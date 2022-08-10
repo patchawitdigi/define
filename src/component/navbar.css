@@ -1,14 +1,38 @@
 .header{
     display: flex;
     justify-content: space-between;
-    height: 7vw;
-    align-items: center;
+    height: 4.5vw;
+    margin: 0 3vw;
+    
+}
+.logocapita img{
+    width: 8vw;
+    margin-top: 0.5vw;
+    
 }
 .headmenu{
     display: flex;
 }
-
-.logocapita{
-    
+.language{
+    display: flex;
+    margin-right: 1.5vw;
+    margin-top: 1.2vw;
     
 }
+.language p{
+   padding: 0 0.3vw;
+    
+}
+
+.btnregis{
+    text-decoration: none;
+    border: 0.1vw solid orange;
+    color: #000;
+    height: 2.8vw;
+    padding: 0.5vw 1vw 0vw 1vw;
+    margin-top: 0.7vw;
+    
+}
+
+
+
