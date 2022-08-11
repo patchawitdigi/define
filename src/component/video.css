@@ -1,5 +1,11 @@
 .vibanner video{ 
     position: absolute;
     width:100%;
-    
+    top:-8.2vw;
+    z-index: -1;
+
+}
+
+.vibanner {
+    margin-bottom: 56vw;
 }

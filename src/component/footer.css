@@ -1,0 +1,37 @@
+.bgfoot{
+    display: flex;
+    margin-bottom: 10vw;
+}
+
+.bgfoot1{
+    width: 100vw;
+    height: 38vw;
+    background: linear-gradient(90deg, #bf5c40 50%, #333132 50%);
+}
+
+.craft{
+    background-color: white;
+    margin: 1.5vw;
+    height: 35vw
+}
+.craft p {
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 1.5vw;
+}
+
+.teamicon{
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 17vw;
+}
+
+.logo1{
+   width: 13vw;
+   padding-left: 1vw;
+}
+.logo2{
+    width: 12vw;
+    padding-left: 5vw;
+ }
+

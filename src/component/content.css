@@ -1,0 +1,109 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vw;
+}
+
+.imgcon img {
+    width: 65vw;
+    height: 37vw;
+}
+
+.textcon {
+    margin-left: 2.5vw;
+    margin-top: 6vw;
+}
+
+.textcon h1 {
+    border-left: 0.2vw solid #bf5c40;
+    padding: 0.5vw 0vw;
+    margin-bottom: 2vw;
+}
+
+.textcon h3 {
+    color: #bf5c40;
+    margin-bottom: 2vw;
+}
+
+.textcon p {
+    font-size: 0.85vw;
+    padding-right: 3vw;
+    line-height: 2vw;
+}
+
+
+.bgleft {
+    position: absolute;
+    width: 21vw;
+    left: 0;
+    top: 80vw;
+    z-index: -1;
+
+}
+
+.textr p {
+    padding-right: 2vw;
+}
+
+.bgright {
+    position: absolute;
+    width: 21vw;
+    right: 0;
+    top: 127vw;
+    z-index: -1;
+
+}
+
+.left2 {
+    top: 174vw;
+}
+
+.textl2 {
+    margin-top: 1.5vw;
+}
+
+.icon1 {
+    margin-left: 3vw;
+    width: 9vw;
+}
+.icon2 {
+    margin-left: 8vw;
+    width: 4.5vw;
+}
+.icon3 {
+    margin-top: 3.5vw;
+    margin-left: 5vw;
+    width: 6vw;
+}
+.icon4 {
+    margin-left: 6vw;
+    margin-top: 3.5vw;
+}
+
+
+.textr2 {
+    margin-top: 3vw;
+}
+
+.textr2 p {
+    padding-right: 2vw;
+    margin-bottom: 2vw;
+}
+
+.textr2 a {
+    font-size: 0.8vw;
+    color: #bf5c40;
+    text-decoration: none;
+    font-weight: bold;
+}
+.right2{
+    top: 221vw;
+}
+
+.right3{
+    top: 268vw;
+}
+
+
+
+

@@ -1,12 +1,14 @@
 import './App.css';
-import Navbar from './component/navbar.js'
-import Video from './component/video.js'
+import Navbar from './component/navbar'
+import Overview from './overview'
+import Footer from './component/footer'
 
 function App() {
   return (
     <>
     <Navbar />
-    <Video />
+    <Overview />
+    <Footer />
     </>
   );
 }
