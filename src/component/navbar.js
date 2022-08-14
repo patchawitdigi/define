@@ -13,7 +13,9 @@ export default function Navbar() {
                     <p>/</p>
                     <p className="en">EN</p>
                 </div>
-                <a className="btnregis">REGISTER NOW</a>
+                <div className="btnregis">
+                    <a>REGISTER NOW</a>
+                </div>
             </div>
         </div>
     )

@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
             <div className="moreinfo">
                 <div className="moreetc">
-                    <div className="infoetc">
+                    <div className="infoetc shop">
                         <h4>SHOP</h4>
                         <a href="">Malls</a>
                         <a href="">Deals</a>
