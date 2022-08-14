@@ -32,3 +32,26 @@
 .point {
     margin-left: 2vw;
 }
+
+.menu ul,
+.menu input,
+.menu .closer,
+.menu input:checked~.opener {
+  display: none;
+}
+
+.menu input:checked~ul,
+.menu input:checked~.closer {
+  display: block;
+}
+
+.menu li{
+    list-style: none;
+    font-size: 0.6vw;
+    margin-bottom: 0.5vw;
+}
+
+.menu label{
+    margin-bottom: 0.5vw;
+    font-size: 0.8vw;
+}
