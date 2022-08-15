@@ -132,6 +132,7 @@ function interest() {
         </div>
 
       </div>
+      <p className='disclaimer'>Disclaimer: Whilst every care has been taken to ensure accuracy in the preparation of the information contained herein, no warranties whatsoever are given, or legal representations provided in respect thereon.</p>
     </div>
   )
 }

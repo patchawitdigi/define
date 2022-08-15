@@ -49,9 +49,21 @@
     list-style: none;
     font-size: 0.6vw;
     margin-bottom: 0.5vw;
+    border-bottom: 0.1vw solid #bf5c40;
+    width: 27vw;
 }
 
 .menu label{
     margin-bottom: 0.5vw;
     font-size: 0.8vw;
+}
+
+.menu li ul li{
+    border: 0;
+}
+
+.disclaimer{
+    font-size: 0.6vw;
+    margin-bottom: 2vw;
+    text-align: center;
 }
