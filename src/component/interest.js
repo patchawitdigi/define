@@ -3,9 +3,56 @@ import "./interest.css";
 import gal5 from '../img/overview/gallery-5.jpeg'
 import delogo from '../img/pointint/logo-menu.png'
 import bgmap from '../img/pointint/background.png'
+import busi from '../img/pointint/business.png'
+import capi from '../img/pointint/capital.png'
+import edu from '../img/pointint/education.png'
+import heal from '../img/pointint/healt.png'
+import metro from '../img/pointint/metro.png'
+import near from '../img/pointint/nearby.png'
+import shop from '../img/pointint/shopping.png'
+import sup from '../img/pointint/supermarket.png'
+import surr from '../img/pointint/surround.png'
 
 
 function interest() {
+
+  function changeimg1() {
+    document.getElementById("extend").src = surr
+
+  }
+  function changeimg2() {
+    document.getElementById("extend").src = capi
+
+  }
+  function changeimg3() {
+    document.getElementById("extend").src = edu
+
+  }
+  function changeimg4() {
+    document.getElementById("extend").src = heal
+
+  }
+  function changeimg5() {
+    document.getElementById("extend").src = busi
+
+  }
+  function changeimg6() {
+    document.getElementById("extend").src = sup
+
+  }
+  function changeimg7() {
+    document.getElementById("extend").src = shop
+
+  }
+  function changeimg8() {
+    document.getElementById("extend").src = near
+
+  }
+  function changeimg9() {
+    document.getElementById("extend").src = metro
+
+  }
+
   return (
     <div>
       <img className='delogo' src={delogo} />
@@ -15,15 +62,18 @@ function interest() {
         <div className='bgmap'>
           <img src={bgmap} />
         </div>
+        <div className='mapextend'>
+          <img src={surr} id="extend" />
+        </div>
 
         <div className='point'>
           <ul class="menu">
-            <li>
+            <li onClick={changeimg1}>
               <input type="radio" name="menuopt" id="drop1" />
               <label class="opener" for="drop1">SURROUNDING</label>
               <label class="closer" for="dropclose">SURROUNDING</label>
             </li>
-            <li>
+            <li onClick={changeimg2}>
               <input type="radio" name="menuopt" id="drop2" />
               <label class="opener" for="drop2">CAPITALAND PROJECTS</label>
               <label class="closer" for="dropclose">CAPITALAND PROJECTS</label>
@@ -42,7 +92,7 @@ function interest() {
               </ul>
               <input type="radio" name="menuopt" id="dropclose" />
             </li>
-            <li>
+            <li onClick={changeimg3}>
               <input type="radio" name="menuopt" id="drop3" />
               <label class="opener" for="drop3">EDUCATION</label>
               <label class="closer" for="dropclose">EDUCATION</label>
@@ -57,7 +107,7 @@ function interest() {
               </ul>
               <input type="radio" name="menuopt" id="dropclose" />
             </li>
-            <li>
+            <li onClick={changeimg4}>
               <input type="radio" name="menuopt" id="drop4" />
               <label class="opener" for="drop4">HEALTH CARE</label>
               <label class="closer" for="dropclose">HEALTH CARE</label>
@@ -68,7 +118,7 @@ function interest() {
               </ul>
               <input type="radio" name="menuopt" id="dropclose" />
             </li>
-            <li>
+            <li onClick={changeimg5}>
               <input type="radio" name="menuopt" id="drop5" />
               <label class="opener" for="drop5">BUSINESS ADMINISTRATIVE UNITS</label>
               <label class="closer" for="dropclose">BUSINESS ADMINISTRATIVE UNITS</label>
@@ -80,7 +130,7 @@ function interest() {
               </ul>
               <input type="radio" name="menuopt" id="dropclose" />
             </li>
-            <li>
+            <li onClick={changeimg6}>
               <input type="radio" name="menuopt" id="drop6" />
               <label class="opener" for="drop6">SUPERMARKET</label>
               <label class="closer" for="dropclose">SUPERMARKET</label>
@@ -93,7 +143,7 @@ function interest() {
               </ul>
               <input type="radio" name="menuopt" id="dropclose" />
             </li>
-            <li>
+            <li onClick={changeimg7}>
               <input type="radio" name="menuopt" id="drop7" />
               <label class="opener" for="drop7">SHOPPING & ENTERTAINMENT</label>
               <label class="closer" for="dropclose">SHOPPING & ENTERTAINMENT</label>
@@ -108,7 +158,7 @@ function interest() {
               </ul>
               <input type="radio" name="menuopt" id="dropclose" />
             </li>
-            <li>
+            <li onClick={changeimg8}>
               <input type="radio" name="menuopt" id="drop8" />
               <label class="opener" for="drop8">NEARBY AMENITIES</label>
               <label class="closer" for="dropclose">NEARBY AMENITIES</label>
@@ -118,7 +168,7 @@ function interest() {
               </ul>
               <input type="radio" name="menuopt" id="dropclose" />
             </li>
-            <li>
+            <li onClick={changeimg9}>
               <input type="radio" name="menuopt" id="drop9" />
               <label class="opener" for="drop9">METRO LINES</label>
               <label class="closer" for="dropclose">METRO LINES</label>

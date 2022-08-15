@@ -1,0 +1,61 @@
+.bglefthid {
+
+    position: absolute;
+    width: 21vw;
+    left: 0;
+    top: 34.5vw;
+    z-index: -1;
+}
+
+.conhid{
+    margin-bottom: 10vw;
+}
+.main-carousel {
+    position: relative;
+    height: 36.5vw;
+}
+
+.items {
+    width: 64.5vw;
+}
+
+.carousel-image {
+    width: 64.5vw;
+    height: 36.5vw;
+    object-fit: cover;
+    object-position: center 82%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.current {
+    opacity: 1;
+}
+
+
+#prevBtn, #nextBtn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    opacity: 0.7;
+    position: absolute;
+
+}
+#prevBtn:hover, #nextBtn:hover{ 
+    opacity: 1;
+}
+
+.buttons #prevBtn { 
+    top: 18vw;
+    right: 0vw;
+    background-color: #bf5c40;
+}
+
+.buttons #nextBtn {
+    top: 18vw;    
+    left: 0vw;
+    background-color: #bf5c40;
+}
+

@@ -10,6 +10,8 @@
 .gal5 {
     width: 100%;
     height: 41vw;
+    object-fit: cover;
+    object-position: center 50%;
 }
 
 .where {
@@ -22,15 +24,16 @@
 .staymap {
     display: flex;
     margin-bottom: 2vw;
-    margin-left: 3vw;
+    margin-left: 2.8vw;
 }
 
 .bgmap img{
-    width: 61vw;
+    width: 61.5vw;
+    height: 45vw;
 }
 
 .point {
-    margin-left: 2vw;
+    margin-top: 0.5vw;
 }
 
 .menu ul,
@@ -63,7 +66,15 @@
 }
 
 .disclaimer{
-    font-size: 0.6vw;
+    font-size: 0.5vw;
     margin-bottom: 2vw;
     text-align: center;
+}
+
+.mapextend img{
+    position: absolute;
+    left: 2.5vw;
+    top: 60.9vw;
+    width: 62vw;
+    height: 45vw;
 }
