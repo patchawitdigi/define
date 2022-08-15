@@ -1,11 +1,41 @@
 .floorbg{
     width: 100%;
     height: 41vw;
-    margin-bottom: 4vw;
+    margin-bottom: 5vw;
 }
 
 .yourown{
     text-align: center;
     color: #bf5c40;
     margin-bottom: 2vw;
+}
+
+.floorplan{
+    display: flex;
+}
+.selectlevel h4{
+    font-size: 1.1vw;
+    color: #bf5c40;
+    border-bottom: 0.1vw solid #bf5c40;
+    padding: 0 2.5vw 1vw 2.5vw;
+    margin-bottom: 1vw;
+}
+.selectlevel p{
+    padding: 0.25vw 0vw 0vw 2.5vw;
+    cursor: pointer;
+}
+.imglevel img{
+    margin-left: 5vw;
+    width: 80vw;
+}
+
+.disclaimer3{
+    font-size: 0.6vw;
+    margin-bottom: 4vw;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+#floor3{
+    color: #bf5c40;
 }
