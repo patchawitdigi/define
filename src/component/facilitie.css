@@ -19,8 +19,42 @@
 
 .levelselect p {
     margin-left: 2vw;
+    cursor: pointer;
+}
+
+#lv1 {
+    color: #bf5c40;
 }
 
 .levelimg{
+    display: flex;
+    justify-content: center;
+}
+.levelimg img{
     width: 80vw;
 }
+.levelplan{
+    display: flex;
+    padding: 0 5vw;
+    margin-top: 2vw;
+}
+
+.indoor{
+    margin-left: 3vw;
+}
+.outdoor h3, .indoor h3{
+    font-size: 1vw;
+}
+.rowout{
+    display: flex;
+}
+.colout{
+    margin-right: 7vw;
+
+}
+.colout p{  
+    font-size: 0.7vw;
+    margin-bottom: 0.5vw;
+}
+
+
