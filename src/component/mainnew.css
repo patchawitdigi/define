@@ -1,0 +1,31 @@
+.headborder{
+    display: flex;
+    margin: 6vw 0 5vw 5vw;
+}
+.headnew{
+    color: #bf5c40;
+    font-size: 2vw;
+}
+.headnew2{
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    border-top: 0.1vw solid #bf5c40;
+    padding-right: 75.5vw;
+}
+.newmedia{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxnew{
+    width: 27.5vw;
+    height: 26vw;
+    background-color: bisque;
+    margin-bottom: 4vw;
+    
+}

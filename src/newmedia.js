@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Mainnew from './component/mainnew'
 function newmedia() {
   return (
-    <div>newmedia</div>
+    <div>
+      <Mainnew/>
+    </div>
   )
 }
 

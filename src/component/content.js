@@ -18,7 +18,7 @@ export default function Content() {
         <div>
             <div className="content">
                 <div className="textcon">
-                    <h2><br /></h2>
+                    <h2></h2>
                     <h3>DEFINE A WORLD OF <br />
                         SOPHISTICATION</h3>
                     <p>DEFINE your stature in society by owning one of the exclusive 88 units of
@@ -35,7 +35,7 @@ export default function Content() {
                     <img src={ban2} />
                 </div>
                 <div className="textcon textr">
-                    <h2><br /></h2>
+                    <h2></h2>
                     <h3>DEFINE A PLACE<br />
                         TO CALL YOUR OWN </h3>
                     <p>All units at DEFINE are fully & beautifully fitted with provisions that will
@@ -47,7 +47,7 @@ export default function Content() {
             </div>
             <div className="content">
                 <div className="textcon textl2">
-                    <h2><br /></h2>
+                    <h2></h2>
                     <h3>DEFINE THE PEAK<br />
                         OF PROVISIONS</h3>
                     <div>
@@ -69,7 +69,7 @@ export default function Content() {
                     <img src={ban4} />
                 </div>
                 <div className="textcon textr2">
-                    <h2><br /></h2>
+                    <h2></h2>
                     <h3>DEFINE YOUR<br />
                         INNER SELF</h3>
                     <p>Nestled in a private green oasis, surrounded by beautifully landscaped
@@ -84,7 +84,7 @@ export default function Content() {
                     <img src={ban5} />
                 </div>
                 <div className="textcon textr2">
-                    <h2><br /></h2>
+                    <h2></h2>
                     <h3>DEFINE WHERE<br />
                         YOU STAY</h3>
                     <p>DEFINE is located in the administrative center of Thu Duc City and boasts 

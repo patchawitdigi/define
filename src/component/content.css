@@ -16,7 +16,7 @@
 
 .textcon h2 {
     border-left: 0.15vw solid #bf5c40;
-    padding: 0.5vw 0vw;
+    padding: 2vw 0vw;
     margin-bottom: 2vw;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .textcon p {
-    font-size: 0.65vw;
+    font-size: 0.8vw;
     padding-right: 3vw;
     line-height: 1.5vw;
 }

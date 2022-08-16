@@ -68,7 +68,7 @@ function Slide() {
             <img className='delogo' src={delogo} />
             <div className="content conhid">
                 <div className="textcon">
-                    <h2><br /></h2>
+                    <h2></h2>
                     <h3>DEFINE YOUR LIFESTYLE<br />
                         & WELLBEING</h3>
                     <p>Surrounded by serene gardens and tranquil water features, you will find numerous relaxation zones
