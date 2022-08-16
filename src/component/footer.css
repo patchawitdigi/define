@@ -1,6 +1,6 @@
 .bgfoot1{
     width: 100vw;
-    height: 28.5vw;
+    height: 32.5vw;
     background: linear-gradient(90deg, #842c1e 50%, #333132 50%);
 
   
@@ -10,13 +10,13 @@
     display: inline-block;
     background-color: white;
     margin: 1.2vw;
-    height: 26vw;
+    height: 30vw;
     width: 97vw;
 }
 .craft p {
     text-align: center;
     padding-top: 2vw;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 .teamicon{
@@ -26,37 +26,40 @@
     margin-bottom: 3vw;
 }
 .teamicon p{
-  font-size: 1vw;
+  font-size: 1.3vw;
 }
 
 .logo1{
-   width: 9.5vw;
+   width: 11vw;
 }
 .logo2{
-    width: 8.5vw;
-    padding-left: 3vw;
+    width: 12vw;
+    padding-left: 5vw;
+ }
+ .butregis{
+   display: flex;
+   justify-content: center;
  }
 
 .craft button {
-    margin-left: 43.5vw;
+    
     border: 0.1vw solid transparent;
     background-color: #bf5c40;
-    padding: 0.5vw 1.5vw;
+    padding: 1vw 2vw;
     text-decoration: none;
     color: white;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .craft a{
     display: inline-block;
-    margin-left: 43.5vw;
     margin-top: 1vw;
     text-decoration: none;
     color: #bf5c40;
     font-size: 1.5vw;
     border-top: 0.1vw solid #bf5c40;
     border-bottom: 0.1vw solid #bf5c40;
-    padding: 0.5vw 0.55vw;
+    padding: 0.5vw 1.5vw;
 }
 .craft a:hover{
     color: #bf5c40;
@@ -64,12 +67,12 @@
 
 .moreinfo{
     background-color: #333132;
-    height: 23vw;  
+    height: 25vw;  
     border-top: 0.15vw solid #bf5c40;
 }
 .moreetc{
     display: flex;
-    padding: 0vw 15vw;
+    padding: 0vw 10vw;
     justify-content: space-around;
 }
 
@@ -84,11 +87,11 @@
  }
 
  .infoetc h4{
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     margin-bottom: 1vw;
  }
  .infoetc a{
-    font-size: 0.6vw;
+    font-size: 0.7vw;
     margin-bottom: 0.5vw;
     text-decoration: none;
     color: white;
@@ -98,12 +101,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1vw;
-    margin-left: 16vw;
-    margin-right: 16vw;
+    margin-left: 13vw;
+    margin-right: 13vw;
     padding-top: 0.8vw;
     border-top: 0.1vw solid white;
     color: white;
-    font-size: 0.6vw;
+    font-size: 0.7vw;
  }
 .follow a{
     padding: 0vw 0.75vw;
@@ -121,26 +124,26 @@
     padding-top: 0.2vw;
 }
  .social img{
-    width: 2vw;
-    height: 1.5vw;
+    width: 2.4vw;
+    height: 1.8vw;
     padding: 0vw 0.2vw;
  }
 
  .descrip{
     height: 9vw;
     background-color: #e6e6e7;
-    padding: 1.5vw 19vw;
+    padding: 1.5vw 10vw;
  }
 
  .descrip p{
     text-align: center;
-    font-size: 0.6vw;
+    font-size: 0.7vw;
     line-height: 1.2vw;
  }
  .contact {
     display: flex;
     justify-content: space-between;
-    padding: 2.5vw 18vw;
+    padding: 2.5vw 10vw;
  }
 
  .copyright{
@@ -149,7 +152,7 @@
     font-size: 0.6vw;
  }
  .copyright img{
-    width: 4.5vw;
+    width: 6vw;
     margin-bottom: 1vw;  
  }
  .copyright a{

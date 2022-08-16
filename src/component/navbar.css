@@ -1,8 +1,8 @@
 .header{
     display: flex;
     justify-content: space-between;
-    height: 3.4vw;
-    padding: 0 2vw;
+    height: 4vw;
+    padding: 0 3vw;
     background-color: white;
     border-bottom: 0.2vw solid #bf5c40;
     position: fixed;
@@ -12,8 +12,8 @@
 
 }
 .logocapita img{
-    width: 6vw;
-    margin-top: 0.3vw;
+    width: 7vw;
+    margin-top: 0.5vw;
     
 }
 .headmenu{
@@ -34,14 +34,14 @@
 .btnregis{
     text-decoration: none;
     color: #bf5c40;
-    margin-top: 1vw;
-    font-size: 0.7vw;
+    margin-top: 1.2vw;
+    font-size: 0.9vw;
     font-weight: bold;
 }
 
 .btnregis a{
     border: 0.15vw solid #bf5c40;
-    padding: 0.35vw 1.25vw 0.45vw 1.25vw;
+    padding: 0.55vw 1.25vw 0.55vw 1.25vw;
 }
 
 .en {

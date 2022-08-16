@@ -15,6 +15,7 @@ function App() {
   return (
     <>
     <Navbar />
+    
     <BrowserRouter>
     <Routes>
           <Route path="/" element={<Overview />} />

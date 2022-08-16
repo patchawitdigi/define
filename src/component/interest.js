@@ -18,38 +18,119 @@ function interest() {
 
   function changeimg1() {
     document.getElementById("extend").src = surr
+    document.getElementById("surround").style.color = "#bf5c40"
+    document.getElementById("capital").style.color = "black"
+    document.getElementById("educa").style.color = "black"
+    document.getElementById("health").style.color = "black"
+    document.getElementById("business").style.color = "black"
+    document.getElementById("superma").style.color = "black"
+    document.getElementById("shopen").style.color = "black"
+    document.getElementById("nearby").style.color = "black"
+    document.getElementById("metroline").style.color = "black"
 
   }
   function changeimg2() {
     document.getElementById("extend").src = capi
+    document.getElementById("surround").style.color = "black"
+    document.getElementById("capital").style.color = "#bf5c40"
+    document.getElementById("educa").style.color = "black"
+    document.getElementById("health").style.color = "black"
+    document.getElementById("business").style.color = "black"
+    document.getElementById("superma").style.color = "black"
+    document.getElementById("shopen").style.color = "black"
+    document.getElementById("nearby").style.color = "black"
+    document.getElementById("metroline").style.color = "black"
 
   }
   function changeimg3() {
     document.getElementById("extend").src = edu
+    document.getElementById("surround").style.color = "black"
+    document.getElementById("capital").style.color = "black"
+    document.getElementById("educa").style.color = "#bf5c40"
+    document.getElementById("health").style.color = "black"
+    document.getElementById("business").style.color = "black"
+    document.getElementById("superma").style.color = "black"
+    document.getElementById("shopen").style.color = "black"
+    document.getElementById("nearby").style.color = "black"
+    document.getElementById("metroline").style.color = "black"
 
   }
   function changeimg4() {
     document.getElementById("extend").src = heal
+    document.getElementById("surround").style.color = "black"
+    document.getElementById("capital").style.color = "black"
+    document.getElementById("educa").style.color = "black"
+    document.getElementById("health").style.color = "#bf5c40"
+    document.getElementById("business").style.color = "black"
+    document.getElementById("superma").style.color = "black"
+    document.getElementById("shopen").style.color = "black"
+    document.getElementById("nearby").style.color = "black"
+    document.getElementById("metroline").style.color = "black"
 
   }
   function changeimg5() {
     document.getElementById("extend").src = busi
+    document.getElementById("surround").style.color = "black"
+    document.getElementById("capital").style.color = "black"
+    document.getElementById("educa").style.color = "black"
+    document.getElementById("health").style.color = "black"
+    document.getElementById("business").style.color = "#bf5c40"
+    document.getElementById("superma").style.color = "black"
+    document.getElementById("shopen").style.color = "black"
+    document.getElementById("nearby").style.color = "black"
+    document.getElementById("metroline").style.color = "black"
 
   }
   function changeimg6() {
     document.getElementById("extend").src = sup
+    document.getElementById("surround").style.color = "black"
+    document.getElementById("capital").style.color = "black"
+    document.getElementById("educa").style.color = "black"
+    document.getElementById("health").style.color = "black"
+    document.getElementById("business").style.color = "black"
+    document.getElementById("superma").style.color = "#bf5c40"
+    document.getElementById("shopen").style.color = "black"
+    document.getElementById("nearby").style.color = "black"
+    document.getElementById("metroline").style.color = "black"
 
   }
   function changeimg7() {
     document.getElementById("extend").src = shop
+    document.getElementById("surround").style.color = "black"
+    document.getElementById("capital").style.color = "black"
+    document.getElementById("educa").style.color = "black"
+    document.getElementById("health").style.color = "black"
+    document.getElementById("business").style.color = "black"
+    document.getElementById("superma").style.color = "black"
+    document.getElementById("shopen").style.color = "#bf5c40"
+    document.getElementById("nearby").style.color = "black"
+    document.getElementById("metroline").style.color = "black"
 
   }
   function changeimg8() {
     document.getElementById("extend").src = near
+    document.getElementById("surround").style.color = "black"
+    document.getElementById("capital").style.color = "black"
+    document.getElementById("educa").style.color = "black"
+    document.getElementById("health").style.color = "black"
+    document.getElementById("business").style.color = "black"
+    document.getElementById("superma").style.color = "black"
+    document.getElementById("shopen").style.color = "black"
+    document.getElementById("nearby").style.color = "#bf5c40"
+    document.getElementById("metroline").style.color = "black"
 
   }
   function changeimg9() {
     document.getElementById("extend").src = metro
+    document.getElementById("surround").style.color = "black"
+    document.getElementById("capital").style.color = "black"
+    document.getElementById("educa").style.color = "black"
+    document.getElementById("health").style.color = "black"
+    document.getElementById("business").style.color = "black"
+    document.getElementById("superma").style.color = "black"
+    document.getElementById("shopen").style.color = "black"
+    document.getElementById("nearby").style.color = "black"
+    document.getElementById("metroline").style.color = "#bf5c40"
 
   }
 
@@ -70,18 +151,19 @@ function interest() {
           <ul class="menu">
             <li onClick={changeimg1}>
               <input type="radio" name="menuopt" id="drop1" />
-              <label class="opener" for="drop1">SURROUNDING</label>
-              <label class="closer" for="dropclose">SURROUNDING</label>
+              <label class="opener" for="drop1" id="surround">SURROUNDING</label>
+              <label class="closer" for="dropclose" id="surround">SURROUNDING</label>
+              <input type="radio" name="menuopt" id="dropclose" />
             </li>
             <li onClick={changeimg2}>
-              <input type="radio" name="menuopt" id="drop2" />
-              <label class="opener" for="drop2">CAPITALAND PROJECTS</label>
-              <label class="closer" for="dropclose">CAPITALAND PROJECTS</label>
+              <input type="radio" name="menuopt" id="drop2"/>
+              <label class="opener" for="drop2" id="capital">CAPITALAND PROJECTS</label>
+              <label class="closer" for="dropclose" id="capital">CAPITALAND PROJECTS</label>
               <ul>
                 <li>A The Vista</li>
                 <li>B Vista Verde</li>
                 <li>C ParcSpring</li>
-                <li>D The Krista</li>
+                <li>D The Krista</li> 
                 <li>E Kris Vue</li>
                 <li>F Feliz en Vista</li>
                 <li>G D2eight</li>
@@ -94,8 +176,8 @@ function interest() {
             </li>
             <li onClick={changeimg3}>
               <input type="radio" name="menuopt" id="drop3" />
-              <label class="opener" for="drop3">EDUCATION</label>
-              <label class="closer" for="dropclose">EDUCATION</label>
+              <label class="opener" for="drop3" id="educa">EDUCATION</label>
+              <label class="closer" for="dropclose"id="educa">EDUCATION</label>
               <ul>
                 <li>1 British International School (BIS)</li>
                 <li>2 International School Ho Chi Minh City (ISHCMC)</li>
@@ -109,8 +191,8 @@ function interest() {
             </li>
             <li onClick={changeimg4}>
               <input type="radio" name="menuopt" id="drop4" />
-              <label class="opener" for="drop4">HEALTH CARE</label>
-              <label class="closer" for="dropclose">HEALTH CARE</label>
+              <label class="opener" for="drop4" id="health">HEALTH CARE</label>
+              <label class="closer" for="dropclose" id="health">HEALTH CARE</label>
               <ul>
                 <li>8 Le Van Thinh Hospital</li>
                 <li>9 American International Hospital</li>
@@ -120,8 +202,8 @@ function interest() {
             </li>
             <li onClick={changeimg5}>
               <input type="radio" name="menuopt" id="drop5" />
-              <label class="opener" for="drop5">BUSINESS ADMINISTRATIVE UNITS</label>
-              <label class="closer" for="dropclose">BUSINESS ADMINISTRATIVE UNITS</label>
+              <label class="opener" for="drop5" id="business">BUSINESS ADMINISTRATIVE UNITS</label>
+              <label class="closer" for="dropclose" id="business">BUSINESS ADMINISTRATIVE UNITS</label>
               <ul>
                 <li>11 People’s Committee Thu Duc City</li>
                 <li>12 Vietnam State Treasury Thu Duc City</li>
@@ -132,8 +214,8 @@ function interest() {
             </li>
             <li onClick={changeimg6}>
               <input type="radio" name="menuopt" id="drop6" />
-              <label class="opener" for="drop6">SUPERMARKET</label>
-              <label class="closer" for="dropclose">SUPERMARKET</label>
+              <label class="opener" for="drop6" id="superma">SUPERMARKET</label>
+              <label class="closer" for="dropclose" id="superma">SUPERMARKET</label>
               <ul>
                 <li>15 Tops Market An Phu</li>
                 <li>16 Mega Market</li>
@@ -145,8 +227,8 @@ function interest() {
             </li>
             <li onClick={changeimg7}>
               <input type="radio" name="menuopt" id="drop7" />
-              <label class="opener" for="drop7">SHOPPING & ENTERTAINMENT</label>
-              <label class="closer" for="dropclose">SHOPPING & ENTERTAINMENT</label>
+              <label class="opener" for="drop7" id="shopen">SHOPPING & ENTERTAINMENT</label>
+              <label class="closer" for="dropclose" id="shopen">SHOPPING & ENTERTAINMENT</label>
               <ul>
                 <li>20 Cantavil An Phu</li>
                 <li>21 Lotte Cinema</li>
@@ -160,8 +242,8 @@ function interest() {
             </li>
             <li onClick={changeimg8}>
               <input type="radio" name="menuopt" id="drop8" />
-              <label class="opener" for="drop8">NEARBY AMENITIES</label>
-              <label class="closer" for="dropclose">NEARBY AMENITIES</label>
+              <label class="opener" for="drop8" id="nearby">NEARBY AMENITIES</label>
+              <label class="closer" for="dropclose" id="nearby">NEARBY AMENITIES</label>
               <ul>
                 <li>27 Riverside Park</li>
                 <li>28 Rach Chiec Golf Driving Range</li>
@@ -170,8 +252,8 @@ function interest() {
             </li>
             <li onClick={changeimg9}>
               <input type="radio" name="menuopt" id="drop9" />
-              <label class="opener" for="drop9">METRO LINES</label>
-              <label class="closer" for="dropclose">METRO LINES</label>
+              <label class="opener" for="drop9" id="metroline">METRO LINES</label>
+              <label class="closer" for="dropclose" id="metroline">METRO LINES</label>
               <ul>
                 <li>Metro Station (Under Construction)</li>
                 <li>Metro Line 2 (Under Planning)</li>

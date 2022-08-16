@@ -2,7 +2,7 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 5.5vw;
+    width: 7vw;
     margin-top: 5vw;
     margin-bottom: 1.5vw;
 }
@@ -78,3 +78,6 @@
     width: 62vw;
     height: 45vw;
 }
+ #surround{
+    color: #bf5c40;
+ }

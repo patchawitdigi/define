@@ -23,10 +23,12 @@ export default function Footer() {
                             <img className="logo2" src={logo2} />
                         </div>
                     </div>
-                    <div>
+                    <div className="butregis">
                         <button href="">REGISTER NOW</button>
                     </div>
+                    <div className="butregis">
                     <a href="1800599986">1800 599 986</a>
+                    </div>
                 </div>
             </div>
             <div className="moreinfo">
