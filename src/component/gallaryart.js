@@ -20,7 +20,10 @@ export default function Gallaryart() {
     return (
         <div>
             <img className='delogo' src={delogo} />
+            <div className='headborder'>
             <h3 className="headgal">GALLERIE D’ARTE</h3>
+            <h3 className="headgal2"></h3>
+            </div>
             <div className="gallary">
                 <div className="lgallary">
                     <img className="facade1" src={Facade1} />

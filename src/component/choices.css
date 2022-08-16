@@ -14,7 +14,7 @@
     display: flex;
 }
 .selectlevel h4{
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     color: #bf5c40;
     border-bottom: 0.1vw solid #bf5c40;
     padding: 0 2.5vw 1vw 2.5vw;
@@ -25,7 +25,7 @@
     cursor: pointer;
 }
 .imglevel img{
-    margin-left: 5vw;
+    margin-left: 3vw;
     width: 80vw;
 }
 

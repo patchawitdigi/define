@@ -1,7 +1,13 @@
 .headgal{
-    margin: 7vw 0 7vw 7vw;
     color: #bf5c40;
     font-size: 2vw;
+    margin-left: 2vw;
+}
+.headgal2{
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    border-top: 0.1vw solid #bf5c40;
+    padding-right: 70vw;
 }
 
 .gallary {

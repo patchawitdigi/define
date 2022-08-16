@@ -27,7 +27,7 @@
 
 .textcon p {
     font-size: 0.8vw;
-    padding-right: 3vw;
+    padding-right: 3.5vw;
     line-height: 1.5vw;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .textr p {
-    padding-right: 2.5vw;
+    padding-right: 4.5vw;
 }
 
 .bgright {
@@ -68,21 +68,21 @@
 
 .icon1 {
     margin-left: 3vw;
-    width: 7vw;
+    width: 8vw;
 }
 .icon2 {
     margin-left: 7vw;
-    width: 3.5vw;
+    width: 5vw;
 }
 .icon3 {
     margin-top: 3vw;
     margin-left: 5vw;
-    width: 4vw;
+    width: 5vw;
 }
 .icon4 {
     margin-left: 6vw;
     margin-top: 3vw;
-    width: 8vw;
+    width: 10vw;
 }
 
 
@@ -91,7 +91,7 @@
 }
 
 .textr2 p {
-    padding-right: 2.5vw;
+    padding-right: 4.5vw;
     margin-bottom: 1.5vw;
 }
 

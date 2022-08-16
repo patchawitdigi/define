@@ -25,7 +25,49 @@
 .boxnew{
     width: 27.5vw;
     height: 26vw;
-    background-color: bisque;
+    background-color: #f0f0f0;
     margin-bottom: 4vw;
     
+}
+
+.boxnew img {
+    width: 100%;
+    height: 60%;
+    border-left: 0.5vw solid #bf5c40;
+    border-top: 0.5vw solid #bf5c40;
+    border-right: 0.5vw solid #f0f0f0;
+
+}
+
+.newtext{
+    display: flex;
+}
+.newdatebox{
+    background-color: white;
+    height: 10.38vw;
+}
+.newdate{
+    background-color: #bf5c40;
+    padding: 0.5vw 0.7vw 0vw 0.7vw;
+    height: 6vw;
+
+}
+.newdate h4{
+    font-size: 1.7vw;
+    margin-bottom: 0vw;
+    color: white;
+}
+.newdate p{
+    font-size: 0.8vw;
+    margin-bottom: 0vw;
+    color: white;
+}
+.newname h5{
+    font-size: 0.9vw;
+    margin-top: 3vw;
+    margin-left: 1vw;
+}
+.newname p{
+    font-size: 0.8vw;
+    margin-left: 1vw;
 }
