@@ -80,28 +80,28 @@ function Slide() {
                     <div className="carousel">
                         <div className="items">
                             <img src={im1} alt="" className="carousel-image current" />
-                            <img src={im2} alt="" className="carousel-image"/>
-                            <img src={im3} alt="" className="carousel-image"/>
-                            <img src={im4} alt="" className="carousel-image"/>
-                            <img src={im5} alt="" className="carousel-image" />
-                            <img src={im6} alt="" className="carousel-image" />
-                            <img src={im7} alt="" className="carousel-image" />
+                            <img src={im5} alt="" className="carousel-image"/>
+                            <img src={im14} alt="" className="carousel-image"/>
+                            <img src={im9} alt="" className="carousel-image"/>
                             <img src={im8} alt="" className="carousel-image" />
-                            <img src={im9} alt="" className="carousel-image" />
                             <img src={im10} alt="" className="carousel-image" />
+                            <img src={im2} alt="" className="carousel-image" />
+                            <img src={im16} alt="" className="carousel-image" />
+                            <img src={im4} alt="" className="carousel-image" />
+                            <img src={im6} alt="" className="carousel-image" />
                             <img src={im11} alt="" className="carousel-image" />
                             <img src={im12} alt="" className="carousel-image" />
                             <img src={im13} alt="" className="carousel-image" />
-                            <img src={im14} alt="" className="carousel-image" />
+                            <img src={im3} alt="" className="carousel-image" />
                             <img src={im15} alt="" className="carousel-image" />
-                            <img src={im16} alt="" className="carousel-image" />
+                            <img src={im7} alt="" className="carousel-image" />
                             <img src={im17} alt="" className="carousel-image" />
                         </div>
                     </div>
 
                     <div className="buttons">
-                        <FiArrowLeft id="nextBtn" size="2vw"/>
-                        <FiArrowRight id="prevBtn" size="2vw"/>
+                        <FiArrowLeft id="nextBtn" size="3vw"/>
+                        <FiArrowRight id="prevBtn" size="3vw"/>
                     </div>
 
                 </div>

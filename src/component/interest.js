@@ -151,13 +151,13 @@ function interest() {
           <ul class="menu">
             <li onClick={changeimg1}>
               <input type="radio" name="menuopt" id="drop1" />
-              <label class="opener" for="drop1" id="surround">SURROUNDING</label>
+              <label class="opener" for="drop1">SURROUNDING</label>
               <label class="closer" for="dropclose" id="surround">SURROUNDING</label>
               <input type="radio" name="menuopt" id="dropclose" />
             </li>
             <li onClick={changeimg2}>
               <input type="radio" name="menuopt" id="drop2"/>
-              <label class="opener" for="drop2" id="capital">CAPITALAND PROJECTS</label>
+              <label class="opener" for="drop2">CAPITALAND PROJECTS</label>
               <label class="closer" for="dropclose" id="capital">CAPITALAND PROJECTS</label>
               <ul>
                 <li>A The Vista</li>
@@ -176,7 +176,7 @@ function interest() {
             </li>
             <li onClick={changeimg3}>
               <input type="radio" name="menuopt" id="drop3" />
-              <label class="opener" for="drop3" id="educa">EDUCATION</label>
+              <label class="opener" for="drop3">EDUCATION</label>
               <label class="closer" for="dropclose"id="educa">EDUCATION</label>
               <ul>
                 <li>1 British International School (BIS)</li>
@@ -191,7 +191,7 @@ function interest() {
             </li>
             <li onClick={changeimg4}>
               <input type="radio" name="menuopt" id="drop4" />
-              <label class="opener" for="drop4" id="health">HEALTH CARE</label>
+              <label class="opener" for="drop4">HEALTH CARE</label>
               <label class="closer" for="dropclose" id="health">HEALTH CARE</label>
               <ul>
                 <li>8 Le Van Thinh Hospital</li>
@@ -202,7 +202,7 @@ function interest() {
             </li>
             <li onClick={changeimg5}>
               <input type="radio" name="menuopt" id="drop5" />
-              <label class="opener" for="drop5" id="business">BUSINESS ADMINISTRATIVE UNITS</label>
+              <label class="opener" for="drop5">BUSINESS ADMINISTRATIVE UNITS</label>
               <label class="closer" for="dropclose" id="business">BUSINESS ADMINISTRATIVE UNITS</label>
               <ul>
                 <li>11 People’s Committee Thu Duc City</li>
@@ -214,7 +214,7 @@ function interest() {
             </li>
             <li onClick={changeimg6}>
               <input type="radio" name="menuopt" id="drop6" />
-              <label class="opener" for="drop6" id="superma">SUPERMARKET</label>
+              <label class="opener" for="drop6">SUPERMARKET</label>
               <label class="closer" for="dropclose" id="superma">SUPERMARKET</label>
               <ul>
                 <li>15 Tops Market An Phu</li>
@@ -227,7 +227,7 @@ function interest() {
             </li>
             <li onClick={changeimg7}>
               <input type="radio" name="menuopt" id="drop7" />
-              <label class="opener" for="drop7" id="shopen">SHOPPING & ENTERTAINMENT</label>
+              <label class="opener" for="drop7">SHOPPING & ENTERTAINMENT</label>
               <label class="closer" for="dropclose" id="shopen">SHOPPING & ENTERTAINMENT</label>
               <ul>
                 <li>20 Cantavil An Phu</li>
@@ -242,7 +242,7 @@ function interest() {
             </li>
             <li onClick={changeimg8}>
               <input type="radio" name="menuopt" id="drop8" />
-              <label class="opener" for="drop8" id="nearby">NEARBY AMENITIES</label>
+              <label class="opener" for="drop8">NEARBY AMENITIES</label>
               <label class="closer" for="dropclose" id="nearby">NEARBY AMENITIES</label>
               <ul>
                 <li>27 Riverside Park</li>
@@ -252,7 +252,7 @@ function interest() {
             </li>
             <li onClick={changeimg9}>
               <input type="radio" name="menuopt" id="drop9" />
-              <label class="opener" for="drop9" id="metroline">METRO LINES</label>
+              <label class="opener" for="drop9">METRO LINES</label>
               <label class="closer" for="dropclose" id="metroline">METRO LINES</label>
               <ul>
                 <li>Metro Station (Under Construction)</li>

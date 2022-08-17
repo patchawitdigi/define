@@ -1,6 +1,6 @@
 .bgfoot1{
     width: 100vw;
-    height: 32.5vw;
+    height: 36.5vw;
     background: linear-gradient(90deg, #842c1e 50%, #333132 50%);
 }
 
@@ -8,12 +8,12 @@
     display: inline-block;
     background-color: white;
     margin: 1.2vw;
-    height: 30vw;
+    height: 34vw;
     width: 97vw;
 }
 .craft p {
     text-align: center;
-    padding-top: 2vw;
+    padding-top: 4vw;
     font-size: 1.5vw;
 }
 
@@ -54,10 +54,10 @@
     margin-top: 1vw;
     text-decoration: none;
     color: #bf5c40;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     border-top: 0.1vw solid #bf5c40;
     border-bottom: 0.1vw solid #bf5c40;
-    padding: 0.5vw 1.5vw;
+    padding: 0.5vw 1vw;
 }
 .craft a:hover{
     color: #bf5c40;

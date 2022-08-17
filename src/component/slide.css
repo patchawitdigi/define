@@ -48,14 +48,16 @@
 }
 
 .buttons #prevBtn { 
-    top: 18vw;
+    top: 16vw;
     right: 0vw;
     background-color: #bf5c40;
+    padding: 0.5vw;
 }
 
 .buttons #nextBtn {
-    top: 18vw;    
+    top: 16vw;    
     left: 0vw;
     background-color: #bf5c40;
+    padding: 0.5vw;
 }
 

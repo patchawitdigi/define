@@ -9,11 +9,15 @@ function facilitie() {
     document.getElementById("level").src = vel1
     document.getElementById("lv1").style.color = "#bf5c40"
     document.getElementById("lv3").style.color = "black"
+    document.getElementById("textlv3").style.display = "none"
+    document.getElementById("textlv1").style.display = "block"
   }
   function changelevel3() {
     document.getElementById("level").src = vel3
     document.getElementById("lv3").style.color = "#bf5c40"
     document.getElementById("lv1").style.color = "black"
+    document.getElementById("textlv3").style.display = "block"
+    document.getElementById("textlv1").style.display = "none"
 
   }
   return (
@@ -26,6 +30,8 @@ function facilitie() {
       <div className='levelimg'>
         <img src={vel1} id="level"/>
       </div>
+
+      <div id="textlv1" style={{ display: "block" }}>
       <div className='levelplan'>
         <div className='outdoor'>
           <h3>OUTDOOR FACILITIES</h3>
@@ -54,7 +60,7 @@ function facilitie() {
               <p>17 L’Aventure Treehouse</p>
               <p>18 Topaz Garden</p>
               <p>19 Topaz Pavilion</p>
-              <p>21 Topaz Walkway</p>
+              <p>20 Topaz Walkway</p>
             </div>
           </div>
         </div>
@@ -77,6 +83,55 @@ function facilitie() {
           </div>
         </div>
       </div>
+      </div>
+
+      <div id="textlv3" style={{ display: "none" }}>
+      <div className='levelplan'>
+        <div className='outdoor'>
+          <h3>OUTDOOR FACILITIES</h3>
+          <div className='rowout'>
+            <div className='colout rowlv3'>
+              <p>21 Hydrotherapy Jacuzzi</p>
+              <p>22 Illuminating Pathway</p>
+              <p>23 Sun Lounge</p>
+              <p>24 Sunbed At DEFINE Pool</p>
+              <p>25 DEFINE Pool</p>
+            </div>
+            <div className='colout rowlv3'>
+              <p>26 Sapphire Deck</p>
+              <p>27 Sapphire Path</p>
+              <p>28 L’amour Sunbed</p>
+              <p>29 Botanique Lawn</p>
+              <p>30 Zen Zone</p>
+            </div>
+            <div className='colout rowlv3'>
+              <p>31 BBQ Area</p>
+              <p>32 Herbs Garden</p>
+              <p>33 L’amour Swing</p>
+              <p>34 L’Aventure Kid’s Pool</p>
+              <p>35 Family Pavilion</p>
+            </div>
+          </div>
+        </div>
+        <div className='indoor'>
+          <h3>INDOOR FACILITIES</h3>
+          <div className='rowout'>
+            <div className='colout rowlv3'>
+              <p>45 Privé Party House</p>
+              <p>46 Privé Wine Cellar Lounge</p>
+              <p>47 Changing Room</p>
+              <p>48 Sauna & Steam Room</p>
+              <p>49 Privé Gym</p>
+            </div>
+            <div className='colout rowlv3'>
+              <p>50 Privé Yoga</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
       <p className='disclaimer2'>Disclaimer: Whilst every care has been taken to ensure accuracy in the preparation of the information contained herein,
         no warranties whatsoever are given, or legal representations provided in respect thereon. The Developer reserves the right
         to modify information of the development, or any part thereof as may be approved or required by the relevant authorities.</p>
