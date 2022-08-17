@@ -20,7 +20,7 @@ export default function Menu() {
     return (
         <div>
             <div className="menuclick">
-                <p onClick={toggleMenubar}>click</p>
+                <p onClick={toggleMenubar}>menuclick</p>
             </div>
             <div className="menubg" id="menu-box" style={{ display: "none" }}>
                 <img className="pattl" src={pattleft} />

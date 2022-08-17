@@ -212,6 +212,7 @@
     height: 80%;
     background-color: white;
     z-index: 3;
+    display: none;
 }
 
 .planpopup p {
