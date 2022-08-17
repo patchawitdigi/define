@@ -29,12 +29,12 @@ export default function Menu() {
                     <img src={logodef} />
                 </div>
                 <div className="menuitem">
-                    <a href='/'>OVERVIEW</a>
-                    <a href='/point-of-Interests'>POINT OF INTERESTS</a>
-                    <a href='/hidden-treasures'>HIDDEN TREASURES</a>
-                    <a href='/luxury-of-choices'>LUXURY OF CHOICES</a>
-                    <a href='/gallerie-d-arte'>GALLERIE D’ARTE</a>
-                    <a href='/news-and-media'>NEWS & MEDIA</a>
+                    <a href='/project/define/'>OVERVIEW</a>
+                    <a href='/project/define/point-of-Interests'>POINT OF INTERESTS</a>
+                    <a href='/project/define/hidden-treasures'>HIDDEN TREASURES</a>
+                    <a href='/project/define/luxury-of-choices'>LUXURY OF CHOICES</a>
+                    <a href='/project/define/gallerie-d-arte'>GALLERIE D’ARTE</a>
+                    <a href='/project/define/news-and-media'>NEWS & MEDIA</a>
                 </div>
             </div>
         </div>

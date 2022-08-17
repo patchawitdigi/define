@@ -236,7 +236,7 @@ function choices() {
       <div className='planpopup'>
         <div className='plandetail'>
           <div className='popuplogo'>
-            <div className='borderdetail'>
+            <div className='borderdetail '>
               <img src={delogo} />
             </div>
             <div className='borderdetail'>

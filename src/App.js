@@ -18,7 +18,7 @@ function App() {
     <Navbar />
     <Menu />
     
-    <BrowserRouter>
+    <BrowserRouter basename={'/project/define/'}>
     <Routes>
         
           <Route path="/" element={<Overview />} exact/>

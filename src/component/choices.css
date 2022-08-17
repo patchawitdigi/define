@@ -206,26 +206,32 @@
 .planpopup {
     position: absolute;
     position: fixed;
-    left:5vw;
-    top: 6.5vw;
-    width: 90%;
-    height: 80%;
+    left:3.5vw;
+    top: 4vw;
+    width: 93%;
+    height: 84%;
     background-color: white;
     z-index: 3;
-    display: none;
+    padding: 0 1vw;
+    /* display: none; */
 }
 
 .planpopup p {
     font-size: 0.7vw;
+    text-align: center;
+
 }
 
 .plandetail {
     display: flex;
+    justify-content: space-between;
+    padding: 1.2vw 3.5vw;
 }
 
 .popuplogo img {
-    width: 7vw;
+    width: 9vw;
     padding-bottom: 2vw;
+    
 }
 
 .popuplogo h4 {
@@ -235,13 +241,16 @@
 
 .popuplogo p {
     font-size: 0.8vw;
+    text-align: left;
 }
 
 .planimg img {
-    width: 60vw;
+    width: 65vw;
+    margin-top: 2vw;
 }
 
 .borderdetail{
     border-bottom: 0.1vw solid black;
     margin-bottom: 1vw;
+    padding-right: 7vw;
 }
