@@ -1,6 +1,7 @@
 import './App.css';
 import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './component/navbar'
+import Menu from './component/menu'
 
 import Overview from './overview'
 import Pointint from './pointint'
@@ -15,9 +16,11 @@ function App() {
   return (
     <>
     <Navbar />
+    <Menu />
     
     <BrowserRouter>
     <Routes>
+        
           <Route path="/" element={<Overview />} />
           <Route path="/point-of-Interests" element={<Pointint />} />
           <Route path="/hidden-treasures" element={<Hidden />} />
