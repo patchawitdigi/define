@@ -12,6 +12,29 @@ import { BsPlusCircle } from "react-icons/bs"
 import Lv3_1 from '../img/luxury/lv3unit1.jpg'
 import Lv3_2 from '../img/luxury/lv3unit2.jpg'
 
+import Lv4_1 from '../img/luxury/lv4unit1.jpg'
+import Lv4_2 from '../img/luxury/lv4unit2.jpg'
+import Lv4_3 from '../img/luxury/lv4unit3.jpg'
+import Lv4_4 from '../img/luxury/lv4unit4.jpg'
+
+import typ1_1 from '../img/luxury/typ1unit1.jpg'
+import typ1_2 from '../img/luxury/typ1unit2.jpg'
+import typ1_3 from '../img/luxury/typ1unit3.jpg'
+import typ1_4 from '../img/luxury/typ1unit4.jpg'
+
+import typ2_1 from '../img/luxury/typ2unit1.jpg'
+import typ2_2 from '../img/luxury/typ2unit2.jpg'
+import typ2_3 from '../img/luxury/typ2unit3.jpg'
+import typ2_4 from '../img/luxury/typ2unit4.jpg'
+
+import Lv15_1 from '../img/luxury/lv15unit1.jpg'
+import Lv15_2 from '../img/luxury/lv15unit2.jpg'
+import Lv15_3 from '../img/luxury/lv15unit3.jpg'
+import Lv15_4 from '../img/luxury/lv15unit4.jpg'
+
+import Lv25_1 from '../img/luxury/lv25unit1.jpg'
+import Lv25_2 from '../img/luxury/lv25unit2.jpg'
+
 function choices() {
 
   function changelv3() {
@@ -190,6 +213,14 @@ function choices() {
     document.getElementById("plus25-1").style.display = "block"
     document.getElementById("plus25-2").style.display = "block"
   }
+  function showPop3_1() {
+    document.getElementById("pop3-1").style.display = "block"
+  }
+  function showPop3_2() {
+    document.getElementById("pop3-2").style.display = "block"
+  }
+  
+
   return (
     <div>
       <img className='delogo' src={delogo} />
@@ -208,8 +239,8 @@ function choices() {
         <div className='imglevel'>
           <img src={Floor3} id="floorselect" />
         </div>
-        <BsPlusCircle size="3.5vw" id='plus3-1' />
-        <BsPlusCircle size="3.5vw" id='plus3-2' />
+        <BsPlusCircle size="3.5vw" id='plus3-1' onClick={showPop3_1}/>
+        <BsPlusCircle size="3.5vw" id='plus3-2' onClick={showPop3_2}/>
         <BsPlusCircle size="3.5vw" id='plus4-1' />
         <BsPlusCircle size="3.5vw" id='plus4-2' />
         <BsPlusCircle size="3.5vw" id='plus4-3' />
@@ -233,7 +264,8 @@ function choices() {
         accuracy in the preparation of the information contained herein, no
         warranties whatsoever are given, or legal representations provided in
         respect thereon.</p>
-      <div className='planpopup'>
+
+      <div className='planpopup' id="pop3-1">
         <div className='plandetail'>
           <div className='popuplogo'>
             <div className='borderdetail '>
@@ -271,6 +303,46 @@ function choices() {
           the development, or any part thereof as may be approved or required
           by the relevant authorities.</p>
       </div>
+
+      <div className='planpopup' id="pop3-2">
+        <div className='plandetail'>
+          <div className='popuplogo'>
+            <div className='borderdetail '>
+              <img src={delogo} />
+            </div>
+            <div className='borderdetail'>
+              <h4>UNIT TYPE</h4>
+              <p>4 BEDROOM - D (M)</p>
+            </div>
+            <div className='borderdetail'>
+              <h4>LEVEL NO.</h4>
+              <p>03</p>
+            </div>
+            <div className='borderdetail'>
+              <h4>UNIT NO.</h4>
+              <p>02</p>
+            </div>
+            <div className='borderdetail'>
+              <h4>NET FLOOR AREA</h4>
+              <p>285.5sqm</p>
+            </div>
+            <div className='borderdetail'>
+              <h4>GROSS FLOOR AREA</h4>
+              <p>315.7sqm</p>
+            </div>
+          </div>
+          <div className='planimg'>
+            <img src={Lv3_2} />
+          </div>
+        </div>
+        <p>Disclaimer: Whilst every care has been taken to ensure accuracy
+          in the preparation of the information contained herein, no warranties
+          whatsoever are given, or legal representations provided in respect
+          thereon. The Developer reserves the right to modify information of
+          the development, or any part thereof as may be approved or required
+          by the relevant authorities.</p>
+      </div>
+
     </div>
   )
 }
