@@ -21,12 +21,12 @@ function App() {
     <BrowserRouter>
     <Routes>
         
-          <Route path="/" element={<Overview />} />
-          <Route path="/point-of-Interests" element={<Pointint />} />
-          <Route path="/hidden-treasures" element={<Hidden />} />
-          <Route path="/luxury-of-choices" element={<Luxury />} />
-          <Route path="/gallerie-d-arte" element={<Gallerie />} />
-          <Route path="/news-and-media" element={<Newmedia />} />
+          <Route path="/" element={<Overview />} exact/>
+          <Route path="/point-of-Interests" element={<Pointint />} exact />
+          <Route path="/hidden-treasures" element={<Hidden />} exact />
+          <Route path="/luxury-of-choices" element={<Luxury />} exact />
+          <Route path="/gallerie-d-arte" element={<Gallerie />} exact />
+          <Route path="/news-and-media" element={<Newmedia />} exact />
       </Routes>
     </BrowserRouter>
     
