@@ -229,44 +229,46 @@ function choices() {
         <BsPlusCircle size="3.5vw" id='plus25-1' />
         <BsPlusCircle size="3.5vw" id='plus25-2' />
       </div>
-      <p className='disclaimer3'>Disclaimer: Whilst every care has been taken to ensure 
-      accuracy in the preparation of the information contained herein, no 
-      warranties whatsoever are given, or legal representations provided in 
-      respect thereon.</p>
+      <p className='disclaimer3'>Disclaimer: Whilst every care has been taken to ensure
+        accuracy in the preparation of the information contained herein, no
+        warranties whatsoever are given, or legal representations provided in
+        respect thereon.</p>
       <div className='planpopup'>
         <div className='plandetail'>
           <div className='popuplogo'>
-            <img src={delogo} />
-            <div className=''>
+            <div className='borderdetail'>
+              <img src={delogo} />
+            </div>
+            <div className='borderdetail'>
               <h4>UNIT TYPE</h4>
               <p>4 BEDROOM - D</p>
             </div>
-            <div>
+            <div className='borderdetail'>
               <h4>LEVEL NO.</h4>
               <p>03</p>
             </div>
-            <div>
+            <div className='borderdetail'>
               <h4>UNIT NO.</h4>
               <p>01</p>
             </div>
-            <div>
+            <div className='borderdetail'>
               <h4>NET FLOOR AREA</h4>
               <p>285.5sqm</p>
             </div>
-            <div>
+            <div className='borderdetail'>
               <h4>GROSS FLOOR AREA</h4>
               <p>315.7sqm</p>
             </div>
           </div>
           <div className='planimg'>
-            <img src={Lv3_1}/>
+            <img src={Lv3_1} />
           </div>
         </div>
-        <p>Disclaimer: Whilst every care has been taken to ensure accuracy 
-          in the preparation of the information contained herein, no warranties 
-          whatsoever are given, or legal representations provided in respect 
-          thereon. The Developer reserves the right to modify information of 
-          the development, or any part thereof as may be approved or required 
+        <p>Disclaimer: Whilst every care has been taken to ensure accuracy
+          in the preparation of the information contained herein, no warranties
+          whatsoever are given, or legal representations provided in respect
+          thereon. The Developer reserves the right to modify information of
+          the development, or any part thereof as may be approved or required
           by the relevant authorities.</p>
       </div>
     </div>
