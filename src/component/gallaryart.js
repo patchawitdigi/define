@@ -22,6 +22,8 @@ import { useEffect } from "react";
 
 export default function Gallaryart() {
 
+  
+
     useEffect(() => {
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("plusitem1");
@@ -33,25 +35,28 @@ export default function Gallaryart() {
             modal.style.display = "none";
         }
 
-
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
     }, [])
+
+    // var slideIndex = 1;
+    // showDivs(slideIndex);
+
+    // function plusDivs() {
+    //     showDivs(slideIndex += 1);
+    // }
+    // function minusDivs() {
+    //     showDivs(slideIndex += -1);
+    // }
+
+    // function showDivs(n) {
+    //     var i;
+    //     var x = document.getElementsByClassName("mySlides");
+    //     if (n > x.length) { slideIndex = 1 }
+    //     if (n < 1) { slideIndex = x.length }
+    //     for (i = 0; i < x.length; i++) {
+    //         x[i].style.display = "none";
+    //     }
+    //     x[slideIndex - 1].style.display = "block";
+    // }
 
 
     return (
@@ -82,8 +87,8 @@ export default function Gallaryart() {
                     <img src={Facade2} className="mySlides" />
                     <img src={Facade3} className="mySlides" />
                 </div>
-                <FiArrowLeft onClick={() => this.plusDivs(-1)} className="prev" size="3vw" />
-                <FiArrowRight onClick={() => this.plusDivs(1)} className="next" size="3vw" />
+                <FiArrowLeft  className="prev" size="3vw" />
+                <FiArrowRight  className="next" size="3vw" />
             </div>
 
             <div className="gallary">
