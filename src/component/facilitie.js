@@ -2,11 +2,14 @@ import React from 'react'
 import "./facilitie.css";
 import vel1 from '../img/hidden/level1.jpg'
 import vel3 from '../img/hidden/level3.jpg'
+import text1 from '../img/hidden/level1-text.png'
+import text3 from '../img/hidden/level3-text.png'
 
 function facilitie() {
 
   function changelevel1() {
     document.getElementById("level").src = vel1
+    document.getElementById("text").src = text1
     document.getElementById("lv1").style.color = "#bf5c40"
     document.getElementById("lv3").style.color = "black"
     document.getElementById("textlv3").style.display = "none"
@@ -14,6 +17,7 @@ function facilitie() {
   }
   function changelevel3() {
     document.getElementById("level").src = vel3
+    document.getElementById("text").src = text3
     document.getElementById("lv3").style.color = "#bf5c40"
     document.getElementById("lv1").style.color = "black"
     document.getElementById("textlv3").style.display = "block"
@@ -30,6 +34,7 @@ function facilitie() {
       <div className='levelimg'>
         <img src={vel1} id="level"/>
       </div>
+      <img className='textlv' src={text1} id="text"/>
 
       <div id="textlv1" style={{ display: "block" }}>
       <div className='levelplan'>

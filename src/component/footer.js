@@ -24,9 +24,9 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="butregis">
-                        <button href="">REGISTER NOW</button>
+                        <a href="https://www.capitaland.com/vn/en/contact-us.html" target="_blank"><button>REGISTER NOW</button></a>
                     </div>
-                    <div className="butregis">
+                    <div className="numregis">
                     <a href="1800599986">1800 599 986</a>
                     </div>
                 </div>
@@ -35,62 +35,62 @@ export default function Footer() {
                 <div className="moreetc">
                     <div className="infoetc shop">
                         <h4>SHOP</h4>
-                        <a href="">Malls</a>
-                        <a href="">Deals</a>
-                        <a href="">Rewards</a>
+                        <a href="https://www.capitaland.com/en/shop/malls.html?category=retail" target="_blank">Malls</a>
+                        <a href="https://www.capitaland.com/en.html" target="_blank">Deals</a>
+                        <a href="https://www.capitaland.com/en/shop/rewards.html"target="_blank">Rewards</a>
                     </div>
                     <div className="infoetc">
                         <h4>STAY</h4>
-                        <a href="">Residential Developments</a>
-                        <a href="">Lodging</a>
+                        <a href="https://www.capitaland.com/en/stay/residential-developments.html?category=residential" target="_blank">Residential Developments</a>
+                        <a href="https://www.capitaland.com/en/stay/lodging.html?category=lodging" target="_blank">Lodging</a>
                     </div>
                     <div className="infoetc">
                         <h4>LEASE</h4>
-                        <a href="">Business Parks, Industrial & Logistics Spaces</a>
-                        <a href="">Offices</a>
-                        <a href="">Malls</a>
+                        <a href="https://www.capitaland.com/en/lease/businessparks-industrial-logistics.html?category=businesspark-industrial-logistics" target="_blank">Business Parks, Industrial & Logistics Spaces</a>
+                        <a href="https://www.capitaland.com/en/lease/offices.html?category=commercial" target="_blank">Offices</a>
+                        <a href="https://www.capitaland.com/en/lease/malls.html?category=retail" target="_blank">Malls</a>
                     </div>
                     <div className="infoetc">
                         <h4>INVEST</h4>
-                        <a href="">CapitaLand Limited</a>
-                        <a href="">CapitaLand Mall Trust</a>
-                        <a href="">Ascendas Reit</a>
-                        <a href="">CapitaLand Commercial Trust</a>
-                        <a href="">Ascott Residence Trust</a>
-                        <a href="">CapitaLand Retail China Trust</a>
-                        <a href="">Ascendas India Trust</a>
-                        <a href="">CapitaLand Malaysia Mall Trust</a>
-                        <a href="">Ascendas Hospitality Trust</a>
+                        <a href="https://www.capitaland.com/en.html" target="_blank">CapitaLand Limited</a>
+                        <a href="https://www.capitaland.com/en.html" target="_blank">CapitaLand Mall Trust</a>
+                        <a href="https://www.ascendas-reit.com/en.html" target="_blank">Ascendas Reit</a>
+                        <a href="https://www.capitaland.com/en.html" target="_blank">CapitaLand Commercial Trust</a>
+                        <a href="https://www.capitaland.com/en.html" target="_blank">Ascott Residence Trust</a>
+                        <a href="https://www.capitaland.com/en.html" target="_blank">CapitaLand Retail China Trust</a>
+                        <a href="https://www.a-itrust.com/en.html" target="_blank">Ascendas India Trust</a>
+                        <a href="https://www.capitaland.com/en.html" target="_blank">CapitaLand Malaysia Mall Trust</a>
+                        <a href="https://www.capitaland.com/en.html" target="_blank">Ascendas Hospitality Trust</a>
                     </div>
                     <div className="infoetc">
                         <h4>MORE FROM CAPITALAND</h4>
-                        <a href="">Who We Are</a>
-                        <a href="">CapitaLand Hope Foundation</a>
-                        <a href="">Sustainability</a>
-                        <a href="">Careers</a>
-                        <a href="">Art @ CapitaLand</a>
-                        <a href="">Newsroom</a>
-                        <a href="">Blog</a>
-                        <a href="">Awards</a>
-                        <a href="">Follow @CapitaLand on social!</a>
-                        <a href="">API Portal</a>
+                        <a href="https://www.capitaland.com/en/about-capitaland/who-we-are.html" target="_blank">Who We Are</a>
+                        <a href="https://www.capitaland.com/en/about-capitaland/sustainability/capitaland-hope-foundation/overview.html" target="_blank">CapitaLand Hope Foundation</a>
+                        <a href="https://www.capitaland.com/en/about-capitaland/sustainability.html" target="_blank">Sustainability</a>
+                        <a href="https://www.capitaland.com/en/about-capitaland/careers.html" target="_blank">Careers</a>
+                        <a href="https://www.capitaland.com/en/art-at-capitaland.html" target="_blank">Art @ CapitaLand</a>
+                        <a href="https://www.capitaland.com/en/about-capitaland/newsroom.html" target="_blank">Newsroom</a>
+                        <a href="https://www.capitaland.com/en/inside-magazine.html" target="_blank">Blog</a>
+                        <a href="https://www.capitaland.com/en/about-capitaland/awards.html" target="_blank">Awards</a>
+                        <a href="https://www.capitaland.com/en/more-from-capitaland/social-media.html" target="_blank">Follow @CapitaLand on social!</a>
+                        <a href="https://www.capitaland.com/api-portal/index.html" target="_blank">API Portal</a>
                     </div>
                 </div>
                 <div className="follow">
                     <div>
-                        <a href="" className="folleft">Find a Property</a>
-                        <a href="" className="folleft">Contact Us</a>
-                        <a href="" className="folleft">Privacy Policy</a>
-                        <a href="">Terms & Conditions</a>
+                        <a href="https://www.capitaland.com/en/find-a-property/global-presence-map.html" target="_blank" className="folleft">Find a Property</a>
+                        <a href="https://www.capitaland.com/en/contact-us.html" target="_blank" className="folleft">Contact Us</a>
+                        <a href="" target="_blank" className="folleft">Privacy Policy</a>
+                        <a href="https://www.capitaland.com/en/legal-notices/terms-and-conditions.html" target="_blank">Terms & Conditions</a>
 
                     </div>
                     <div className="social">
                         <p>Follow @CapitaLand</p>
-                        <img src={ig} />
-                        <img src={fb} />
-                        <img src={tw} />
-                        <img src={lk} />
-                        <img src={yt} />
+                        <a href="https://www.instagram.com/accounts/login/?next=/capitaland/" target="_blank"><img src={ig} /></a>
+                        <a href="https://www.facebook.com/capitaland" target="_blank"><img src={fb} /></a>
+                        <a href="https://twitter.com/CapitaLand" target="_blank"><img src={tw} /></a>
+                        <a href="https://www.linkedin.com/company/capitaland-limited" target="_blank"><img src={lk} /></a>
+                        <a href="https://www.youtube.com/user/CapitaLandGroup" target="_blank"><img src={yt} /></a>
                     </div>
 
                 </div>

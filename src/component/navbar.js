@@ -14,7 +14,7 @@ export default function Navbar() {
                     <p className="en">EN</p>
                 </div>
                 <div className="btnregis">
-                    <a>REGISTER NOW</a>
+                    <a href="https://www.capitaland.com/vn/en/contact-us.html" target="_blank">REGISTER NOW</a>
                 </div>
             </div>
         </div>

@@ -42,8 +42,15 @@
 .btnregis a{
     border: 0.15vw solid #bf5c40;
     padding: 0.55vw 1.25vw 0.55vw 1.25vw;
+    text-decoration: none;
+    color: #bf5c40;
 }
 
+.btnregis a:hover{
+   background-color: #bf5c40;
+   color: white;
+   transition: 700ms;
+}
 .en {
     color: #bf5c40;
 }

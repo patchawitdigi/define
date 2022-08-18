@@ -151,7 +151,7 @@ function interest() {
           <ul class="menu">
             <li onClick={changeimg1}>
               <input type="radio" name="menuopt" id="drop1" />
-              <label class="opener" for="drop1">SURROUNDING</label>
+              <label class="opener" for="drop1" id="surround">SURROUNDING</label>
               <label class="closer" for="dropclose" id="surround">SURROUNDING</label>
               <input type="radio" name="menuopt" id="dropclose" />
             </li>

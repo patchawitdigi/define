@@ -14,7 +14,7 @@
 .levelselect {
     display: flex;
     justify-content: end;
-    margin-right: 8vw;
+    margin-right: 10vw;
 }
 
 .levelselect p {
@@ -33,6 +33,15 @@
 .levelimg img{
     width: 80vw;
 }
+
+.textlv{
+    position: absolute;
+    top: 62.5vw;
+    left: 10vw;
+    width: 80vw;
+}
+
+
 .levelplan{
     display: flex;
     justify-content: space-between;

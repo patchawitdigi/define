@@ -38,6 +38,10 @@
    display: flex;
    justify-content: center;
  }
+ .numregis{
+   display: flex;
+   justify-content: center;
+ }
 
 .craft button {
     
@@ -49,7 +53,7 @@
     font-size: 1.2vw;
 }
 
-.craft a{
+.numregis a{
     display: inline-block;
     margin-top: 1vw;
     text-decoration: none;
@@ -94,6 +98,12 @@
     text-decoration: none;
     color: white;
  }
+ .infoetc a:hover{
+   color: white;
+   border-bottom: 0.1vw solid white;
+   width: fit-content;
+}
+
 
  .follow {
     display: flex;
@@ -120,6 +130,11 @@
 .social p{
     padding-right: 0.5vw;
     padding-top: 0.2vw;
+}
+
+.social a{
+   padding: 0vw 0.2vw;
+
 }
  .social img{
     width: 2.4vw;

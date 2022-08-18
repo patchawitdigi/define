@@ -50,10 +50,11 @@
 
 .menu li{
     list-style: none;
-    font-size: 0.6vw;
+    font-size: 0.7vw;
     margin-bottom: 0.5vw;
     border-bottom: 0.1vw solid #bf5c40;
     width: 27vw;
+    font-weight: bold;
 }
 
 .menu label{
