@@ -144,15 +144,15 @@
     width: 100%; 
     height: 100%; 
     background-color: #9e9e9e; 
-    padding: 0 8vw;
-
+  
   }
   .modal2-content {
-    margin: 0 0;
+    margin: auto;
+    width: 85%;
   }
 
   .modal2-content img{
-    height: 47.8vw;
+    height: 47.8vw; 
   }
 
 
