@@ -33,9 +33,16 @@
 .boxnew img {
     width: 100%;
     height: 60%;
-    border-left: 0.5vw solid #bf5c40;
-    border-top: 0.5vw solid #bf5c40;
+    border-left: 0.5vw solid #bf5c4094;
+    border-top: 0.5vw solid #bf5c4094;
     border-right: 0.5vw solid #f0f0f0;
+
+}
+
+.boxnew img:hover{
+    border-left: 0.5vw solid #bf5c40;
+    border-top: 0.5vw solid #bf5c40; 
+    transition: 700ms;
 
 }
 

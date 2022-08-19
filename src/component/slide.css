@@ -23,15 +23,11 @@
     width: 64.5vw;
     height: 32.5vw;
     object-fit: cover;
-    object-position: center 82%;
+    object-position: 50% 100% ;
     position: absolute;
-    opacity: 0;
     transition: 0.5s all;
 }
 
-.current {
-    opacity: 1;
-}
 
 
 #prevBtn, #nextBtn {
@@ -49,14 +45,14 @@
 
 .buttons #prevBtn { 
     top: 16vw;
-    right: 0vw;
+    left: 0vw;
     background-color: #bf5c40;
     padding: 0.5vw;
 }
 
 .buttons #nextBtn {
     top: 16vw;    
-    left: 0vw;
+    right: 0vw;
     background-color: #bf5c40;
     padding: 0.5vw;
 }
