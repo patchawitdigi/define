@@ -14,11 +14,11 @@ export default function Footer() {
                 <div className="craft">
                     <p>CRAFTED BY</p>
                     <div className="teamicon">
-                        <div>
+                        <div className="collapicon">
                             <p>LEAD DEVELOPER</p>
                             <img className="logo1" src={logo} />
                         </div>
-                        <div>
+                        <div className="collapicon">
                             <p>IN COLLABORATION WITH</p>
                             <img className="logo2" src={logo2} />
                         </div>
