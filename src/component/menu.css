@@ -1,12 +1,66 @@
 .menuclick{
-    position: absolute;
-    top: 7vw;
     position: fixed;
+    top: 7vw;
     right: 3vw;
+    display: flex;
     z-index: 2;
     cursor: pointer;
-
 }
+.col_1{
+    padding-top: 0.4vw;
+}
+.col_2{
+    padding-top: 0.2vw;
+}
+.menuclick:hover .col_3{
+    padding-top: 0.4vw;
+    transition: 500ms;
+}
+.menuclick:hover .col_2{
+    padding-top: 0.4vw;
+    transition: 500ms;
+}
+
+.col_1 div{
+    width: 0.5vw;
+    height: 0.1vw;
+    margin: 0.2vw 0;
+   
+}
+.col_2 div{
+    width: 0.5vw;
+    height: 0.1vw;
+    margin: 0.2vw 0; 
+}
+
+.col_3 div{
+    width: 0.8vw;
+    height: 0.1vw;
+    margin: 0.2vw 0; 
+}
+
+.wrap-close{
+    display: none;
+    position: fixed;
+    top: 8vw;
+    right: 3vw;
+    z-index: 3;
+    cursor: pointer;
+   
+}
+.x-1{
+    width: 2vw;
+    height: 0.1vw;
+    background: white;
+    transform: rotate(45deg)
+}
+.x-2{
+    width: 2vw;
+    height: 0.1vw;
+    background: white;
+    transform: rotate(-45deg) translate(0.1vw, -0.05vw);
+}
+
 .menubg{
     background: linear-gradient(180deg, #d16d49, #8c3424);
     position: absolute;

@@ -14,7 +14,7 @@ import sup from '../img/pointint/supermarket.png'
 import surr from '../img/pointint/surround.png'
 
 
-function interest() {
+function Interest() {
 
   function changeimg1() {
     document.getElementById("extend").src = surr
@@ -27,6 +27,19 @@ function interest() {
     document.getElementById("shopen").style.color = "black"
     document.getElementById("nearby").style.color = "black"
     document.getElementById("metroline").style.color = "black"
+    var liblock = document.querySelectorAll("#liblock")
+    for (var i = 0; i < liblock.length; i++) {
+      liblock[i].style.display = "none"
+    }
+    document.getElementById("rotatep").style.transform = "rotate(45deg)"
+    document.getElementById("rotatep0").style.transform = "rotate(0deg)"
+    document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+    document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+    document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+    document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+    document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+    document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+    document.getElementById("rotatep7").style.transform = "rotate(0deg)"; 
 
   }
   function changeimg2() {
@@ -40,6 +53,26 @@ function interest() {
     document.getElementById("shopen").style.color = "black"
     document.getElementById("nearby").style.color = "black"
     document.getElementById("metroline").style.color = "black"
+    var liblock = document.querySelectorAll("#liblock")
+    if (liblock[0].style.display == "block") { // if is menuBox displayed, hide it
+      liblock[0].style.display = "none";
+      document.getElementById("rotatep0").style.transform = "rotate(0deg)"; 
+    }
+    else { // if is menuBox hidden, display it
+      for (var i = 0; i < liblock.length; i++) {
+        liblock[i].style.display = "none"
+      }
+      liblock[0].style.display = "block"
+      document.getElementById("rotatep").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep0").style.transform = "rotate(45deg)"
+      document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep7").style.transform = "rotate(0deg)"; 
+    }
 
   }
   function changeimg3() {
@@ -53,7 +86,27 @@ function interest() {
     document.getElementById("shopen").style.color = "black"
     document.getElementById("nearby").style.color = "black"
     document.getElementById("metroline").style.color = "black"
-
+    var liblock = document.querySelectorAll("#liblock")
+    if (liblock[1].style.display == "block") { // if is menuBox displayed, hide it
+      liblock[1].style.display = "none";
+      document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+    }
+    else { // if is menuBox hidden, display it
+      for (var i = 0; i < liblock.length; i++) {
+        liblock[i].style.display = "none"
+      }
+      liblock[1].style.display = "block"
+      document.getElementById("rotatep").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep0").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep1").style.transform = "rotate(45deg)"
+      document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep7").style.transform = "rotate(0deg)"
+      ; 
+    }
   }
   function changeimg4() {
     document.getElementById("extend").src = heal
@@ -66,7 +119,26 @@ function interest() {
     document.getElementById("shopen").style.color = "black"
     document.getElementById("nearby").style.color = "black"
     document.getElementById("metroline").style.color = "black"
-
+    var liblock = document.querySelectorAll("#liblock")
+    if (liblock[2].style.display == "block") { // if is menuBox displayed, hide it
+      liblock[2].style.display = "none";
+      document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+    }
+    else { // if is menuBox hidden, display it
+      for (var i = 0; i < liblock.length; i++) {
+        liblock[i].style.display = "none"
+      }
+      liblock[2].style.display = "block"
+      document.getElementById("rotatep").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep0").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep2").style.transform = "rotate(45deg)"
+      document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep7").style.transform = "rotate(0deg)"
+    }
   }
   function changeimg5() {
     document.getElementById("extend").src = busi
@@ -79,7 +151,26 @@ function interest() {
     document.getElementById("shopen").style.color = "black"
     document.getElementById("nearby").style.color = "black"
     document.getElementById("metroline").style.color = "black"
-
+    var liblock = document.querySelectorAll("#liblock")
+    if (liblock[3].style.display == "block") { // if is menuBox displayed, hide it
+      liblock[3].style.display = "none";
+      document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+    }
+    else { // if is menuBox hidden, display it
+      for (var i = 0; i < liblock.length; i++) {
+        liblock[i].style.display = "none"
+      }
+      liblock[3].style.display = "block"
+      document.getElementById("rotatep").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep0").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep3").style.transform = "rotate(45deg)"
+      document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep7").style.transform = "rotate(0deg)"
+    }
   }
   function changeimg6() {
     document.getElementById("extend").src = sup
@@ -92,7 +183,26 @@ function interest() {
     document.getElementById("shopen").style.color = "black"
     document.getElementById("nearby").style.color = "black"
     document.getElementById("metroline").style.color = "black"
-
+    var liblock = document.querySelectorAll("#liblock")
+    if (liblock[4].style.display == "block") { // if is menuBox displayed, hide it
+      liblock[4].style.display = "none";
+      document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+    }
+    else { // if is menuBox hidden, display it
+      for (var i = 0; i < liblock.length; i++) {
+        liblock[i].style.display = "none"
+      }
+      liblock[4].style.display = "block"
+      document.getElementById("rotatep").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep0").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep4").style.transform = "rotate(45deg)"
+      document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep7").style.transform = "rotate(0deg)"
+    }
   }
   function changeimg7() {
     document.getElementById("extend").src = shop
@@ -105,7 +215,26 @@ function interest() {
     document.getElementById("shopen").style.color = "#bf5c40"
     document.getElementById("nearby").style.color = "black"
     document.getElementById("metroline").style.color = "black"
-
+    var liblock = document.querySelectorAll("#liblock")
+    if (liblock[5].style.display == "block") { // if is menuBox displayed, hide it
+      liblock[5].style.display = "none";
+      document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+    }
+    else { // if is menuBox hidden, display it
+      for (var i = 0; i < liblock.length; i++) {
+        liblock[i].style.display = "none"
+      }
+      liblock[5].style.display = "block"
+      document.getElementById("rotatep").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep0").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep5").style.transform = "rotate(45deg)"
+      document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep7").style.transform = "rotate(0deg)"
+    }
   }
   function changeimg8() {
     document.getElementById("extend").src = near
@@ -118,7 +247,28 @@ function interest() {
     document.getElementById("shopen").style.color = "black"
     document.getElementById("nearby").style.color = "#bf5c40"
     document.getElementById("metroline").style.color = "black"
-
+    var liblock = document.querySelectorAll("#liblock")
+    if (liblock[6].style.display == "block") { // if is menuBox displayed, hide it
+      liblock[6].style.display = "none";
+      document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+    }
+    else { // if is menuBox hidden, display it
+      for (var i = 0; i < liblock.length; i++) {
+        liblock[i].style.display = "none"
+        
+      }
+      liblock[6].style.display = "block"
+      document.getElementById("rotatep").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep0").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep6").style.transform = "rotate(45deg)"
+      document.getElementById("rotatep7").style.transform = "rotate(0deg)"
+      
+    }
   }
   function changeimg9() {
     document.getElementById("extend").src = metro
@@ -131,7 +281,26 @@ function interest() {
     document.getElementById("shopen").style.color = "black"
     document.getElementById("nearby").style.color = "black"
     document.getElementById("metroline").style.color = "#bf5c40"
-
+    var liblock = document.querySelectorAll("#liblock")
+    if (liblock[7].style.display == "block") { // if is menuBox displayed, hide it
+      liblock[7].style.display = "none";
+      document.getElementById("rotatep7").style.transform = "rotate(0deg)"
+    }
+    else { // if is menuBox hidden, display it
+      for (var i = 0; i < liblock.length; i++) {
+        liblock[i].style.display = "none"
+      }
+      liblock[7].style.display = "block"
+      document.getElementById("rotatep").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep0").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+      document.getElementById("rotatep7").style.transform = "rotate(45deg)"; 
+    }
   }
 
   return (
@@ -150,115 +319,125 @@ function interest() {
         <div className='point'>
           <ul class="menu">
             <li onClick={changeimg1}>
-              <input type="radio" name="menuopt" id="drop1" />
-              <label class="opener" for="drop1" id="surround">SURROUNDING</label>
-              <label class="closer" for="dropclose" id="surround">SURROUNDING</label>
-              <input type="radio" name="menuopt" id="dropclose" />
+              <div className='headdrop'>
+                <label class="closer" for="dropclose" id="surround">SURROUNDING</label>
+                <p id="rotatep">+</p>
+              </div>
             </li>
+
+
             <li onClick={changeimg2}>
-              <input type="radio" name="menuopt" id="drop2"/>
-              <label class="opener" for="drop2">CAPITALAND PROJECTS</label>
-              <label class="closer" for="dropclose" id="capital">CAPITALAND PROJECTS</label>
-              <ul>
-                <li>A The Vista</li>
-                <li>B Vista Verde</li>
-                <li>C ParcSpring</li>
-                <li>D The Krista</li> 
-                <li>E Kris Vue</li>
-                <li>F Feliz en Vista</li>
-                <li>G D2eight</li>
-                <li>H D1MENSION</li>
-                <li>I De La Sol</li>
-                <li>J d’Edge Thao Dien</li>
-                <li>K ZENITY</li>
+              <div className='headdrop'>
+                <label class="closer" for="dropclose" id="capital">CAPITALAND PROJECTS</label>
+                <p id="rotatep0">+</p>
+              </div>
+              <ul id="liblock">
+                <li><span>A</span> <a>The Vista</a></li>
+                <li><span>B</span> <a>Vista Verde</a></li>
+                <li><span>C</span> <a>ParcSpring</a></li>
+                <li><span>D</span> <a>The Krista</a></li>
+                <li><span>E</span> <a>Kris Vue</a></li>
+                <li><span>F</span> <a>Feliz en Vista</a></li>
+                <li><span>G</span> <a>D2eight</a></li>
+                <li><span>H</span> <a>D1MENSION</a></li>
+                <li><span>I</span> <a>De La Sol</a></li>
+                <li><span>J</span> <a>d’Edge Thao Dien</a></li>
+                <li><span>K</span> <a>ZENITY</a></li>
               </ul>
-              <input type="radio" name="menuopt" id="dropclose" />
             </li>
+
+
             <li onClick={changeimg3}>
-              <input type="radio" name="menuopt" id="drop3" />
-              <label class="opener" for="drop3">EDUCATION</label>
-              <label class="closer" for="dropclose"id="educa">EDUCATION</label>
-              <ul>
-                <li>1 British International School (BIS)</li>
-                <li>2 International School Ho Chi Minh City (ISHCMC)</li>
-                <li>3 Australian International School</li>
-                <li>4 EtonHouse Kindergarden</li>
-                <li>5 Saigon Star International School</li>
-                <li>6 The American School (TAS)</li>
-                <li>7 Luong Dinh Cua Secondary School</li>
+              <div className='headdrop'>
+                <label class="closer" for="dropclose" id="educa">EDUCATION</label>
+                <p id="rotatep1">+</p>
+              </div>
+              <ul id="liblock">
+                <li><span>1</span> <a>British International School (BIS)</a></li>
+                <li><span>2</span> <a>International School Ho Chi Minh City (ISHCMC)</a></li>
+                <li><span>3</span> <a>Australian International School</a></li>
+                <li><span>4</span> <a>EtonHouse Kindergarden</a></li>
+                <li><span>5</span> <a>Saigon Star International School</a></li>
+                <li><span>6</span> <a>The American School (TAS)</a></li>
+                <li><span>7</span> <a>Luong Dinh Cua Secondary School</a></li>
               </ul>
-              <input type="radio" name="menuopt" id="dropclose" />
             </li>
+
             <li onClick={changeimg4}>
-              <input type="radio" name="menuopt" id="drop4" />
-              <label class="opener" for="drop4">HEALTH CARE</label>
-              <label class="closer" for="dropclose" id="health">HEALTH CARE</label>
-              <ul>
-                <li>8 Le Van Thinh Hospital</li>
-                <li>9 American International Hospital</li>
-                <li>10 Victoria Healthcare</li>
+              <div className='headdrop'>
+                <label class="closer" for="dropclose" id="health">HEALTH CARE</label>
+                <p id="rotatep2">+</p>
+              </div>
+              <ul id="liblock">
+                <li><span>8</span> <a>Le Van Thinh Hospital</a></li>
+                <li><span>9</span> <a>American International Hospital</a></li>
+                <li><span>10</span> <a>Victoria Healthcare</a></li>
               </ul>
-              <input type="radio" name="menuopt" id="dropclose" />
             </li>
+
             <li onClick={changeimg5}>
-              <input type="radio" name="menuopt" id="drop5" />
-              <label class="opener" for="drop5">BUSINESS ADMINISTRATIVE UNITS</label>
-              <label class="closer" for="dropclose" id="business">BUSINESS ADMINISTRATIVE UNITS</label>
-              <ul>
-                <li>11 People’s Committee Thu Duc City</li>
-                <li>12 Vietnam State Treasury Thu Duc City</li>
-                <li>13 Police Station Thu Duc City</li>
-                <li>14 Tax Department</li>
+              <div className='headdrop'>
+                <label class="closer" for="dropclose" id="business">BUSINESS ADMINISTRATIVE UNITS</label>
+                <p id="rotatep3">+</p>
+              </div>
+              <ul id="liblock">
+                <li><span>11</span> <a>People’s Committee Thu Duc City</a></li>
+                <li><span>12</span> <a>Vietnam State Treasury Thu Duc City</a></li>
+                <li><span>13</span> <a>Police Station Thu Duc City</a></li>
+                <li><span>14</span> <a>Tax Department</a></li>
               </ul>
-              <input type="radio" name="menuopt" id="dropclose" />
             </li>
+
             <li onClick={changeimg6}>
-              <input type="radio" name="menuopt" id="drop6" />
-              <label class="opener" for="drop6">SUPERMARKET</label>
-              <label class="closer" for="dropclose" id="superma">SUPERMARKET</label>
-              <ul>
-                <li>15 Tops Market An Phu</li>
-                <li>16 Mega Market</li>
-                <li>17 CoopMart</li>
-                <li>18 Vinmart Diamond Island</li>
-                <li>19 Annam Gourmet</li>
+              <div className='headdrop'>
+                <label class="closer" for="dropclose" id="superma">SUPERMARKET</label>
+                <p id="rotatep4">+</p>
+              </div>
+              <ul id="liblock">
+                <li><span>15</span> <a>Tops Market An Phu</a></li>
+                <li><span>16</span> <a>Mega Market</a></li>
+                <li><span>17</span> <a>CoopMart</a></li>
+                <li><span>18</span> <a>Vinmart Diamond Island</a></li>
+                <li><span>19</span> <a>Annam Gourmet</a></li>
               </ul>
-              <input type="radio" name="menuopt" id="dropclose" />
             </li>
+
             <li onClick={changeimg7}>
-              <input type="radio" name="menuopt" id="drop7" />
-              <label class="opener" for="drop7">SHOPPING & ENTERTAINMENT</label>
-              <label class="closer" for="dropclose" id="shopen">SHOPPING & ENTERTAINMENT</label>
-              <ul>
-                <li>20 Cantavil An Phu</li>
-                <li>21 Lotte Cinema</li>
-                <li>22 CGV Cinema</li>
-                <li>23 Vincom Megamall Thao Dien</li>
-                <li>24 Estella Place</li>
-                <li>25 Faifo Lane</li>
-                <li>26 Starbucks</li>
+              <div className='headdrop'>
+                <label class="closer" for="dropclose" id="shopen">SHOPPING & ENTERTAINMENT</label>
+                <p id="rotatep5">+</p>
+              </div>
+              <ul id="liblock">
+                <li><span>20</span> <a>Cantavil An Phu</a></li>
+                <li><span>21</span> <a>Lotte Cinema</a></li>
+                <li><span>22</span> <a>CGV Cinema</a></li>
+                <li><span>23</span> <a>Vincom Megamall Thao Dien</a></li>
+                <li><span>24</span> <a>Estella Place</a></li>
+                <li><span>25</span> <a>Faifo Lane</a></li>
+                <li><span>26</span> <a>Starbucks</a></li>
               </ul>
-              <input type="radio" name="menuopt" id="dropclose" />
             </li>
+
             <li onClick={changeimg8}>
-              <input type="radio" name="menuopt" id="drop8" />
-              <label class="opener" for="drop8">NEARBY AMENITIES</label>
-              <label class="closer" for="dropclose" id="nearby">NEARBY AMENITIES</label>
-              <ul>
-                <li>27 Riverside Park</li>
-                <li>28 Rach Chiec Golf Driving Range</li>
+              <div className='headdrop'>
+                <label class="closer" for="dropclose" id="nearby">NEARBY AMENITIES</label>
+                <p id="rotatep6">+</p>
+              </div>
+              <ul id="liblock">
+                <li><span>27</span> <a>Riverside Park</a></li>
+                <li><span>28</span> <a>Rach Chiec Golf Driving Range</a></li>
               </ul>
-              <input type="radio" name="menuopt" id="dropclose" />
             </li>
+
             <li onClick={changeimg9}>
-              <input type="radio" name="menuopt" id="drop9" />
-              <label class="opener" for="drop9">METRO LINES</label>
-              <label class="closer" for="dropclose" id="metroline">METRO LINES</label>
-              <ul>
-                <li>Metro Station (Under Construction)</li>
-                <li>Metro Line 2 (Under Planning)</li>
+              <div className='headdrop'>
+                <label class="closer" for="dropclose" id="metroline">METRO LINES</label>
+                <p id="rotatep7">+</p>
+              </div>
+              <ul id="liblock">
+                <li><span><br/></span> <a>Metro Station (Under Construction)</a></li>
+                <li><span style={{backgroundColor:'#9e9e9e'}}><br/></span> <a>Metro Line 2 (Under Planning)</a></li>
               </ul>
-              <input type="radio" name="menuopt" id="dropclose" />
             </li>
           </ul>
         </div>
@@ -269,4 +448,4 @@ function interest() {
   )
 }
 
-export default interest
+export default Interest

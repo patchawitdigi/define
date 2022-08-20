@@ -42,30 +42,30 @@ function facilitie() {
           <h3>OUTDOOR FACILITIES</h3>
           <div className='rowout'>
             <div className='colout'>
-              <p>1 Grand Arc Welcome Gate</p>
-              <p>2 Guardhouse</p>
-              <p>3 Pedestrian Gate</p>
-              <p>4 Couture Jardin</p>
-              <p>5 DEFINE Signage</p>
-              <p>6 DEFINE Artwork</p>
-              <p>7 Crystal Court</p>
+              <div className="faciout"><span>1</span> <a>Grand Arc Welcome Gate</a></div>
+              <div className="faciout"><span>2</span> <a>Guardhouse</a></div>
+              <div className="faciout"><span>3</span> <a>Pedestrian Gate</a></div>
+              <div className="faciout"><span>4</span> <a>Couture Jardin</a></div>
+              <div className="faciout"><span>5</span> <a>DEFINE Signage</a></div>
+              <div className="faciout"><span>6</span> <a>DEFINE Artwork</a></div>
+              <div className="faciout"><span>7</span> <a>Crystal Court</a></div>
             </div>
             <div className='colout'>
-              <p>8 Ruby Terrace</p>
-              <p>9 Reflexology Garden</p>
-              <p>10 Emerald Terrace</p>
-              <p>11 Vehical Washing Bay</p>
-              <p>12 Eco Charging Point & Parking</p>
-              <p>13 Amber Garden</p>
-              <p>14 Amber Deck</p>
+              <div className="faciout"><span>8</span> <a>Ruby Terrace</a></div>
+              <div className="faciout"><span>9</span> <a>Reflexology Garden</a></div>
+              <div className="faciout"><span>10</span> <a>Emerald Terrace</a></div>
+              <div className="faciout"><span>11</span> <a>Vehical Washing Bay</a></div>
+              <div className="faciout"><span>12</span> <a>Eco Charging Point & Parking</a></div>
+              <div className="faciout"><span>13</span> <a>Amber Garden</a></div>
+              <div className="faciout"><span>14</span> <a>Amber Deck</a></div>
             </div>
             <div className='colout'>
-              <p>15 Motorbike Parking</p>
-              <p>16 L’Aventure Playground</p>
-              <p>17 L’Aventure Treehouse</p>
-              <p>18 Topaz Garden</p>
-              <p>19 Topaz Pavilion</p>
-              <p>20 Topaz Walkway</p>
+              <div className="faciout"><span>15</span> <a>Motorbike Parking</a></div>
+              <div className="faciout"><span>16</span> <a>L’Aventure Playground</a></div>
+              <div className="faciout"><span>17</span> <a>L’Aventure Treehouse</a></div>
+              <div className="faciout"><span>18</span> <a>Topaz Garden</a></div>
+              <div className="faciout"><span>19</span> <a>Topaz Pavilion</a></div>
+              <div className="faciout"><span>20</span> <a>Topaz Walkway</a></div>
             </div>
           </div>
         </div>
@@ -73,17 +73,17 @@ function facilitie() {
           <h3>INDOOR FACILITIES</h3>
           <div className='rowout'>
             <div className='colout'>
-              <p>36 DEFINE Grand Lobby</p>
-              <p>37 Mail Room</p>
-              <p>38 Diamond Lounge</p>
-              <p>39 La Galerie Welcome Lounge</p>
-              <p>40 Tranquillité Lounge</p>
-              <p>41 La Première Co-working Lounge</p>
-              <p>42 L’Aventure Kid’s Club</p>
+              <div className="faciin"><span>36</span> <a>DEFINE Grand Lobby</a></div>
+              <div className="faciin"><span>37</span> <a>Mail Room</a></div>
+              <div className="faciin"><span>38</span> <a>Diamond Lounge</a></div>
+              <div className="faciin"><span>39</span> <a>La Galerie Welcome Lounge</a></div>
+              <div className="faciin"><span>40</span> <a>Tranquillité Lounge</a></div>
+              <div className="faciin"><span>41</span> <a>La Première Co-working Lounge</a></div>
+              <div className="faciin"><span>42</span> <a>L’Aventure Kid’s Club</a></div>
             </div>
             <div className='colout'>
-              <p>43 Privé Supercar Garage</p>
-              <p>44 Automated Car Parking System</p>
+              <div className="faciin"><span>43</span> <a>Privé Supercar Garage</a></div>
+              <div className="faciin"><span>44</span> <a>Automated Car Parking System</a></div>
             </div>
           </div>
         </div>
@@ -96,25 +96,25 @@ function facilitie() {
           <h3>OUTDOOR FACILITIES</h3>
           <div className='rowout'>
             <div className='colout rowlv3'>
-              <p>21 Hydrotherapy Jacuzzi</p>
-              <p>22 Illuminating Pathway</p>
-              <p>23 Sun Lounge</p>
-              <p>24 Sunbed At DEFINE Pool</p>
-              <p>25 DEFINE Pool</p>
+              <div className="faciout"><span>21</span> <a>Hydrotherapy Jacuzzi</a></div>
+              <div className="faciout"><span>22</span> <a>Illuminating Pathway</a></div>
+              <div className="faciout"><span>23</span> <a>Sun Lounge</a></div>
+              <div className="faciout"><span>24</span> <a>Sunbed At DEFINE Pool</a></div>
+              <div className="faciout"><span>25</span> <a>DEFINE Pool</a></div>
             </div>
             <div className='colout rowlv3'>
-              <p>26 Sapphire Deck</p>
-              <p>27 Sapphire Path</p>
-              <p>28 L’amour Sunbed</p>
-              <p>29 Botanique Lawn</p>
-              <p>30 Zen Zone</p>
+              <div className="faciout"><span>26</span> <a>Sapphire Deck</a></div>
+              <div className="faciout"><span>27</span> <a>Sapphire Path</a></div>
+              <div className="faciout"><span>28</span> <a>L’amour Sunbed</a></div>
+              <div className="faciout"><span>29</span> <a>Botanique Lawn</a></div>
+              <div className="faciout"><span>30</span> <a>Zen Zone</a></div>
             </div>
             <div className='colout rowlv3'>
-              <p>31 BBQ Area</p>
-              <p>32 Herbs Garden</p>
-              <p>33 L’amour Swing</p>
-              <p>34 L’Aventure Kid’s Pool</p>
-              <p>35 Family Pavilion</p>
+              <div className="faciout"><span>31</span> <a>BBQ Area</a></div>
+              <div className="faciout"><span>32</span> <a>Herbs Garden</a></div>
+              <div className="faciout"><span>33</span> <a>L’amour Swing</a></div>
+              <div className="faciout"><span>34</span> <a>L’Aventure Kid’s Pool</a></div>
+              <div className="faciout"><span>35</span> <a>Family Pavilion</a></div>
             </div>
           </div>
         </div>
@@ -122,14 +122,14 @@ function facilitie() {
           <h3>INDOOR FACILITIES</h3>
           <div className='rowout'>
             <div className='colout rowlv3'>
-              <p>45 Privé Party House</p>
-              <p>46 Privé Wine Cellar Lounge</p>
-              <p>47 Changing Room</p>
-              <p>48 Sauna & Steam Room</p>
-              <p>49 Privé Gym</p>
+              <div className="faciin"><span>45</span> <a>Privé Party House</a></div>
+              <div className="faciin"><span>46</span> <a>Privé Wine Cellar Lounge</a></div>
+              <div className="faciin"><span>47</span> <a>Changing Room</a></div>
+              <div className="faciin"><span>48</span> <a>Sauna & Steam Room</a></div>
+              <div className="faciin"><span>49</span> <a>Privé Gym</a></div>
             </div>
             <div className='colout rowlv3'>
-              <p>50 Privé Yoga</p>
+              <div className="faciin"><span>50</span> <a>Privé Yoga</a></div>
             </div>
           </div>
         </div>

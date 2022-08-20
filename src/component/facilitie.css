@@ -36,8 +36,8 @@
 
 .textlv{
     position: absolute;
-    top: 62.5vw;
-    left: 10vw;
+    top: 61.8vw;
+    left: 9.7vw;
     width: 80vw;
 }
 
@@ -62,13 +62,42 @@
     margin-left: 2vw;
     margin-right: 2vw;
 }
-.colout p{  
+.colout a{  
     font-size: 0.9vw;
-    margin-bottom: 0.5vw;
 }
 
 .rowlv3 {
     margin-right: 6.5vw;
+}
+
+.faciout span{
+    border: 0.1vw solid black;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    width: 1.1vw;
+    height: 1.1vw;
+    font-weight: bold;
+    font-size: 0.6vw;
+    
+}
+.faciin span{
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 1.1vw;
+    height: 1vw;
+    line-height: 1vw;
+    font-weight: bold;
+    font-size: 0.6vw;
+}
+
+.faciout , .faciin{
+    margin-bottom: 0.2vw;
 }
 
 

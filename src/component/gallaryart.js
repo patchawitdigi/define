@@ -105,7 +105,6 @@ export default function Gallaryart() {
         else{
             setimgsl01(imgsl01+1)
         }
-        console.log(imgsl01)
     }
     function prev01(){
         if(imgsl01 <= 0){
@@ -115,7 +114,6 @@ export default function Gallaryart() {
             setimgsl01(imgsl01-1)
         }
 
-        console.log(imgsl01)
     }
 
     const [imgsl02, setimgsl02] = useState(0)
@@ -127,7 +125,6 @@ export default function Gallaryart() {
         else{
             setimgsl02(imgsl02+1)
         }
-        console.log(imgsl02)
     }
     function prev02(){
         if(imgsl02 <= 0){
@@ -137,7 +134,6 @@ export default function Gallaryart() {
             setimgsl02(imgsl02-1)
         }
 
-        console.log(imgsl02)
     }
 
     const [imgsl03, setimgsl03] = useState(0)
@@ -149,7 +145,6 @@ export default function Gallaryart() {
         else{
             setimgsl03(imgsl03+1)
         }
-        console.log(imgsl03)
     }
     function prev03(){
         if(imgsl03 <= 0){
@@ -159,7 +154,6 @@ export default function Gallaryart() {
             setimgsl03(imgsl03-1)
         }
 
-        console.log(imgsl03)
     }
     
     const [imgsl04, setimgsl04] = useState(0)
@@ -171,7 +165,6 @@ export default function Gallaryart() {
         else{
             setimgsl04(imgsl04+1)
         }
-        console.log(imgsl04)
     }
     function prev04(){
         if(imgsl04 <= 0){
@@ -181,7 +174,6 @@ export default function Gallaryart() {
             setimgsl04(imgsl04-1)
         }
 
-        console.log(imgsl04)
     }
 
     const [imgsl05, setimgsl05] = useState(0)
@@ -193,7 +185,6 @@ export default function Gallaryart() {
         else{
             setimgsl05(imgsl05+1)
         }
-        console.log(imgsl05)
     }
     function prev05(){
         if(imgsl05 <= 0){
@@ -203,7 +194,6 @@ export default function Gallaryart() {
             setimgsl05(imgsl05-1)
         }
 
-        console.log(imgsl05)
     }
 
 

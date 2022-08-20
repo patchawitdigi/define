@@ -25,7 +25,8 @@ import { FiArrowLeft } from "react-icons/fi";
 
 
 function Slide() {
-
+    
+    const [imgsty, setimgsty] = useState({objectPosition: '50% 100%' })
     const [imgsl, setimgsl] = useState(0)
     const slide = [im1, im2, im3, im4, im5, im6, im7, im8, im9, im10, im11, im12, im13, im14, im15, im16, im17]
     function next() {
@@ -35,7 +36,14 @@ function Slide() {
         else {
             setimgsl(imgsl + 1)
         }
+        if (imgsl == 13) {
+            setimgsty({objectPosition: 'center 50%'}) 
+        }
+        else {
+            setimgsty({objectPosition: '50% 100%'})
+        }
         console.log(imgsl)
+        
     }
     function prev() {
         if (imgsl <= 0) {
@@ -44,7 +52,12 @@ function Slide() {
         else {
             setimgsl(imgsl - 1)
         }
-
+        if (imgsl == 15) {
+            setimgsty({objectPosition: 'center 50%'}) 
+        }
+        else {
+            setimgsty({objectPosition: '50% 100%'})
+        }
         console.log(imgsl)
     }
 
@@ -66,7 +79,7 @@ function Slide() {
                 <div className="main-carousel">
                     <div className="carousel">
                         <div className="items">
-                            <img src={slide[imgsl]} alt="" className="carousel-image" />
+                            <img src={slide[imgsl]} alt="" className="carousel-image" style={imgsty}/>
                         </div>
                     </div>
 
