@@ -224,7 +224,7 @@ export default function Gallaryart() {
                     <img src={slide01[imgsl01]} />
                 </div>
                 <FiArrowLeft onClick={prev01} className="prev" size="3vw" />
-                <FiArrowRight onClick={next01} className="next" size="3vw" />
+                <FiArrowRight onClick={next01} className="nextimg" size="3vw" />
             </div>
 
             <div className="gallary">
@@ -247,7 +247,7 @@ export default function Gallaryart() {
                     <img src={slide02[imgsl02]} />
                 </div>
                 <FiArrowLeft onClick={prev02} className="prev" size="3vw" />
-                <FiArrowRight onClick={next02} className="next" size="3vw" />
+                <FiArrowRight onClick={next02} className="nextimg" size="3vw" />
             </div>
 
             <div className="gallary">
@@ -270,7 +270,7 @@ export default function Gallaryart() {
                     <img src={slide03[imgsl03]} />
                 </div>
                 <FiArrowLeft onClick={prev03} className="prev" size="3vw" />
-                <FiArrowRight onClick={next03} className="next" size="3vw" />
+                <FiArrowRight onClick={next03} className="nextimg" size="3vw" />
             </div>
 
             <div className="gallary">
@@ -293,7 +293,7 @@ export default function Gallaryart() {
                     <img src={slide04[imgsl04]} />
                 </div>
                 <FiArrowLeft onClick={prev04} className="prev" size="3vw" />
-                <FiArrowRight onClick={next04} className="next" size="3vw" />
+                <FiArrowRight onClick={next04} className="nextimg" size="3vw" />
             </div>
 
             <div className="gallary">
@@ -316,7 +316,7 @@ export default function Gallaryart() {
                     <img src={slide05[imgsl05]} />
                 </div>
                 <FiArrowLeft onClick={prev05} className="prev" size="3vw" />
-                <FiArrowRight onClick={next05} className="next" size="3vw" />
+                <FiArrowRight onClick={next05} className="nextimg" size="3vw" />
             </div>
 
 
