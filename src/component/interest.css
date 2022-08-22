@@ -107,3 +107,21 @@
 #surround {
     color: #bf5c40;
 }
+
+@media only screen and (max-width: 969px) {
+    .mapextend img {
+        left: 2.5vw;
+        top: 64.2vw;
+        width: 62vw;
+        height: 44vw;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .mapextend img {
+        left: 2.5vw;
+        top: 66.2vw;
+        width: 62vw;
+        height: 44vw;
+    }
+}

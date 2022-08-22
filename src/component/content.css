@@ -1,7 +1,20 @@
+.vibanner video{ 
+    position: absolute;
+    width:100%;
+    top:-5.25vw;
+    z-index: -1;
+
+}
+
+.vibanner {
+    margin-bottom: 53vw;
+}
 .content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15vw;
+    margin-bottom: 10vw;
+    padding-top: 8vw;
+
 }
 
 .imgcon img {
@@ -36,7 +49,7 @@
     position: absolute;
     width: 21vw;
     left: 0;
-    top: 85.5vw;
+    top: 87vw;
     z-index: -1;
 
 }
@@ -53,13 +66,13 @@
     position: absolute;
     width: 21vw;
     right: 0;
-    top: 136.5vw;
+    top: 141.5vw;
     z-index: -1;
 
 }
 
 .left2 {
-    top: 189vw;
+    top: 196vw;
 }
 
 .textl2 {
@@ -101,12 +114,24 @@
     text-decoration: none;
     font-weight: bold;
 }
+.textr2 a:hover{
+    color: #bf5c40;
+    text-decoration: underline;
+    
+}
+
 .right2{
-    top: 240vw;
+    top: 250vw;
 }
 
 .right3{
-    top: 292vw;
+    top: 305vw;
+}
+
+.changeto{
+    color: white;
+    background-color: #bf5c40;
+    margin-left: 0.5vw;
 }
 
 

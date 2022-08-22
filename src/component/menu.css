@@ -98,7 +98,7 @@
 .menuitem a:hover{
    
     color: white;
-    border-bottom: 0.1vw solid white;
+    text-decoration: underline;
     
 }
 

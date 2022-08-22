@@ -9,7 +9,12 @@
 
 .conhid{
     margin-bottom: 10vw;
+    padding-top: 0vw;
 }
+.texthid{
+    margin-top: 8vw;
+}
+
 .main-carousel {
     position: relative;
     height: 36.5vw;

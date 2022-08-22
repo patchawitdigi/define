@@ -13,9 +13,24 @@ import icon2 from '../img/overview/g-2.png'
 import icon3 from '../img/overview/g-3.png'
 import icon4 from '../img/overview/g-4.png'
 
+import video from "../img/overview/video-banner.mp4"
+
+import useScrollSnap from 'react-use-scroll-snap';
+import { useRef } from "react";
+import { FiArrowRight } from "react-icons/fi";
+
 export default function Content() {
+
+    const scrollRef = useRef(null);
+    useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
+
     return (
-        <div>
+        <div  ref={scrollRef}>
+            <div className="vibanner">
+                <video loop muted autoPlay>
+                    <source src={video} type="video/mp4" />
+                </video>
+            </div>
             <div className="content">
                 <div className="textcon">
                     <h2></h2>
@@ -75,7 +90,7 @@ export default function Content() {
                     <p>Nestled in a private green oasis, surrounded by beautifully landscaped
                         gardens and water features, DEFINE is your heaven of peace and tranquility
                         in Ho Chi Minh City.</p>
-                    <a href="">DISCOVER THE EXCLUSIVE FACILITIES</a>
+                    <a href="/project/define/hidden-treasures">DISCOVER THE EXCLUSIVE FACILITIES<FiArrowRight size="1vw" className="changeto"/></a>
                     <img className="bgright right2" src={bgright} />
                 </div>
             </div>
@@ -87,9 +102,9 @@ export default function Content() {
                     <h2></h2>
                     <h3>DEFINE WHERE<br />
                         YOU STAY</h3>
-                    <p>DEFINE is located in the administrative center of Thu Duc City and boasts 
+                    <p>DEFINE is located in the administrative center of Thu Duc City and boasts
                         a prestigious location with fabulous views of Saigon River from every unit.</p>
-                    <a href="">EXPLORE THE PRESTIGIOUS LOCATION</a>
+                    <a href="/project/define/point-of-Interests">EXPLORE THE PRESTIGIOUS LOCATION<FiArrowRight size="1vw" className="changeto"/></a>
                     <img className="bgright right3" src={bgright} />
                 </div>
             </div>

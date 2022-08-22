@@ -91,13 +91,50 @@
     text-align: center;
     width: 1.1vw;
     height: 1vw;
-    line-height: 1vw;
     font-weight: bold;
     font-size: 0.6vw;
 }
 
 .faciout , .faciin{
     margin-bottom: 0.2vw;
+}
+
+@media only screen and (max-width: 969px) {
+    .textlv{
+        top: 65.8vw;
+        left: 9vw;
+        width: 80vw;
+    }
+    .faciout span{
+        width: 1.6vw;
+        height: 1.6vw;
+        font-size: 0.5vw;
+        
+    }
+    .faciin span{
+        width: 1.6vw;
+        height: 1.6vw;
+        font-size: 0.5vw;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .textlv{
+        top: 81vw;
+        left: 8.3vw;
+        width: 80vw;
+    }
+    .faciout span{
+        width: 2.8vw;
+        height: 2.8vw;
+        font-size: 0.5vw;
+        
+    }
+    .faciin span{
+        width: 2.8vw;
+        height: 2.8vw;
+        font-size: 0.5vw;
+    }
 }
 
 

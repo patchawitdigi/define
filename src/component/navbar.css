@@ -27,6 +27,7 @@
 }
 .language p{
    padding: 0 0.3vw;
+   font-size: 1vw;
     
 }
 
@@ -55,5 +56,48 @@
     color: #bf5c40;
 }
 
+
+@media only screen and (max-width: 969px) {
+    .header{
+        height: 5vw;
+    
+    }
+    .logocapita img{
+        width: 8vw;
+        margin-top: 0.9vw;
+        
+    }
+    .btnregis{
+        margin-top: 1.9vw;
+
+    }
+    .language{
+        margin-top: 1.7vw;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 575px) {
+    .header{
+        height: 6vw;
+    
+    }
+    .logocapita img{
+        width: 9vw;
+        margin-top: 0.9vw;
+        
+    }
+    .btnregis{
+       
+        margin-top: 1.5vw;
+
+    }
+    .language{
+        margin-top: 1.5vw;
+        
+    }
+   
+}
 
 

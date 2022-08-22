@@ -189,3 +189,15 @@
     top:50%;
     color: #bf5c40;
 }
+
+@media only screen and (max-width: 969px) {
+    .rgallary{
+        margin-left: 1vw;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .rgallary{
+        margin-left: 1.5vw;
+    }
+}
