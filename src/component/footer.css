@@ -135,6 +135,9 @@
    text-decoration: none;
    color: white;
 }
+.follow a:hover {
+   color: white;
+}
 
 .folleft {
    border-right: 0.1vw solid white;
@@ -201,4 +204,28 @@
    padding-top: 2vw;
    font-size: 0.6vw;
    text-align: end;
+}
+
+@media only screen and (max-width: 576px) {
+   .social img {
+      width: 3.5vw;
+      height: 2.5vw;
+      padding: 0vw 0.2vw;
+   }
+   .follow {
+      margin: 1vw 8vw 0vw 8vw;
+      padding: 1vw 0vw;
+   }
+   .moreetc {
+      padding: 0vw 8vw;
+   }
+   .descrip {
+      padding: 2vw 8vw;
+   }
+   .descrip p {
+      line-height: 1.5vw;
+   }
+   .contact {
+      padding: 2.5vw 7vw;
+   }
 }

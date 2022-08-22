@@ -1,29 +1,24 @@
-.images{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 3vw;
-    margin: 5vw auto;
-    width: 60%;
-    min-width: 70vw;
-    min-height: 40vw;
+.images {
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
-.image{
-    width: 30%;
-    height: 30%;
-    color: black;
-    border-radius: 5%;
-    overflow: hidden;
-    /* margin: 2vw 1vw; */
+.image {
+    text-align: center;
+    border: 0.1vw solid #bf5c40;
+    margin-bottom: 3vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    height: 25vw;
 }
 
-.image img{
-    display: block;
+.image img {
     width: 100%;
+    height: 16vw;
+    margin-bottom: 1vw;
 }
 
-.pagination{
+.pagination {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +28,7 @@
 
 }
 
-.pagination .page-num{
+.pagination .page-num {
     padding: 0.25vw 0.60vw;
     cursor: pointer;
     border-radius: 50%;
@@ -41,12 +36,13 @@
     text-decoration: none;
     color: black;
 }
-.pagination .page-num:hover{
+
+.pagination .page-num:hover {
     background-color: #bf5c40;
     color: #fff;
- }
+}
 
-.pagination .page-num-chg{
+.pagination .page-num-chg {
     padding: 0.25vw 0.60vw;
     cursor: pointer;
     border-radius: 50%;
@@ -54,13 +50,14 @@
     text-decoration: none;
     color: black;
 }
-.pagination .page-num-chg:hover{
+
+.pagination .page-num-chg:hover {
     color: #bf5c40;
 }
 
 
 
-.pagination .active{
+.pagination .active {
     background-color: #bf5c40;
     color: #fff;
 }

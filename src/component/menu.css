@@ -1,4 +1,4 @@
-.menuclick{
+.menuclick {
     position: fixed;
     top: 7vw;
     right: 3vw;
@@ -6,62 +6,69 @@
     z-index: 2;
     cursor: pointer;
 }
-.col_1{
+
+.col_1 {
     padding-top: 0.4vw;
 }
-.col_2{
+
+.col_2 {
     padding-top: 0.2vw;
 }
-.menuclick:hover .col_3{
-    padding-top: 0.4vw;
-    transition: 500ms;
-}
-.menuclick:hover .col_2{
+
+.menuclick:hover .col_3 {
     padding-top: 0.4vw;
     transition: 500ms;
 }
 
-.col_1 div{
+.menuclick:hover .col_2 {
+    padding-top: 0.4vw;
+    transition: 500ms;
+}
+
+.col_1 div {
     width: 0.5vw;
     height: 0.1vw;
     margin: 0.2vw 0;
-   
+
 }
-.col_2 div{
+
+.col_2 div {
     width: 0.5vw;
     height: 0.1vw;
-    margin: 0.2vw 0; 
+    margin: 0.2vw 0;
 }
 
-.col_3 div{
+.col_3 div {
     width: 0.8vw;
     height: 0.1vw;
-    margin: 0.2vw 0; 
+    margin: 0.2vw 0;
 }
 
-.wrap-close{
+.wrap-close {
     display: none;
     position: fixed;
     top: 8vw;
     right: 3vw;
     z-index: 3;
     cursor: pointer;
-   
+
 }
-.x-1{
+
+.x-1 {
     width: 2vw;
     height: 0.1vw;
     background: white;
     transform: rotate(45deg)
 }
-.x-2{
+
+.x-2 {
     width: 2vw;
     height: 0.1vw;
     background: white;
     transform: rotate(-45deg) translate(0.1vw, -0.05vw);
 }
 
-.menubg{
+.menubg {
     background: linear-gradient(180deg, #d16d49, #8c3424);
     position: absolute;
     width: 100%;
@@ -70,17 +77,18 @@
     position: fixed;
     z-index: 1;
 }
+
 .logodef {
     display: flex;
     justify-content: center;
-    
+
 }
 
-.logodef img{
+.logodef img {
     width: 10vw;
     margin-top: 4vw;
     margin-bottom: 6vw;
-    
+
 }
 
 .menuitem {
@@ -88,29 +96,134 @@
     flex-direction: column;
     align-items: center;
 }
-.menuitem a{
+
+.menuitem a {
     width: fit-content;
     color: white;
     font-size: 1.5vw;
     margin-bottom: 2vw;
     text-decoration: none;
 }
-.menuitem a:hover{
-   
+
+.menuitem a:hover {
+
     color: white;
     text-decoration: underline;
-    
+
 }
 
-.pattl{
+.pattl {
     position: absolute;
     width: 20vw;
     left: 0vw;
     top: 0vw;
 }
-.pattr{
+
+.pattr {
     position: absolute;
     width: 20vw;
     bottom: 4vw;
     right: 0vw;
+}
+
+@media only screen and (max-width: 992px) {
+    .col_1 div {
+        width: 0.9vw;
+        height: 0.2vw;
+        margin: 0.3vw 0;
+
+    }
+
+    .col_2 div {
+        width: 0.9vw;
+        height: 0.2vw;
+        margin: 0.3vw 0;
+    }
+
+    .col_3 div {
+        width: 1.3vw;
+        height: 0.2vw;
+        margin: 0.3vw 0;
+    }
+
+    .x-1 {
+        width: 3.2vw;
+        height: 0.2vw;
+
+    }
+
+    .x-2 {
+        width: 3.2vw;
+        height: 0.2vw;
+
+    }
+
+    .wrap-close {
+        top: 9vw;
+    }
+    .menuitem a {
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+    .logodef img {
+        width: 15vw;
+        margin-top: 15vw;
+        margin-bottom: 15vw;
+    
+    }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+
+    .menuclick {
+        top: 9vw;
+        right: 4vw;
+       
+    }
+    .col_1 div {
+        width: 1.2vw;
+        height: 0.25vw;
+        margin: 0.4vw 0;
+
+    }
+
+    .col_2 div {
+        width: 1.2vw;
+        height: 0.25vw;
+        margin: 0.4vw 0;
+    }
+
+    .col_3 div {
+        width: 1.5vw;
+        height: 0.25vw;
+        margin: 0.4vw 0;
+    }
+
+    .x-1 {
+        width: 4.5vw;
+        height: 0.3vw;
+
+    }
+
+    .x-2 {
+        width: 4.5vw;
+        height: 0.3vw;
+
+    }
+
+    .wrap-close {
+        top: 12vw;
+    }
+    .menuitem a {
+        font-size: 4vw;
+        margin-bottom: 3.5vw;
+    }
+    .logodef img {
+        width: 25vw;
+        margin-top: 25vw;
+        margin-bottom: 20vw;
+    
+    }
 }

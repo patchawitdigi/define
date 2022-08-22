@@ -11,24 +11,29 @@
 }
 
 .gallary {
-    display: flex;
+    /* display: flex; */
     margin-bottom: 5vw;
 }
 .lgallary{
     margin-left: 7vw;
-    width: 60%;
+    /* width: 60%; */
 }
 .lgallary img {
     margin-bottom: 1.5vw;
 }
+.rgallary{
+    margin-left: 2vw;
+}
 .facade1{
-    width: 60vw;
+    width: 61vw;
 }
 .facade2{
     width: 35vw;
-    margin-left: 25vw;
+    margin-left: 26vw;
     
 }
+
+
 .facade3{
     width: 25vw;
     height: 28vw;
@@ -53,7 +58,7 @@
 }
 .rgallary2 p{
     color: #bf5c40;
-    margin-left: 1.7vw;
+    margin-left: 2vw;
     font-size: 2vw;
     border-right: 0.1vw solid #bf5c40;
     padding-top: 10vw;
@@ -64,22 +69,20 @@
 .rgallary3 p{
     margin-left: 1.5vw;
 }
-.lgallary2{
-    margin-left: 1.5vw;
-}
+
 .outdoor2{
     width: 35vw;
     margin-top: 1.5vw;
 }
 .outdoor3{
-    width: 23.5vw;
+    width: 24.2vw;
     height: 23vw;
     margin-top: 7vw;
     object-fit: cover;
 
 }
 .Riviere3{
-    width: 23.5vw;
+    width: 24vw;
     height: 33vw;
     margin-top: 6vw;
     object-fit: cover;
@@ -114,7 +117,7 @@
 #plusitem2{
     color: #bf5c40;
     margin-top: 11vw;
-    margin-left: 8.5vw;
+    margin-left: 9.5vw;
 }
 
 #plusitem3{
@@ -126,7 +129,7 @@
 #plusitem4{
     color: #bf5c40;
     margin-top: 10vw;
-    margin-left: 11.5vw;
+    margin-left: 13vw;
 }
 
 #plusitem5{
@@ -190,14 +193,129 @@
     color: #bf5c40;
 }
 
-@media only screen and (max-width: 969px) {
+@media only screen and (max-width: 576px) {
     .rgallary{
         margin-left: 1vw;
     }
-}
-
-@media only screen and (max-width: 575px) {
-    .rgallary{
-        margin-left: 1.5vw;
+    .headgal{
+        font-size: 4vw;
     }
+    .headgal2{
+        margin-top: 1vw;
+        margin-left: 1vw;
+        padding-right: 52vw;
+    }
+    .lgallary{
+        margin-left: 1vw;
+        margin-right: 1vw;
+        /* width: 60%; */
+    }
+    .facade1{
+        margin-top: 25vw;
+        width: 100%;
+    }
+    .facade2{
+        width: 100%;
+        margin-left: 0vw; 
+    }
+    .rgallary p{ 
+        margin-left: 0vw;
+        font-size: 4vw;
+        padding-top: 15vw;
+    }
+    #plusitem1{
+        margin-top: 15vw;
+        margin-left: 73vw;
+    }
+    .facade3{
+        width: 100%;
+        height: auto;
+        margin-left: 0vw;
+        margin-top: 0vw;    
+    }
+    .facade{
+        position: absolute;
+        top: 30vw;
+    }
+    
+    .rgallary2{
+        margin-left: 0vw;
+    }
+    .rgallary2 p{ 
+        margin-left: 70vw;
+        font-size: 4vw;
+        padding-top: 15vw;
+        line-height: 4vw;
+    }
+    #plusitem2{
+       
+        margin-top: 20vw;
+        margin-left: 0vw;
+    }
+    .outdoor3{
+        width: 100%;
+        height: auto;
+        margin-top: 51vw;
+    }
+    .outdoor2{
+        width: 100%;
+        margin-top: 1.5vw;
+    }
+    .outdoor1{
+        position: absolute;
+        top: 246vw;
+        width: 96%;
+        margin-top: 1.5vw;
+    }
+    .indoor{
+        position: absolute;
+        top: 410vw;
+    }
+    .indoor p{
+        line-height: 4vw;
+    }
+    #plusitem3{
+        margin-top: 18vw;
+        margin-left: 69vw;
+    }
+    .indoor1{
+        margin-top: 26.5vw;
+    }
+    #plusitem4{
+        margin-top: 17vw;
+        margin-left: 1vw;
+    }
+    .riviere p{
+        margin-left: 75vw;
+    }
+
+    .Riviere3{
+        width: 100%;
+        height: auto;
+        margin-top: 59vw;
+        object-fit: cover;
+        
+    }
+    .riviere1{
+        position: absolute;
+        top: 643vw;
+        width: 96%;
+    }
+
+    .jardin{
+        position: absolute;
+        top: 855vw;
+    }
+    .jardin3{
+        width: 100%;
+        height: auto;
+        margin-left: 0vw;
+        margin-top: 0vw;
+        
+    }
+    #plusitem5{
+        margin-top: 15vw;
+        margin-left: 74vw;
+    }
+
 }

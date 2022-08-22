@@ -40,6 +40,9 @@ import { BsPlusCircle } from "react-icons/bs"
 import { FiArrowRight } from "react-icons/fi";
 import { FiArrowLeft } from "react-icons/fi";
 import { useEffect, useState } from "react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function Gallaryart() {
 
@@ -73,7 +76,7 @@ export default function Gallaryart() {
         span03.onclick = function () {
             modal03.style.display = "none";
         }
-        
+
         var modal04 = document.getElementById("myModal04");
         var btn04 = document.getElementById("plusitem4");
         var span04 = document.getElementsByClassName("close")[3];
@@ -83,7 +86,7 @@ export default function Gallaryart() {
         span04.onclick = function () {
             modal04.style.display = "none";
         }
-        
+
         var modal05 = document.getElementById("myModal05");
         var btn05 = document.getElementById("plusitem5");
         var span05 = document.getElementsByClassName("close")[4];
@@ -98,100 +101,100 @@ export default function Gallaryart() {
 
     const [imgsl01, setimgsl01] = useState(0)
     const slide01 = [Facade1, Facade2, Facade3]
-    function next01(){
-        if(imgsl01 >= slide01.length-1){
+    function next01() {
+        if (imgsl01 >= slide01.length - 1) {
             setimgsl01(0)
         }
-        else{
-            setimgsl01(imgsl01+1)
+        else {
+            setimgsl01(imgsl01 + 1)
         }
     }
-    function prev01(){
-        if(imgsl01 <= 0){
+    function prev01() {
+        if (imgsl01 <= 0) {
             setimgsl01(slide01.length - 1)
         }
-        else{
-            setimgsl01(imgsl01-1)
+        else {
+            setimgsl01(imgsl01 - 1)
         }
 
     }
 
     const [imgsl02, setimgsl02] = useState(0)
     const slide02 = [Outdoor4, Outdoor5, Outdoor6, Outdoor2, Outdoor3, Outdoor1, Outdoor7, Outdoor8, Outdoor9]
-    function next02(){
-        if(imgsl02 >= slide02.length-1){
+    function next02() {
+        if (imgsl02 >= slide02.length - 1) {
             setimgsl02(0)
         }
-        else{
-            setimgsl02(imgsl02+1)
+        else {
+            setimgsl02(imgsl02 + 1)
         }
     }
-    function prev02(){
-        if(imgsl02 <= 0){
+    function prev02() {
+        if (imgsl02 <= 0) {
             setimgsl02(slide02.length - 1)
         }
-        else{
-            setimgsl02(imgsl02-1)
+        else {
+            setimgsl02(imgsl02 - 1)
         }
 
     }
 
     const [imgsl03, setimgsl03] = useState(0)
     const slide03 = [Indoor4, Indoor5, Indoor6, Indoor3, Indoor1, Indoor2, Indoor7, Indoor8]
-    function next03(){
-        if(imgsl03 >= slide03.length-1){
+    function next03() {
+        if (imgsl03 >= slide03.length - 1) {
             setimgsl03(0)
         }
-        else{
-            setimgsl03(imgsl03+1)
+        else {
+            setimgsl03(imgsl03 + 1)
         }
     }
-    function prev03(){
-        if(imgsl03 <= 0){
+    function prev03() {
+        if (imgsl03 <= 0) {
             setimgsl03(slide03.length - 1)
         }
-        else{
-            setimgsl03(imgsl03-1)
+        else {
+            setimgsl03(imgsl03 - 1)
         }
 
     }
-    
+
     const [imgsl04, setimgsl04] = useState(0)
     const slide04 = [Riviere4, Riviere2, Riviere1, Riviere3, Riviere5]
-    function next04(){
-        if(imgsl04 >= slide04.length-1){
+    function next04() {
+        if (imgsl04 >= slide04.length - 1) {
             setimgsl04(0)
         }
-        else{
-            setimgsl04(imgsl04+1)
+        else {
+            setimgsl04(imgsl04 + 1)
         }
     }
-    function prev04(){
-        if(imgsl04 <= 0){
+    function prev04() {
+        if (imgsl04 <= 0) {
             setimgsl04(slide04.length - 1)
         }
-        else{
-            setimgsl04(imgsl04-1)
+        else {
+            setimgsl04(imgsl04 - 1)
         }
 
     }
 
     const [imgsl05, setimgsl05] = useState(0)
     const slide05 = [Jardin1, Jardin2, Jardin4, Jardin5, Jardin6, Jardin3]
-    function next05(){
-        if(imgsl05 >= slide05.length-1){
+    function next05() {
+        if (imgsl05 >= slide05.length - 1) {
             setimgsl05(0)
         }
-        else{
-            setimgsl05(imgsl05+1)
+        else {
+            setimgsl05(imgsl05 + 1)
         }
     }
-    function prev05(){
-        if(imgsl05 <= 0){
+    function prev05() {
+        if (imgsl05 <= 0) {
             setimgsl05(slide05.length - 1)
         }
-        else{
-            setimgsl05(imgsl05-1)
+        else {
+            setimgsl05(imgsl05 - 1)
         }
 
     }
@@ -204,19 +207,35 @@ export default function Gallaryart() {
                 <h3 className="headgal">GALLERIE D’ARTE</h3>
                 <h3 className="headgal2"></h3>
             </div>
-            <div className="gallary">
-                <div className="lgallary">
-                    <img className="facade1" src={Facade1} />
-                    <img className="facade2 bwimg" src={Facade2} />
+
+
+            <Container fluid>
+
+                <div className="gallary">
+                    <Row>
+                        <Col xs={12} sm={8}>
+                            <div className="lgallary">
+
+                                <img className="facade1" src={Facade1} />
+                                <img className="facade2 bwimg" src={Facade2} />
+
+                            </div>
+                        </Col>
+                        <Col xs={12} sm={4}>
+                            <div className="rgallary">
+
+                                <div className="moreitem facade">
+                                    <p>FACADE</p>
+                                    <BsPlusCircle size="2vw" id='plusitem1' />
+                                </div>
+                                <img className="facade3 bwimg" src={Facade3} />
+
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
-                <div className="rgallary">
-                    <div className="moreitem">
-                        <p>FACADE</p>
-                        <BsPlusCircle size="2vw" id='plusitem1' />
-                    </div>
-                    <img className="facade3 bwimg" src={Facade3} />
-                </div>
-            </div>
+
+            </Container>
 
             <div id="myModal01" class="modal2">
                 <span className="close">&times;</span>
@@ -227,19 +246,28 @@ export default function Gallaryart() {
                 <FiArrowRight onClick={next01} className="nextimg" size="3vw" />
             </div>
 
-            <div className="gallary">
-                <div className="rgallary2">
-                    <div className="moreitem">
-                        <BsPlusCircle size="2vw" id='plusitem2' />
-                        <p>OUTDOOR<br />FACILITIES</p>
-                    </div>
-                    <img className="outdoor3 bwimg" src={Outdoor3} />
+
+            <Container fluid>
+                <div className="gallary">
+                    <Row>
+                        <Col xs={12} sm={4}>
+                            <div className="rgallary2">
+                                <div className="moreitem">
+                                    <BsPlusCircle size="2vw" id='plusitem2' />
+                                    <p>OUTDOOR<br />FACILITIES</p>
+                                </div>
+                                <img className="outdoor3 bwimg" src={Outdoor3} />
+                            </div>
+                        </Col>
+                        <Col xs={12} sm={8}>
+                            <div className="lgallary2">
+                                <img className="facade1 outdoor1" src={Outdoor1} />
+                                <img className="outdoor2 bwimg" src={Outdoor2} />
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
-                <div className="lgallary2">
-                    <img className="facade1" src={Outdoor1} />
-                    <img className="outdoor2 bwimg" src={Outdoor2} />
-                </div>
-            </div>
+            </Container>
 
             <div id="myModal02" class="modal2">
                 <span className="close">&times;</span>
@@ -250,19 +278,28 @@ export default function Gallaryart() {
                 <FiArrowRight onClick={next02} className="nextimg" size="3vw" />
             </div>
 
-            <div className="gallary">
-                <div className="lgallary">
-                    <img className="facade1" src={Indoor1} />
-                    <img className="facade2 bwimg" src={Indoor2} />
+
+            <Container fluid>
+                <div className="gallary">
+                    <Row>
+                        <Col xs={12} sm={8}>
+                            <div className="lgallary">
+                                <img className="facade1 indoor1" src={Indoor1} />
+                                <img className="facade2 bwimg" src={Indoor2} />
+                            </div>
+                        </Col>
+                        <Col xs={12} sm={4}>
+                            <div className="rgallary ">
+                                <div className="moreitem indoor">
+                                    <p>INDOOR<br />FACILITIES</p>
+                                    <BsPlusCircle size="2vw" id='plusitem3' />
+                                </div>
+                                <img className="facade3 bwimg" src={Indoor3} />
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
-                <div className="rgallary">
-                    <div className="moreitem">
-                        <p>INDOOR<br />FACILITIES</p>
-                        <BsPlusCircle size="2vw" id='plusitem3' />
-                    </div>
-                    <img className="facade3 bwimg" src={Indoor3} />
-                </div>
-            </div>
+            </Container>
 
             <div id="myModal03" class="modal2">
                 <span className="close">&times;</span>
@@ -273,19 +310,27 @@ export default function Gallaryart() {
                 <FiArrowRight onClick={next03} className="nextimg" size="3vw" />
             </div>
 
-            <div className="gallary">
-                <div className="rgallary2 rgallary3">
-                    <div className="moreitem">
-                        <BsPlusCircle size="2vw" id='plusitem4' />
-                        <p>RIVIERE</p>
-                    </div>
-                    <img className="Riviere3 bwimg" src={Riviere3} />
+            <Container fluid>
+                <div className="gallary">
+                    <Row>
+                        <Col xs={12} sm={4}>
+                            <div className="rgallary2 rgallary3">
+                                <div className="moreitem riviere">
+                                    <BsPlusCircle size="2vw" id='plusitem4' />
+                                    <p>RIVIERE</p>
+                                </div>
+                                <img className="Riviere3 bwimg" src={Riviere3} />
+                            </div>
+                        </Col>
+                        <Col xs={12} sm={8}>
+                            <div className="lgallary2">
+                                <img className="facade1 riviere1" src={Riviere2} />
+                                <img className="outdoor2 bwimg" src={Riviere1} />
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
-                <div className="lgallary2">
-                    <img className="facade1" src={Riviere2} />
-                    <img className="outdoor2 bwimg" src={Riviere1} />
-                </div>
-            </div>
+            </Container>
 
             <div id="myModal04" class="modal2">
                 <span className="close">&times;</span>
@@ -296,19 +341,27 @@ export default function Gallaryart() {
                 <FiArrowRight onClick={next04} className="nextimg" size="3vw" />
             </div>
 
-            <div className="gallary">
-                <div className="lgallary">
-                    <img className="facade1" src={Jardin1} />
-                    <img className="facade2 bwimg" src={Jardin2} />
+            <Container fluid>
+                <div className="gallary">
+                    <Row>
+                        <Col xs={12} sm={8}>
+                            <div className="lgallary">
+                                <img className="facade1" src={Jardin1} />
+                                <img className="facade2 bwimg" src={Jardin2} />
+                            </div>
+                        </Col>
+                        <Col xs={12} sm={4}>
+                            <div className="rgallary">
+                                <div className="moreitem jardin">
+                                    <p>JARDIN</p>
+                                    <BsPlusCircle size="2vw" id='plusitem5' />
+                                </div>
+                                <img className="jardin3 bwimg" src={Jardin3} />
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
-                <div className="rgallary">
-                    <div className="moreitem">
-                        <p>JARDIN</p>
-                        <BsPlusCircle size="2vw" id='plusitem5' />
-                    </div>
-                    <img className="jardin3 bwimg" src={Jardin3} />
-                </div>
-            </div>
+            </Container>
 
             <div id="myModal05" class="modal2">
                 <span className="close">&times;</span>
@@ -318,6 +371,8 @@ export default function Gallaryart() {
                 <FiArrowLeft onClick={prev05} className="prev" size="3vw" />
                 <FiArrowRight onClick={next05} className="nextimg" size="3vw" />
             </div>
+
+
 
 
         </div>
