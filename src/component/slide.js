@@ -21,12 +21,15 @@ import im16 from '../img/hidden/Party.jpg'
 import im17 from '../img/hidden/Garage2.jpg'
 import { FiArrowRight } from "react-icons/fi";
 import { FiArrowLeft } from "react-icons/fi";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
 function Slide() {
-    
-    const [imgsty, setimgsty] = useState({objectPosition: '50% 100%' })
+
+    const [imgsty, setimgsty] = useState({ objectPosition: '50% 100%' })
     const [imgsl, setimgsl] = useState(0)
     const slide = [im1, im2, im3, im4, im5, im6, im7, im8, im9, im10, im11, im12, im13, im14, im15, im16, im17]
     function next() {
@@ -37,13 +40,13 @@ function Slide() {
             setimgsl(imgsl + 1)
         }
         if (imgsl == 13) {
-            setimgsty({objectPosition: 'center 50%'}) 
+            setimgsty({ objectPosition: 'center 50%' })
         }
         else {
-            setimgsty({objectPosition: '50% 100%'})
+            setimgsty({ objectPosition: '50% 100%' })
         }
         console.log(imgsl)
-        
+
     }
     function prev() {
         if (imgsl <= 0) {
@@ -53,10 +56,10 @@ function Slide() {
             setimgsl(imgsl - 1)
         }
         if (imgsl == 15) {
-            setimgsty({objectPosition: 'center 50%'}) 
+            setimgsty({ objectPosition: 'center 50%' })
         }
         else {
-            setimgsty({objectPosition: '50% 100%'})
+            setimgsty({ objectPosition: '50% 100%' })
         }
         console.log(imgsl)
     }
@@ -66,30 +69,38 @@ function Slide() {
     return (
         <div>
             <img className='delogo' src={delogo} />
-            <div className="content conhid">
-                <div className="textcon texthid">
-                    <h2></h2>
-                    <h3>DEFINE YOUR LIFESTYLE<br />
-                        & WELLBEING</h3>
-                    <p>Surrounded by serene gardens and tranquil water features, you will find numerous relaxation zones
-                        within DEFINE. Lush jewel themed gardens are dotted around the first floor and third floor, allowing
-                        residents to easily reconnect with nature for quiet moments of repose.</p>
-                    <img className="bglefthid" src={bgleft} />
-                </div>
-                <div className="main-carousel">
-                    <div className="carousel">
-                        <div className="items">
-                            <img src={slide[imgsl]} alt="" className="carousel-image" style={imgsty}/>
-                        </div>
-                    </div>
 
-                    <div className="buttons">
-                        <FiArrowLeft onClick={prev} id="prevBtn" size="3vw" />
-                        <FiArrowRight onClick={next} id="nextBtn" size="3vw" />
-                    </div>
+            <Container fluid className="p-0">
+                <div className="content conhid">
+                    <Row>
+                        <Col lg={4}>
+                            <div className="textcon texthid">
+                                <h2></h2>
+                                <h3>DEFINE YOUR LIFESTYLE<br />
+                                    & WELLBEING</h3>
+                                <p>Surrounded by serene gardens and tranquil water features, you will find numerous relaxation zones
+                                    within DEFINE. Lush jewel themed gardens are dotted around the first floor and third floor, allowing
+                                    residents to easily reconnect with nature for quiet moments of repose.</p>
+                                <img className="bglefthid" src={bgleft} />
+                            </div>
+                        </Col>
+                        <Col lg={8}>
+                            <div className="main-carousel">
+                                <div className="carousel">
+                                    <div className="items">
+                                        <img src={slide[imgsl]} alt="" className="carousel-image" style={imgsty} />
+                                    </div>
+                                </div>
 
+                                <div className="buttons">
+                                    <FiArrowLeft onClick={prev} id="prevBtn" size="3vw" />
+                                    <FiArrowRight onClick={next} id="nextBtn" size="3vw" />
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
-            </div>
+            </Container>
         </div>
     )
 }

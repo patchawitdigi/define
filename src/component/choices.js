@@ -35,6 +35,10 @@ import Lv15_4 from '../img/luxury/lv15unit4.jpg'
 import Lv25_1 from '../img/luxury/lv25unit1.jpg'
 import Lv25_2 from '../img/luxury/lv25unit2.jpg'
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 function Choices() {
 
   function changelv3() {
@@ -414,7 +418,7 @@ function Choices() {
     span20.onclick = function () {
       modal20.style.display = "none";
     }
-    
+
     window.onclick = function (event) {
       if (event.target == modal20) {
         modal20.style.display = "none";
@@ -454,10 +458,10 @@ function Choices() {
         modal3.style.display = "none";
       } else if (event.target == modal2) {
         modal2.style.display = "none";
-      } 
+      }
       else if (event.target == modal) {
         modal.style.display = "none";
-      } 
+      }
     }
 
   }, [])
@@ -470,40 +474,52 @@ function Choices() {
       <img className='delogo' src={delogo} />
       <img className='floorbg' src={Floor} />
       <h3 className='yourown'>DEFINE A PLACE TO CALL YOUR OWN</h3>
-      <div className='floorplan'>
-        <div className='selectlevel'>
-          <h4>FLOOR PLAN</h4>
-          <p onClick={changelv3} id="floor3">LEVEL3</p>
-          <p onClick={changelv4} id="floor4">LEVEL4</p>
-          <p onClick={changetyp1} id="typ1">TYPICAL 1</p>
-          <p onClick={changetyp2} id="typ2">TYPICAL 2</p>
-          <p onClick={changelv15} id="floor15">LEVEL15</p>
-          <p onClick={changelv25} id="floor25">LEVEL25</p>
+      <Container fluid className="p-0">
+        <div className='floorplan'>
+          <Row>
+            <Col lg={2}>
+              <div className='selectlevel'>
+                <h4>FLOOR PLAN</h4>
+                <div className='selectleveltext'>
+                <p onClick={changelv3} id="floor3">LEVEL3</p>
+                <p onClick={changelv4} id="floor4">LEVEL4</p>
+                <p onClick={changetyp1} id="typ1">TYPICAL 1</p>
+                <p onClick={changetyp2} id="typ2">TYPICAL 2</p>
+                <p onClick={changelv15} id="floor15">LEVEL15</p>
+                <p onClick={changelv25} id="floor25">LEVEL25</p>
+                </div>
+              </div>
+            </Col>
+            <Col lg={10}>
+              <div className='imglevel'>
+                <img src={Floor3} id="floorselect" />
+                <BsPlusCircle size="3.5vw" id='plus3-1' />
+                <BsPlusCircle size="3.5vw" id='plus3-2' />
+                <BsPlusCircle size="3.5vw" id='plus4-1' />
+                <BsPlusCircle size="3.5vw" id='plus4-2' />
+                <BsPlusCircle size="3.5vw" id='plus4-3' />
+                <BsPlusCircle size="3.5vw" id='plus4-4' />
+                <BsPlusCircle size="3.5vw" id='plus1-1' />
+                <BsPlusCircle size="3.5vw" id='plus1-2' />
+                <BsPlusCircle size="3.5vw" id='plus1-3' />
+                <BsPlusCircle size="3.5vw" id='plus1-4' />
+                <BsPlusCircle size="3.5vw" id='plus2-1' />
+                <BsPlusCircle size="3.5vw" id='plus2-2' />
+                <BsPlusCircle size="3.5vw" id='plus2-3' />
+                <BsPlusCircle size="3.5vw" id='plus2-4' />
+                <BsPlusCircle size="3.5vw" id='plus15-1' />
+                <BsPlusCircle size="3.5vw" id='plus15-2' />
+                <BsPlusCircle size="3.5vw" id='plus15-3' />
+                <BsPlusCircle size="3.5vw" id='plus15-4' />
+                <BsPlusCircle size="3.5vw" id='plus25-1' />
+                <BsPlusCircle size="3.5vw" id='plus25-2' />
+              </div>
+            </Col>
+          </Row>
         </div>
-        <div className='imglevel'>
-          <img src={Floor3} id="floorselect" />
-        </div>
-        <BsPlusCircle size="3.5vw" id='plus3-1'/>
-        <BsPlusCircle size="3.5vw" id='plus3-2'/>
-        <BsPlusCircle size="3.5vw" id='plus4-1' />
-        <BsPlusCircle size="3.5vw" id='plus4-2' />
-        <BsPlusCircle size="3.5vw" id='plus4-3' />
-        <BsPlusCircle size="3.5vw" id='plus4-4' />
-        <BsPlusCircle size="3.5vw" id='plus1-1' />
-        <BsPlusCircle size="3.5vw" id='plus1-2' />
-        <BsPlusCircle size="3.5vw" id='plus1-3' />
-        <BsPlusCircle size="3.5vw" id='plus1-4' />
-        <BsPlusCircle size="3.5vw" id='plus2-1' />
-        <BsPlusCircle size="3.5vw" id='plus2-2' />
-        <BsPlusCircle size="3.5vw" id='plus2-3' />
-        <BsPlusCircle size="3.5vw" id='plus2-4' />
-        <BsPlusCircle size="3.5vw" id='plus15-1' />
-        <BsPlusCircle size="3.5vw" id='plus15-2' />
-        <BsPlusCircle size="3.5vw" id='plus15-3' />
-        <BsPlusCircle size="3.5vw" id='plus15-4' />
-        <BsPlusCircle size="3.5vw" id='plus25-1' />
-        <BsPlusCircle size="3.5vw" id='plus25-2' />
-      </div>
+      </Container>
+
+
       <p className='disclaimer3'>Disclaimer: Whilst every care has been taken to ensure
         accuracy in the preparation of the information contained herein, no
         warranties whatsoever are given, or legal representations provided in
@@ -549,7 +565,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
 
       <div className='modal' id="pop3-2">
@@ -592,7 +608,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop4-1">
         <div className='planpopup'>
@@ -634,7 +650,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop4-2">
         <div className='planpopup'>
@@ -676,7 +692,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop4-3">
         <div className='planpopup'>
@@ -718,7 +734,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop4-4">
         <div className='planpopup'>
@@ -760,7 +776,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop1-1">
         <div className='planpopup'>
@@ -802,7 +818,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop1-2">
         <div className='planpopup'>
@@ -844,7 +860,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop1-3">
         <div className='planpopup'>
@@ -886,7 +902,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop1-4">
         <div className='planpopup'>
@@ -928,7 +944,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop2-1">
         <div className='planpopup'>
@@ -970,7 +986,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop2-2">
         <div className='planpopup'>
@@ -1012,7 +1028,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop2-3">
         <div className='planpopup'>
@@ -1054,7 +1070,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop2-4">
         <div className='planpopup'>
@@ -1096,7 +1112,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop15-1">
         <div className='planpopup'>
@@ -1138,7 +1154,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop15-2">
         <div className='planpopup'>
@@ -1180,7 +1196,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop15-3">
         <div className='planpopup'>
@@ -1222,7 +1238,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop15-4">
         <div className='planpopup'>
@@ -1254,7 +1270,7 @@ function Choices() {
               </div>
             </div>
             <div className='planimg'>
-              <img src={Lv15_4}/>
+              <img src={Lv15_4} />
             </div>
           </div>
           <p>Disclaimer: Whilst every care has been taken to ensure accuracy
@@ -1264,7 +1280,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop25-1">
         <div className='planpopup'>
@@ -1306,7 +1322,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
       <div className='modal' id="pop25-2">
         <div className='planpopup'>
@@ -1348,7 +1364,7 @@ function Choices() {
             the development, or any part thereof as may be approved or required
             by the relevant authorities.</p>
         </div>
-      </div> 
+      </div>
 
     </div>
   )

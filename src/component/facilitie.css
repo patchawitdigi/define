@@ -1,6 +1,7 @@
 .facilitie {
     text-align: center;
     color: #bf5c40;
+    font-size: 2.5vw;
 }
 
 .disclaimer2 {
@@ -20,6 +21,7 @@
 .levelselect p {
     margin-left: 2vw;
     cursor: pointer;
+    font-size: 1.2vw;
 }
 
 #lv1 {
@@ -36,25 +38,28 @@
 
 .textlv{
     position: absolute;
-    top: 61.8vw;
-    left: 9.7vw;
+    top: 63.3vw;
+    left: 9.8vw;
     width: 80vw;
 }
 
 
 .levelplan{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5vw;
     margin-top: 2vw;
 }
 
-
+.outdoor{
+    margin-left: 5vw;
+}
+.indoor{
+    margin-right: 2vw;
+}
 .outdoor h3, .indoor h3{
     font-size: 1.2vw;
     margin-left: 2vw;
     margin-bottom: 1.5vw;
 }
+
 .rowout{
     display: flex;
 }
@@ -99,41 +104,55 @@
     margin-bottom: 0.2vw;
 }
 
-@media only screen and (max-width: 969px) {
+@media only screen and (max-width: 991px) {
     .textlv{
-        top: 65.8vw;
-        left: 9vw;
+        top: 101vw;
+        left: 10vw;
         width: 80vw;
     }
     .faciout span{
         width: 1.6vw;
         height: 1.6vw;
-        font-size: 0.5vw;
+        font-size: 0.9vw;
         
     }
     .faciin span{
         width: 1.6vw;
         height: 1.6vw;
-        font-size: 0.5vw;
+        font-size: 0.9vw;
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
     .textlv{
-        top: 81vw;
-        left: 8.3vw;
+        top: 109vw;
+        left: 10vw;
         width: 80vw;
     }
     .faciout span{
-        width: 2.8vw;
-        height: 2.8vw;
-        font-size: 0.5vw;
+        width: 2.5vw;
+        height: 2.5vw;
+        font-size: 1.2vw;
         
     }
     .faciin span{
-        width: 2.8vw;
-        height: 2.8vw;
-        font-size: 0.5vw;
+        width: 2.5vw;
+        height: 2.5vw;
+        font-size: 1.2vw;
+    }
+    .indoor{
+        margin-top: 3vw;
+        margin-left: 5vw;
+    }
+    .colout a{  
+        font-size: 1.2vw;
+    }
+    .disclaimer2 {
+        text-align: center;
+        font-size: 0.8vw;
+        padding: 0vw 10vw;
+        margin-bottom: 5vw;
+        margin-top: 2vw;
     }
 }
 

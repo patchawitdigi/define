@@ -1,7 +1,7 @@
-.vibanner video{ 
+.vibanner video {
     position: absolute;
-    width:100%;
-    top:-5.25vw;
+    width: 100%;
+    top: -5.25vw;
     z-index: -1;
 
 }
@@ -15,22 +15,23 @@
     justify-content: space-between; */
     margin-bottom: 12vw;
     padding-top: 10vw;
-  
+
 
 }
 
 .imgcon img {
     width: 64.5vw;
     height: 36.5vw;
-    
+
 }
 
-.ban1{
-margin-left: 1.2vw;
+.ban1 {
+    margin-left: 1.6vw;
 }
-.ban3{
-    margin-left: 1.2vw;
-    }
+
+.ban3 {
+    margin-left: 1.6vw;
+}
 
 .textcon {
     margin-left: 2vw;
@@ -46,6 +47,7 @@ margin-left: 1.2vw;
 .textcon h3 {
     color: #bf5c40;
     margin-bottom: 1vw;
+    font-size: 2vw;
 }
 
 .textcon p {
@@ -64,7 +66,7 @@ margin-left: 1.2vw;
 }
 
 
-.textr{
+.textr {
     margin-top: 9vw;
     margin-left: 0vw;
 }
@@ -95,22 +97,25 @@ margin-left: 1.2vw;
     margin-left: 3vw;
     width: 6vw;
 }
+
 .icon2 {
     margin-left: 7vw;
     width: 5vw;
 }
+
 .icon3 {
     margin-top: 4vw;
     margin-left: 3vw;
     width: 4vw;
 }
+
 .icon4 {
     margin-left: 14vw;
     margin-top: -4vw;
     width: 10vw;
 }
 
-.ban4{
+.ban4 {
     position: relative;
     left: 0vw;
 }
@@ -131,40 +136,43 @@ margin-left: 1.2vw;
     text-decoration: none;
     font-weight: bold;
 }
-.textr2 a:hover{
+
+.textr2 a:hover {
     color: #bf5c40;
     text-decoration: underline;
-    
+
 }
 
-.right2{
+.right2 {
     top: 263vw;
 }
 
-.right3{
+.right3 {
     top: 321vw;
 }
 
-.changeto{
+.changeto {
     color: white;
     background-color: #bf5c40;
     margin-left: 0.5vw;
 }
 
 @media only screen and (max-width: 992px) {
-    
-    .ban1{
+
+    .ban1 {
         position: absolute;
         right: 0vw;
         top: 70vw;
         margin-left: 0vw;
     }
+
     .imgcon img {
         width: 100%;
         height: auto;
-       
+
     }
-    .ban2{
+
+    .ban2 {
         margin-top: 5vw;
     }
 
@@ -172,67 +180,76 @@ margin-left: 1.2vw;
         margin-top: 64vw;
         margin-left: 5vw;
     }
-    .textcon p{
-       font-size: 1.5vw;
-       line-height: 2vw;
+
+    .textcon p {
+        font-size: 1.5vw;
+        line-height: 2vw;
     }
+
     .bgleft {
         position: absolute;
         width: 23vw;
         left: 0;
         top: 145vw;
         z-index: -1;
-    
+
     }
-    .textr{
+
+    .textr {
         margin-top: 3vw;
     }
-    
-    .bgright {  
+
+    .bgright {
         top: 248.5vw;
     }
-    .ban3{
+
+    .ban3 {
         position: absolute;
         right: 0vw;
         top: 275vw;
         margin-left: 0vw;
     }
+
     .textl2 {
         margin-top: 60vw;
     }
-    .left2{
+
+    .left2 {
         top: 353.5vw;
     }
+
     .icon1 {
         margin-left: 5vw;
         width: 12vw;
     }
+
     .icon2 {
         margin-left: 20vw;
         width: 7vw;
     }
+
     .icon3 {
         margin-top: 4vw;
         margin-left: 20vw;
         width: 7vw;
     }
+
     .icon4 {
         margin-left: 25vw;
         margin-top: 0vw;
         width: 15vw;
     }
+
     .textr2 {
         margin-top: 2vw;
     }
-    .right2{
+
+    .right2 {
         top: 453.5vw;
     }
-    .right3{
+
+    .right3 {
         top: 550.5vw;
     }
 
 }
-
-
-
-

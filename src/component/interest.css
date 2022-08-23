@@ -19,6 +19,7 @@
     margin-top: 6vw;
     margin-bottom: 2.5vw;
     color: #bf5c40;
+    font-size: 2.5vw;
 }
 
 .staymap {
@@ -99,7 +100,7 @@
 .mapextend img {
     position: absolute;
     left: 2.5vw;
-    top: 62.4vw;
+    top: 63.7vw;
     width: 62vw;
     height: 45vw;
 }
@@ -120,8 +121,16 @@
 @media only screen and (max-width: 576px) {
     .mapextend img {
         left: 2.5vw;
-        top: 66.2vw;
+        top: 71.8vw;
         width: 62vw;
         height: 44vw;
+    }
+    .delogo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15vw;
+        margin-top: 9vw;
+        margin-bottom: 3vw;
     }
 }

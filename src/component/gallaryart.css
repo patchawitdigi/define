@@ -211,7 +211,7 @@
         /* width: 60%; */
     }
     .facade1{
-        margin-top: 25vw;
+        margin-top: 17vw;
         width: 100%;
     }
     .facade2{
@@ -255,7 +255,7 @@
     .outdoor3{
         width: 100%;
         height: auto;
-        margin-top: 51vw;
+        margin-top: 53vw;
     }
     .outdoor2{
         width: 100%;
@@ -263,15 +263,15 @@
     }
     .outdoor1{
         position: absolute;
-        top: 246vw;
+        top: 251vw;
         width: 96%;
         margin-top: 1.5vw;
     }
-    .indoor{
+    .indoort{
         position: absolute;
-        top: 410vw;
+        top: 420vw;
     }
-    .indoor p{
+    .indoort p{
         line-height: 4vw;
     }
     #plusitem3{
@@ -286,25 +286,25 @@
         margin-left: 1vw;
     }
     .riviere p{
-        margin-left: 75vw;
+        margin-left: 77vw;
     }
 
     .Riviere3{
         width: 100%;
         height: auto;
-        margin-top: 59vw;
+        margin-top: 60.5vw;
         object-fit: cover;
         
     }
     .riviere1{
         position: absolute;
-        top: 643vw;
+        top: 669vw;
         width: 96%;
     }
 
     .jardin{
         position: absolute;
-        top: 855vw;
+        top: 873.5vw;
     }
     .jardin3{
         width: 100%;

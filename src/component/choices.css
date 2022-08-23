@@ -11,10 +11,10 @@
     font-size: 2vw;
 }
 
-.floorplan {
-    display: flex;
-}
 
+.selectlevel{
+    margin-top: 3vw;
+}
 .selectlevel h4 {
     font-size: 1.3vw;
     color: #bf5c40;
@@ -31,7 +31,7 @@
 
 .imglevel img {
     margin-left: 3vw;
-    width: 80vw;
+    width: 77vw;
 }
 
 .disclaimer3 {
@@ -48,21 +48,21 @@
 #plus3-1 {
     color: white;
     position: absolute;
-    left: 80.3vw;
+    left: 82.3vw;
     top: 79vw;
 }
 
 #plus3-2 {
     color: white;
     position: absolute;
-    left: 27.3vw;
+    left: 31vw;
     top: 79vw;
 }
 
 #plus4-1 {
     color: white;
     position: absolute;
-    left: 83.7vw;
+    left: 85vw;
     top: 77.5vw;
     display: none;
 }
@@ -70,7 +70,7 @@
 #plus4-2 {
     color: white;
     position: absolute;
-    left: 65.5vw;
+    left: 67.5vw;
     top: 77.5vw;
     display: none;
 }
@@ -78,7 +78,7 @@
 #plus4-3 {
     color: white;
     position: absolute;
-    left: 40.6vw;
+    left: 43.6vw;
     top: 77.5vw;
     display: none;
 }
@@ -86,7 +86,7 @@
 #plus4-4 {
     color: white;
     position: absolute;
-    left: 22vw;
+    left: 26vw;
     top: 77.5vw;
     display: none;
 }
@@ -94,7 +94,7 @@
 #plus1-1 {
     color: white;
     position: absolute;
-    left: 83.7vw;
+    left: 85vw;
     top: 77.5vw;
     display: none;
 }
@@ -102,7 +102,7 @@
 #plus1-2 {
     color: white;
     position: absolute;
-    left: 65.5vw;
+    left: 67.5vw;
     top: 77.5vw;
     display: none;
 }
@@ -110,7 +110,7 @@
 #plus1-3 {
     color: white;
     position: absolute;
-    left: 40.6vw;
+    left: 44vw;
     top: 77.5vw;
     display: none;
 }
@@ -118,7 +118,7 @@
 #plus1-4 {
     color: white;
     position: absolute;
-    left: 22vw;
+    left: 26vw;
     top: 77.5vw;
     display: none;
 }
@@ -126,7 +126,7 @@
 #plus2-1 {
     color: white;
     position: absolute;
-    left: 81.1vw;
+    left: 83vw;
     top: 77.5vw;
     display: none;
 }
@@ -134,7 +134,7 @@
 #plus2-2 {
     color: white;
     position: absolute;
-    left: 61vw;
+    left: 63vw;
     top: 77.5vw;
     display: none;
 }
@@ -142,7 +142,7 @@
 #plus2-3 {
     color: white;
     position: absolute;
-    left: 46.2vw;
+    left: 49vw;
     top: 77.5vw;
     display: none;
 }
@@ -150,7 +150,7 @@
 #plus2-4 {
     color: white;
     position: absolute;
-    left: 27.2vw;
+    left: 31vw;
     top: 77.5vw;
     display: none;
 }
@@ -158,7 +158,7 @@
 #plus15-1 {
     color: white;
     position: absolute;
-    left: 79.6vw;
+    left: 81vw;
     top: 77.5vw;
     display: none;
 }
@@ -166,7 +166,7 @@
 #plus15-2 {
     color: white;
     position: absolute;
-    left: 60.9vw;
+    left: 63vw;
     top: 77.5vw;
     display: none;
 }
@@ -174,7 +174,7 @@
 #plus15-3 {
     color: white;
     position: absolute;
-    left: 45.4vw;
+    left: 48vw;
     top: 77.5vw;
     display: none;
 }
@@ -182,7 +182,7 @@
 #plus15-4 {
     color: white;
     position: absolute;
-    left: 25.4vw;
+    left: 29vw;
     top: 77.5vw;
     display: none;
 }
@@ -190,7 +190,7 @@
 #plus25-1 {
     color: white;
     position: absolute;
-    left: 65.4vw;
+    left: 68vw;
     top: 77.5vw;
     display: none;
 }
@@ -198,7 +198,7 @@
 #plus25-2 {
     color: white;
     position: absolute;
-    left: 42.7vw;
+    left: 46vw;
     top: 77.5vw;
     display: none;
 }
@@ -269,4 +269,282 @@
     border-bottom: 0.1vw solid black;
     margin-bottom: 1vw;
     
+}
+
+@media only screen and (max-width: 991px) {
+    .selectlevel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .selectlevel h4{
+       padding: 1vw 20vw;
+       font-size: 2vw;
+    }
+    .selectlevel p {
+        padding: 0.25vw 1.5vw 0vw 1.5vw;
+        font-size: 1.5vw;
+    }
+    .selectleveltext{
+        display: flex;
+        justify-content: center;
+    }
+    .imglevel {
+        display: flex;
+        justify-content: center;
+    }
+    .imglevel img{
+        width: 85vw;
+        margin-left: 0;
+    }
+    #plus3-1 {
+        left: 76.3vw;
+        top: 92vw;
+    }
+    
+    #plus3-2 {
+        left: 20.3vw;
+        top: 92vw;
+    }
+    
+    #plus4-1 {
+        left: 79.5vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus4-2 {
+        left: 60.5vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus4-3 {
+        left: 33.6vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus4-4 {
+        left: 14vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus1-1 {
+        left: 79vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus1-2 {
+        left: 60vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus1-3 {
+        left: 33.6vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus1-4 {
+        left: 14vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus2-1 {
+        left: 77.5vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus2-2 {
+        left: 56vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus2-3 {
+        left: 40.2vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus2-4 {
+        left: 20.2vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus15-1 {
+        left: 75vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus15-2 {
+        left: 55.5vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus15-3 {
+        left: 39vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus15-4 {
+        left: 18vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus25-1 {
+        left: 60vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+    #plus25-2 {
+        left: 36.5vw;
+        top: 92.5vw;
+        display: none;
+    }
+    
+
+
+}
+
+
+
+@media only screen and (max-width: 575px) {
+
+
+#plus3-1 {
+    left: 76vw;
+    top: 103vw;
+}
+
+#plus3-2 {
+    left: 20.3vw;
+    top: 103vw;
+}
+
+#plus4-1 {
+    left: 79.5vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus4-2 {
+    left: 60.5vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus4-3 {
+    left: 34.6vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus4-4 {
+    left: 14vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus1-1 {
+    left: 79vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus1-2 {
+    left: 60vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus1-3 {
+    left: 34.6vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus1-4 {
+    left: 15vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus2-1 {
+    left: 77vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus2-2 {
+    left: 56vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus2-3 {
+    left: 40.2vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus2-4 {
+    left: 20.2vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus15-1 {
+    left: 75vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus15-2 {
+    left: 55.5vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus15-3 {
+    left: 39vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus15-4 {
+    left: 18vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus25-1 {
+    left: 60vw;
+    top: 101.5vw;
+    display: none;
+}
+
+#plus25-2 {
+    left: 36.5vw;
+    top: 101.5vw;
+    display: none;
+}
+.disclaimer3 {
+    font-size: 1vw;
+    padding: 0 5vw;
+   
+}
+
 }

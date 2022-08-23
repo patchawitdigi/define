@@ -4,6 +4,9 @@ import vel1 from '../img/hidden/level1.jpg'
 import vel3 from '../img/hidden/level3.jpg'
 import text1 from '../img/hidden/level1-text.png'
 import text3 from '../img/hidden/level3-text.png'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function facilitie() {
 
@@ -32,108 +35,124 @@ function facilitie() {
         <p onClick={changelevel3} id="lv3">Level3</p>
       </div>
       <div className='levelimg'>
-        <img src={vel1} id="level"/>
+        <img src={vel1} id="level" />
       </div>
-      <img className='textlv' src={text1} id="text"/>
+      <img className='textlv' src={text1} id="text" />
 
       <div id="textlv1" style={{ display: "block" }}>
-      <div className='levelplan'>
-        <div className='outdoor'>
-          <h3>OUTDOOR FACILITIES</h3>
-          <div className='rowout'>
-            <div className='colout'>
-              <div className="faciout"><span>1</span> <a>Grand Arc Welcome Gate</a></div>
-              <div className="faciout"><span>2</span> <a>Guardhouse</a></div>
-              <div className="faciout"><span>3</span> <a>Pedestrian Gate</a></div>
-              <div className="faciout"><span>4</span> <a>Couture Jardin</a></div>
-              <div className="faciout"><span>5</span> <a>DEFINE Signage</a></div>
-              <div className="faciout"><span>6</span> <a>DEFINE Artwork</a></div>
-              <div className="faciout"><span>7</span> <a>Crystal Court</a></div>
-            </div>
-            <div className='colout'>
-              <div className="faciout"><span>8</span> <a>Ruby Terrace</a></div>
-              <div className="faciout"><span>9</span> <a>Reflexology Garden</a></div>
-              <div className="faciout"><span>10</span> <a>Emerald Terrace</a></div>
-              <div className="faciout"><span>11</span> <a>Vehical Washing Bay</a></div>
-              <div className="faciout"><span>12</span> <a>Eco Charging Point & Parking</a></div>
-              <div className="faciout"><span>13</span> <a>Amber Garden</a></div>
-              <div className="faciout"><span>14</span> <a>Amber Deck</a></div>
-            </div>
-            <div className='colout'>
-              <div className="faciout"><span>15</span> <a>Motorbike Parking</a></div>
-              <div className="faciout"><span>16</span> <a>L’Aventure Playground</a></div>
-              <div className="faciout"><span>17</span> <a>L’Aventure Treehouse</a></div>
-              <div className="faciout"><span>18</span> <a>Topaz Garden</a></div>
-              <div className="faciout"><span>19</span> <a>Topaz Pavilion</a></div>
-              <div className="faciout"><span>20</span> <a>Topaz Walkway</a></div>
-            </div>
+        <Container fluid>
+          <div className='levelplan'>
+            <Row>
+              <Col sm={7}>
+                <div className='outdoor'>
+                  <h3>OUTDOOR FACILITIES</h3>
+                  <div className='rowout'>
+                    <div className='colout'>
+                      <div className="faciout"><span>1</span> <a>Grand Arc Welcome Gate</a></div>
+                      <div className="faciout"><span>2</span> <a>Guardhouse</a></div>
+                      <div className="faciout"><span>3</span> <a>Pedestrian Gate</a></div>
+                      <div className="faciout"><span>4</span> <a>Couture Jardin</a></div>
+                      <div className="faciout"><span>5</span> <a>DEFINE Signage</a></div>
+                      <div className="faciout"><span>6</span> <a>DEFINE Artwork</a></div>
+                      <div className="faciout"><span>7</span> <a>Crystal Court</a></div>
+                    </div>
+                    <div className='colout'>
+                      <div className="faciout"><span>8</span> <a>Ruby Terrace</a></div>
+                      <div className="faciout"><span>9</span> <a>Reflexology Garden</a></div>
+                      <div className="faciout"><span>10</span> <a>Emerald Terrace</a></div>
+                      <div className="faciout"><span>11</span> <a>Vehical Washing Bay</a></div>
+                      <div className="faciout"><span>12</span> <a>Eco Charging Point & Parking</a></div>
+                      <div className="faciout"><span>13</span> <a>Amber Garden</a></div>
+                      <div className="faciout"><span>14</span> <a>Amber Deck</a></div>
+                    </div>
+                    <div className='colout'>
+                      <div className="faciout"><span>15</span> <a>Motorbike Parking</a></div>
+                      <div className="faciout"><span>16</span> <a>L’Aventure Playground</a></div>
+                      <div className="faciout"><span>17</span> <a>L’Aventure Treehouse</a></div>
+                      <div className="faciout"><span>18</span> <a>Topaz Garden</a></div>
+                      <div className="faciout"><span>19</span> <a>Topaz Pavilion</a></div>
+                      <div className="faciout"><span>20</span> <a>Topaz Walkway</a></div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              <Col sm={5}>
+                <div className='indoor'>
+                  <h3>INDOOR FACILITIES</h3>
+                  <div className='rowout'>
+                    <div className='colout'>
+                      <div className="faciin"><span>36</span> <a>DEFINE Grand Lobby</a></div>
+                      <div className="faciin"><span>37</span> <a>Mail Room</a></div>
+                      <div className="faciin"><span>38</span> <a>Diamond Lounge</a></div>
+                      <div className="faciin"><span>39</span> <a>La Galerie Welcome Lounge</a></div>
+                      <div className="faciin"><span>40</span> <a>Tranquillité Lounge</a></div>
+                      <div className="faciin"><span>41</span> <a>La Première Co-working Lounge</a></div>
+                      <div className="faciin"><span>42</span> <a>L’Aventure Kid’s Club</a></div>
+                    </div>
+                    <div className='colout'>
+                      <div className="faciin"><span>43</span> <a>Privé Supercar Garage</a></div>
+                      <div className="faciin"><span>44</span> <a>Automated Car Parking System</a></div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+            </Row>
           </div>
-        </div>
-        <div className='indoor'>
-          <h3>INDOOR FACILITIES</h3>
-          <div className='rowout'>
-            <div className='colout'>
-              <div className="faciin"><span>36</span> <a>DEFINE Grand Lobby</a></div>
-              <div className="faciin"><span>37</span> <a>Mail Room</a></div>
-              <div className="faciin"><span>38</span> <a>Diamond Lounge</a></div>
-              <div className="faciin"><span>39</span> <a>La Galerie Welcome Lounge</a></div>
-              <div className="faciin"><span>40</span> <a>Tranquillité Lounge</a></div>
-              <div className="faciin"><span>41</span> <a>La Première Co-working Lounge</a></div>
-              <div className="faciin"><span>42</span> <a>L’Aventure Kid’s Club</a></div>
-            </div>
-            <div className='colout'>
-              <div className="faciin"><span>43</span> <a>Privé Supercar Garage</a></div>
-              <div className="faciin"><span>44</span> <a>Automated Car Parking System</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </Container>
       </div>
 
       <div id="textlv3" style={{ display: "none" }}>
-      <div className='levelplan'>
-        <div className='outdoor'>
-          <h3>OUTDOOR FACILITIES</h3>
-          <div className='rowout'>
-            <div className='colout rowlv3'>
-              <div className="faciout"><span>21</span> <a>Hydrotherapy Jacuzzi</a></div>
-              <div className="faciout"><span>22</span> <a>Illuminating Pathway</a></div>
-              <div className="faciout"><span>23</span> <a>Sun Lounge</a></div>
-              <div className="faciout"><span>24</span> <a>Sunbed At DEFINE Pool</a></div>
-              <div className="faciout"><span>25</span> <a>DEFINE Pool</a></div>
-            </div>
-            <div className='colout rowlv3'>
-              <div className="faciout"><span>26</span> <a>Sapphire Deck</a></div>
-              <div className="faciout"><span>27</span> <a>Sapphire Path</a></div>
-              <div className="faciout"><span>28</span> <a>L’amour Sunbed</a></div>
-              <div className="faciout"><span>29</span> <a>Botanique Lawn</a></div>
-              <div className="faciout"><span>30</span> <a>Zen Zone</a></div>
-            </div>
-            <div className='colout rowlv3'>
-              <div className="faciout"><span>31</span> <a>BBQ Area</a></div>
-              <div className="faciout"><span>32</span> <a>Herbs Garden</a></div>
-              <div className="faciout"><span>33</span> <a>L’amour Swing</a></div>
-              <div className="faciout"><span>34</span> <a>L’Aventure Kid’s Pool</a></div>
-              <div className="faciout"><span>35</span> <a>Family Pavilion</a></div>
-            </div>
+        <Container fluid>
+          <div className='levelplan'>
+            <Row>
+              <Col sm={7}>
+                <div className='outdoor'>
+                  <h3>OUTDOOR FACILITIES</h3>
+                  <div className='rowout'>
+                    <div className='colout rowlv3'>
+                      <div className="faciout"><span>21</span> <a>Hydrotherapy Jacuzzi</a></div>
+                      <div className="faciout"><span>22</span> <a>Illuminating Pathway</a></div>
+                      <div className="faciout"><span>23</span> <a>Sun Lounge</a></div>
+                      <div className="faciout"><span>24</span> <a>Sunbed At DEFINE Pool</a></div>
+                      <div className="faciout"><span>25</span> <a>DEFINE Pool</a></div>
+                    </div>
+                    <div className='colout rowlv3'>
+                      <div className="faciout"><span>26</span> <a>Sapphire Deck</a></div>
+                      <div className="faciout"><span>27</span> <a>Sapphire Path</a></div>
+                      <div className="faciout"><span>28</span> <a>L’amour Sunbed</a></div>
+                      <div className="faciout"><span>29</span> <a>Botanique Lawn</a></div>
+                      <div className="faciout"><span>30</span> <a>Zen Zone</a></div>
+                    </div>
+                    <div className='colout rowlv3'>
+                      <div className="faciout"><span>31</span> <a>BBQ Area</a></div>
+                      <div className="faciout"><span>32</span> <a>Herbs Garden</a></div>
+                      <div className="faciout"><span>33</span> <a>L’amour Swing</a></div>
+                      <div className="faciout"><span>34</span> <a>L’Aventure Kid’s Pool</a></div>
+                      <div className="faciout"><span>35</span> <a>Family Pavilion</a></div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              <Col sm={5}>
+                <div className='indoor'>
+                  <h3>INDOOR FACILITIES</h3>
+                  <div className='rowout'>
+                    <div className='colout rowlv3'>
+                      <div className="faciin"><span>45</span> <a>Privé Party House</a></div>
+                      <div className="faciin"><span>46</span> <a>Privé Wine Cellar Lounge</a></div>
+                      <div className="faciin"><span>47</span> <a>Changing Room</a></div>
+                      <div className="faciin"><span>48</span> <a>Sauna & Steam Room</a></div>
+                      <div className="faciin"><span>49</span> <a>Privé Gym</a></div>
+                    </div>
+                    <div className='colout rowlv3'>
+                      <div className="faciin"><span>50</span> <a>Privé Yoga</a></div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+            </Row>
           </div>
-        </div>
-        <div className='indoor'>
-          <h3>INDOOR FACILITIES</h3>
-          <div className='rowout'>
-            <div className='colout rowlv3'>
-              <div className="faciin"><span>45</span> <a>Privé Party House</a></div>
-              <div className="faciin"><span>46</span> <a>Privé Wine Cellar Lounge</a></div>
-              <div className="faciin"><span>47</span> <a>Changing Room</a></div>
-              <div className="faciin"><span>48</span> <a>Sauna & Steam Room</a></div>
-              <div className="faciin"><span>49</span> <a>Privé Gym</a></div>
-            </div>
-            <div className='colout rowlv3'>
-              <div className="faciin"><span>50</span> <a>Privé Yoga</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </Container>
       </div>
 
 

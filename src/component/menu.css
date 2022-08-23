@@ -162,13 +162,13 @@
         top: 9vw;
     }
     .menuitem a {
-        font-size: 3vw;
-        margin-bottom: 3vw;
+        font-size: 2vw;
+        margin-bottom: 2.5vw;
     }
     .logodef img {
-        width: 15vw;
-        margin-top: 15vw;
-        margin-bottom: 15vw;
+        width: 10vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
     
     }
 }
@@ -217,12 +217,12 @@
         top: 12vw;
     }
     .menuitem a {
-        font-size: 4vw;
-        margin-bottom: 3.5vw;
+        font-size: 3vw;
+        margin-bottom: 4vw;
     }
     .logodef img {
-        width: 25vw;
-        margin-top: 25vw;
+        width: 20vw;
+        margin-top: 20vw;
         margin-bottom: 20vw;
     
     }

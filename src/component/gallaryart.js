@@ -290,7 +290,7 @@ export default function Gallaryart() {
                         </Col>
                         <Col xs={12} sm={4}>
                             <div className="rgallary ">
-                                <div className="moreitem indoor">
+                                <div className="moreitem indoort">
                                     <p>INDOOR<br />FACILITIES</p>
                                     <BsPlusCircle size="2vw" id='plusitem3' />
                                 </div>

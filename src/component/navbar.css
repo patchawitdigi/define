@@ -36,8 +36,6 @@
     text-decoration: none;
     color: #bf5c40;
     margin-top: 1.2vw;
-    font-size: 0.9vw;
-    font-weight: bold;
 }
 
 .btnregis a{
@@ -45,6 +43,8 @@
     padding: 0.55vw 1.25vw 0.55vw 1.25vw;
     text-decoration: none;
     color: #bf5c40;
+    font-size: 0.9vw;
+    font-weight: bold;
 }
 
 .btnregis a:hover{
@@ -57,7 +57,7 @@
 }
 
 
-@media only screen and (max-width: 969px) {
+@media only screen and (max-width: 991px) {
     .header{
         height: 5vw;
     
@@ -68,7 +68,7 @@
         
     }
     .btnregis{
-        margin-top: 1.9vw;
+        margin-top: 1vw;
 
     }
     .language{
@@ -78,26 +78,31 @@
     
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
     .header{
-        height: 6vw;
+        height: 7vw;
     
     }
     .logocapita img{
-        width: 9vw;
+        width: 12vw;
         margin-top: 0.9vw;
         
     }
     .btnregis{
-       
-        margin-top: 1.5vw;
+        margin-top: 1vw;
 
     }
+    .btnregis a{     
+        font-size: 1.2vw;
+    }
     .language{
-        margin-top: 1.5vw;
+        margin-top: 2vw;
         
     }
-   
+    .language p{
+        font-size: 2vw;
+         
+     }
 }
 
 

@@ -79,3 +79,17 @@
     margin-left: 1vw;
 }
 
+@media only screen and (max-width: 576px) { 
+
+    .headnew{
+        font-size: 3vw;
+    }
+    .headnew2{
+        margin-top: 0.5vw;
+        margin-left: 0.5vw;
+        border-top: 0.1vw solid #bf5c40;
+        padding-right: 67vw;
+    }
+
+
+}

@@ -206,7 +206,49 @@
    text-align: end;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
+   .craft {
+      margin: 2vw;
+   }
+   .craft p {
+      padding-top: 4vw;
+      font-size: 3vw;
+   }
+   .teamicon {
+      padding: 0vw 15vw;
+   }
+   .teamicon p {
+      font-size: 1.5vw;
+   }
+   .logo1 {
+      width: 15vw;
+   }
+   .logo2 {
+      width: 10vw; 
+   }
+
+   .craft button {
+      font-size: 2vw;
+   }
+   
+   .numregis a {
+      font-size: 2vw;
+      padding: 0.5vw 3vw;
+      margin-bottom: 4vw;
+   }
+   .infoetc h4 {
+      font-size: 1.5vw;
+      margin-bottom: 1vw;
+   }
+   
+   .infoetc a {
+      font-size: 1.2vw;
+      margin-bottom: 0.5vw;
+      text-decoration: none;
+      color: white;
+   }
+ 
+
    .social img {
       width: 3.5vw;
       height: 2.5vw;
