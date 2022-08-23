@@ -26,7 +26,11 @@ export default function Footer() {
                 etcblock[i].style.display = "none"
             }
         } else {
-            document.getElementById("etc01").onclick = function () { }
+            document.getElementById("etc01").onclick = function () { } 
+            document.getElementById("etc02").onclick = function () { } 
+            document.getElementById("etc03").onclick = function () { } 
+            document.getElementById("etc04").onclick = function () { } 
+            document.getElementById("etc05").onclick = function () { } 
             for (var i = 0; i < etcblock.length; i++) {
                 etcblock[i].style.display = "block"
             }
@@ -44,6 +48,10 @@ export default function Footer() {
             
         } else {
             document.getElementById("etc01").onclick = function () { } 
+            document.getElementById("etc02").onclick = function () { } 
+            document.getElementById("etc03").onclick = function () { } 
+            document.getElementById("etc04").onclick = function () { } 
+            document.getElementById("etc05").onclick = function () { } 
         }
     }, [])
 
