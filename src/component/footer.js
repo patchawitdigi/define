@@ -9,8 +9,43 @@ import yt from "../img/overview/ic-youtube.png"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { useEffect } from "react";
 
 export default function Footer() {
+
+
+    window.addEventListener("resize", function (event) {
+        var etcblock = document.querySelectorAll("#etcblock")
+        if (document.body.clientWidth < 576) {
+            document.getElementById("etc01").onclick = showEtc01
+            document.getElementById("etc02").onclick = showEtc02
+            document.getElementById("etc03").onclick = showEtc03
+            document.getElementById("etc04").onclick = showEtc04
+            document.getElementById("etc05").onclick = showEtc05
+            for (var i = 0; i < etcblock.length; i++) {
+                etcblock[i].style.display = "none"
+            }
+        } else {
+            document.getElementById("etc01").onclick = function () { }
+            for (var i = 0; i < etcblock.length; i++) {
+                etcblock[i].style.display = "block"
+            }
+        }
+        console.log(document.body.clientWidth)
+    })
+
+    useEffect(() => {
+        if (document.body.clientWidth < 576) {
+            document.getElementById("etc01").onclick = showEtc01
+            document.getElementById("etc02").onclick = showEtc02
+            document.getElementById("etc03").onclick = showEtc03
+            document.getElementById("etc04").onclick = showEtc04
+            document.getElementById("etc05").onclick = showEtc05
+            
+        } else {
+            document.getElementById("etc01").onclick = function () { } 
+        }
+    }, [])
 
     function showEtc01() {
         var etcblock = document.querySelectorAll("#etcblock")
@@ -110,6 +145,10 @@ export default function Footer() {
     }
 
 
+
+
+
+
     return (
         <div>
             <div className="bgfoot1">
@@ -141,7 +180,7 @@ export default function Footer() {
                         <Row>
                             <Col sm={2}>
                                 <li className="infoetc">
-                                    <label onClick={showEtc01}><h4>SHOP</h4><p id="roll01">^</p></label>
+                                    <label id="etc01"><h4>SHOP</h4><p id="roll01">^</p></label>
                                     <ul id="etcblock">
                                         <li><a href="https://www.capitaland.com/en/shop/malls.html?category=retail" target="_blank">Malls</a></li>
                                         <li><a href="https://www.capitaland.com/en.html" target="_blank">Deals</a></li>
@@ -151,7 +190,7 @@ export default function Footer() {
                             </Col>
                             <Col sm={2}>
                                 <li className="infoetc" >
-                                    <label onClick={showEtc02}><h4>STAY</h4><p id="roll02">^</p></label>
+                                    <label id="etc02"><h4>STAY</h4><p id="roll02">^</p></label>
                                     <ul id="etcblock">
                                         <li><a href="https://www.capitaland.com/en/stay/residential-developments.html?category=residential" target="_blank">Residential Developments</a></li>
                                         <li><a href="https://www.capitaland.com/en/stay/lodging.html?category=lodging" target="_blank">Lodging</a></li>
@@ -160,7 +199,7 @@ export default function Footer() {
                             </Col>
                             <Col sm={3}>
                                 <li className="infoetc">
-                                    <label onClick={showEtc03}><h4>LEASE</h4><p id="roll03">^</p></label>
+                                    <label id="etc03"><h4>LEASE</h4><p id="roll03">^</p></label>
                                     <ul id="etcblock">
                                         <li><a href="https://www.capitaland.com/en/lease/businessparks-industrial-logistics.html?category=businesspark-industrial-logistics" target="_blank">Business Parks, Industrial & Logistics Spaces</a></li>
                                         <li><a href="https://www.capitaland.com/en/lease/offices.html?category=commercial" target="_blank">Offices</a></li>
@@ -170,7 +209,7 @@ export default function Footer() {
                             </Col>
                             <Col sm={2}>
                                 <li className="infoetc">
-                                    <label onClick={showEtc04}><h4>INVEST</h4><p id="roll04">^</p></label>
+                                    <label id="etc04"><h4>INVEST</h4><p id="roll04">^</p></label>
                                     <ul id="etcblock">
                                         <li><a href="https://www.capitaland.com/en.html" target="_blank">CapitaLand Limited</a></li>
                                         <li><a href="https://www.capitaland.com/en.html" target="_blank">CapitaLand Mall Trust</a></li>
@@ -186,7 +225,7 @@ export default function Footer() {
                             </Col>
                             <Col sm={3}>
                                 <li className="infoetc mfcapi">
-                                    <label onClick={showEtc05}><h4>MORE FROM CAPITALAND</h4><p id="roll05">^</p></label>
+                                    <label id="etc05"><h4>MORE FROM CAPITALAND</h4><p id="roll05">^</p></label>
                                     <ul id="etcblock">
                                         <li><a href="https://www.capitaland.com/en/about-capitaland/who-we-are.html" target="_blank">Who We Are</a></li>
                                         <li><a href="https://www.capitaland.com/en/about-capitaland/sustainability/capitaland-hope-foundation/overview.html" target="_blank">CapitaLand Hope Foundation</a></li>
