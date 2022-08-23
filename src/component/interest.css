@@ -33,20 +33,22 @@
     height: 45vw;
 }
 
-.point {
-    margin-top: 0.5vw;
-}
 
 #liblock {
     display: none;
     padding-left: 0;
 }
 
+.menu {
+    margin-top: 0.5vw;
+    padding-inline-start: 1.5vw;
+}
+
 .menu li {
     list-style: none;
     margin-bottom: 0.5vw;
     border-bottom: 0.1vw solid #bf5c40;
-    width: 27vw;
+    width: 26vw;
     cursor: pointer;
 }
 
@@ -61,14 +63,11 @@
     font-size: 1.2vw;
 }
 
-.headdrop label {
-    font-weight: bold;
-}
-
 
 .menu label {
     margin-bottom: 0.5vw;
     font-size: 0.8vw;
+    font-weight: bold;
 }
 
 .menu li ul li {
@@ -109,7 +108,7 @@
     color: #bf5c40;
 }
 
-@media only screen and (max-width: 969px) {
+@media only screen and (max-width: 991px) {
     .mapextend img {
         left: 2.5vw;
         top: 64.2vw;
@@ -118,13 +117,26 @@
     }
 }
 
-@media only screen and (max-width: 576px) {
-    .mapextend img {
-        left: 2.5vw;
-        top: 71.8vw;
-        width: 62vw;
-        height: 44vw;
+@media only screen and (max-width: 575px) {
+
+    .where {
+        margin-top: 8vw;
+        margin-bottom: 3vw;
+        font-size: 4vw;
     }
+    
+    .bgmap img {
+        width: 97%;
+        height: auto;
+    }
+
+    .mapextend img {
+        left: 3vw;
+        top: 77vw;
+        width: 93%;
+        height: auto;
+    }
+
     .delogo {
         display: flex;
         margin-left: auto;
@@ -133,4 +145,40 @@
         margin-top: 9vw;
         margin-bottom: 3vw;
     }
+    .menu {
+        margin-top: 3vw;
+        padding-inline-start: 0vw;
+    }
+    .menu label {
+        font-size: 2vw;
+        margin-bottom: 0vw;
+    }
+
+    .menu li {
+        margin-bottom: 1vw;
+        width: 93vw;
+
+    }
+    .headdrop p {
+        font-size: 3vw;
+    }
+    
+    .menu li ul li {
+        font-size: 2vw;
+    
+    }
+    .menu li ul li span {
+        width: 3vw;
+        height: 3vw;
+        line-height: 3vw;
+        font-size: 2vw;  
+    }
+
+    .disclaimer {
+        font-size: 1.5vw;
+        padding: 0 5vw;
+        margin-bottom: 3vw;
+    }
+    
+
 }

@@ -72,7 +72,7 @@
 }
 
 .rowlv3 {
-    margin-right: 6.5vw;
+    margin-right: 4vw;
 }
 
 .faciout span{
@@ -121,39 +121,60 @@
         height: 1.6vw;
         font-size: 0.9vw;
     }
+    .rowlv3 {
+        margin-right: 2.5vw;
+    }
 }
 
 @media only screen and (max-width: 575px) {
     .textlv{
-        top: 109vw;
-        left: 10vw;
+        top: 123vw;
+        left: 9.5vw;
         width: 80vw;
     }
+    .levelimg img{
+        width: 94vw;
+    }
+    .facilitie {
+        font-size: 4vw;
+    }
+    .levelselect p {
+        margin-left: 2.5vw;
+        cursor: pointer;
+        font-size: 1.8vw;
+    }
+    .levelplan{
+        margin-top: 4vw;
+    }
+    
+    .outdoor h3, .indoor h3{
+        font-size: 2.5vw;
+    }
     .faciout span{
-        width: 2.5vw;
-        height: 2.5vw;
-        font-size: 1.2vw;
+        width: 3vw;
+        height: 3vw;
+        font-size: 1.8vw;
         
     }
     .faciin span{
-        width: 2.5vw;
-        height: 2.5vw;
-        font-size: 1.2vw;
+        width: 3vw;
+        height: 3vw;
+        font-size: 1.8vw;
     }
     .indoor{
         margin-top: 3vw;
         margin-left: 5vw;
     }
     .colout a{  
-        font-size: 1.2vw;
+        font-size: 1.8vw;
     }
     .disclaimer2 {
-        text-align: center;
-        font-size: 0.8vw;
-        padding: 0vw 10vw;
+        font-size: 1.5vw;
+        padding: 0vw 5vw;
         margin-bottom: 5vw;
-        margin-top: 2vw;
+        margin-top: 4vw;
     }
 }
+
 
 

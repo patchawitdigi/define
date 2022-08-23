@@ -67,7 +67,7 @@
 @media only screen and (max-width: 991px) { 
     .carousel-image {
         width: 100%;
-        height: auto;
+        height: 48vw;
        
     }
 

@@ -25,11 +25,12 @@
    margin-bottom: 3vw;
 }
 
-.collapicon{
+.collapicon {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
+
 .teamicon p {
    font-size: 1.3vw;
 }
@@ -40,7 +41,7 @@
 
 .logo2 {
    width: 8vw;
-  
+
 }
 
 .butregis {
@@ -85,13 +86,11 @@
 }
 
 .moreetc {
-   display: flex;
-   padding: 0vw 10vw;
-   justify-content: space-around;
+   padding: 0vw 8vw;
 }
 
-.shop {
-   margin-right: 3vw;
+.mfcapi {
+   padding-left: 3vw;
 }
 
 .infoetc {
@@ -99,6 +98,21 @@
    flex-direction: column;
    margin-top: 2vw;
    color: white;
+}
+.infoetc label p{
+   display: none;
+}
+.infoetc ul {
+   padding-inline-start: 0vw;
+}
+#etcblock{
+   display: block;
+
+}
+
+.infoetc ul li {
+   list-style: none;
+
 }
 
 .infoetc h4 {
@@ -123,7 +137,7 @@
 .follow {
    display: flex;
    justify-content: space-between;
-   margin: 1vw 13vw 0vw 13vw;
+   margin: 1vw 8vw 0vw 8vw;
    padding: 1vw 0vw;
    border-top: 0.1vw solid white;
    color: white;
@@ -135,6 +149,7 @@
    text-decoration: none;
    color: white;
 }
+
 .follow a:hover {
    color: white;
 }
@@ -175,8 +190,6 @@
 }
 
 .contact {
-   display: flex;
-   justify-content: space-between;
    padding: 2.5vw 10vw;
 }
 
@@ -210,64 +223,165 @@
    .craft {
       margin: 2vw;
    }
+
    .craft p {
       padding-top: 4vw;
-      font-size: 3vw;
+      font-size: 3.5vw;
    }
+
    .teamicon {
       padding: 0vw 15vw;
    }
+
    .teamicon p {
       font-size: 1.5vw;
    }
+
    .logo1 {
-      width: 15vw;
+      width: 18vw;
    }
+
    .logo2 {
-      width: 10vw; 
+      width: 12vw;
    }
 
    .craft button {
-      font-size: 2vw;
+      font-size: 2.5vw;
+      margin-bottom: 2vw;
    }
-   
+
    .numregis a {
-      font-size: 2vw;
-      padding: 0.5vw 3vw;
+      font-size: 3vw;
+      padding: 1vw 1.5vw;
       margin-bottom: 4vw;
    }
+
+
+   .moreetc {
+      padding: 0vw 3vw;
+      margin-top: 5vw;
+   }
+
+   .mfcapi {
+      padding-left: 0vw;
+   }
+   .infoetc{
+      margin-bottom: 1.5vw;
+   }
+   .infoetc label {
+      border-bottom: 0.1vw solid white;
+      padding-bottom: 0vw;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+   }
+   .infoetc label p{
+      display: block;
+      transform: rotate(180deg);
+   }
    .infoetc h4 {
-      font-size: 1.5vw;
-      margin-bottom: 1vw;
+      font-size: 2.2vw;
+   }
+
+   #etcblock{
+      display: none;
+      margin-top: 1.5vw;
+
+   }
+   #etcblock li{
+      margin-top: 1vw;
+   }
+
+   .infoetc a {
+      font-size: 2.5vw;
+
+   }
+
+   .follow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1vw 5vw 0vw 5vw;
+      padding: 1vw 0vw;
+      font-size: 2vw;
+      border-top: 0;
+      color: white;
    }
    
-   .infoetc a {
-      font-size: 1.2vw;
-      margin-bottom: 0.5vw;
+   .follow a {
+      padding: 0vw 2.5vw;
       text-decoration: none;
       color: white;
    }
- 
-
+   
+   .follow a:hover {
+      color: white;
+   }
+   
+   .folleft {
+      border-right: 0.1vw solid white;
+   }
+   
+   .social {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3vw;
+      margin-bottom: 5vw;
+   }
+   
+   .social a {
+      padding: 0vw 0.5vw;
+   
+   }
+   .social p {
+     text-align: center;
+   }
    .social img {
-      width: 3.5vw;
-      height: 2.5vw;
-      padding: 0vw 0.2vw;
+      width: 6vw;
+      height: 5vw;
+      padding: 0vw 0.5vw;
    }
-   .follow {
-      margin: 1vw 8vw 0vw 8vw;
-      padding: 1vw 0vw;
-   }
-   .moreetc {
-      padding: 0vw 8vw;
-   }
+   
    .descrip {
-      padding: 2vw 8vw;
+      padding: 5vw 3vw;
    }
+
    .descrip p {
-      line-height: 1.5vw;
+      line-height: 2.5vw;
+      font-size: 1.9vw;
+      margin-bottom: 0vw;
    }
    .contact {
-      padding: 2.5vw 7vw;
+      padding: 2.5vw 2vw;
+   }
+
+   .contact p {
+      font-size: 1.2vw;
+   }
+
+   .copyright {
+      margin-top: 2vw;
+      align-items: center;
+      margin-bottom: 10vw;
+   }
+
+   .copyright p {
+      font-size: 1.8vw;
+   }
+
+   .copyright a {
+      font-size: 1.8vw;
+   }
+
+   .copyright img {
+      width: 15vw;
+      margin-bottom: 2vw;
+   }
+   .address p {
+
+      font-size: 1.8vw;
+      text-align: center;
+      margin-bottom: 10vw;
+
    }
 }

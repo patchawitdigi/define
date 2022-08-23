@@ -187,11 +187,7 @@
     }
 
     .bgleft {
-        position: absolute;
-        width: 23vw;
-        left: 0;
         top: 145vw;
-        z-index: -1;
 
     }
 
@@ -252,4 +248,58 @@
         top: 550.5vw;
     }
 
+}
+
+@media only screen and (max-width: 575px) {
+    .textcon h2 {
+        border-left: 0.3vw solid #bf5c40;
+        padding: 4vw 0vw;
+    }
+
+    .textcon h3 {
+        margin-bottom: 1vw;
+        font-size: 3.5vw;
+    }
+
+    .textcon p {
+        font-size: 1.7vw;
+        line-height: 3vw;
+        padding-right: 5vw;
+    }
+
+    .bgleft {
+        top: 156vw;
+
+    }
+
+    .bgright {
+        top: 270vw;
+    }
+
+    .ban3 {
+        top: 297vw;
+    }
+
+    .left2 {
+        top: 388vw;
+    }
+
+    .textr2 a {
+        font-size: 1.5vw;
+
+    }
+    .right2 {
+        top: 490.5vw;
+    }
+
+    .right3 {
+        top: 600.5vw;
+    }
+    .vibanner video {
+        position: absolute;
+        width: 100%;
+        top: -2.25vw;
+        z-index: -1;
+    
+    }
 }
