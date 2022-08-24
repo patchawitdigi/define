@@ -7,8 +7,11 @@ import text3 from '../img/hidden/level3-text.png'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
-function facilitie() {
+function Facilitie() {
 
   function changelevel1() {
     document.getElementById("level").src = vel1
@@ -27,24 +30,29 @@ function facilitie() {
     document.getElementById("textlv1").style.display = "none"
 
   }
+
+  useEffect(() => {
+    Aos.init({ duration:  1000 });
+},[]);
+
   return (
     <div>
-      <h3 className='facilitie'>FACILITIES PLAN</h3>
+      <h3 className='facilitie' data-aos="fade-up">FACILITIES PLAN</h3>
       <div className='levelselect'>
         <p onClick={changelevel1} id="lv1">Level1</p>
         <p onClick={changelevel3} id="lv3">Level3</p>
       </div>
       <div className='levelimg'>
-        <img src={vel1} id="level" />
+        <img src={vel1} id="level" data-aos="fade-up" data-aos-delay="500"/>
       </div>
-      <img className='textlv' src={text1} id="text" />
+      <img className='textlv' src={text1} id="text" data-aos="fade-up" data-aos-delay="500"/>
 
       <div id="textlv1" style={{ display: "block" }}>
         <Container fluid>
           <div className='levelplan'>
             <Row>
               <Col sm={7}>
-                <div className='outdoor'>
+                <div className='outdoor' data-aos="fade-up" data-aos-delay="750">
                   <h3>OUTDOOR FACILITIES</h3>
                   <div className='rowout'>
                     <div className='colout'>
@@ -77,7 +85,7 @@ function facilitie() {
                 </div>
               </Col>
               <Col sm={5}>
-                <div className='indoor'>
+                <div className='indoor' data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="1000">
                   <h3>INDOOR FACILITIES</h3>
                   <div className='rowout'>
                     <div className='colout'>
@@ -163,4 +171,4 @@ function facilitie() {
   )
 }
 
-export default facilitie
+export default Facilitie

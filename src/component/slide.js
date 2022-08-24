@@ -77,7 +77,7 @@ function Slide() {
                 <div className="content conhid">
                     <Row>
                         <Col lg={4}>
-                            <div className="textcon texthid" data-aos="fade-up">
+                            <div className="textcon texthid" data-aos="fade-down">
                                 <h2></h2>
                                 <h3>DEFINE YOUR LIFESTYLE<br />
                                     & WELLBEING</h3>

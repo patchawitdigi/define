@@ -2,8 +2,8 @@
 
     position: absolute;
     width: 21vw;
-    left: 0;
-    top: 34.5vw;
+    left: -2vw;
+    top: 16vw;
     z-index: -1;
 }
 
@@ -12,7 +12,7 @@
     padding-top: 0vw;
 }
 .texthid{
-    margin-top: 8vw;
+    margin-top: 5vw;
 }
 
 
@@ -91,6 +91,11 @@
         top: 24vw;    
       
     }
+    .bglefthid {
+        left: -5vw;
+        top: 10vw;
+        ;
+    }
     
 }
 
@@ -106,5 +111,10 @@
         position: absolute;
         top: 20vw;
         margin-left: 0;
+    }
+    .bglefthid {
+        left: -5vw;
+        top: 23vw;
+        ;
     }
 }

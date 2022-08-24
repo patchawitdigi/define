@@ -323,16 +323,16 @@ function Interest() {
         <div className='staymap'>
           <Row>
             <Col sm={8}>
-              <div className='bgmap' data-aos="fade-up">
+              <div className='bgmap' data-aos="fade-up" data-aos-delay="500">
                 <img src={bgmap} />
               </div>
               <div className='mapextend'>
-                <img src={surr} id="extend" data-aos="fade-up"/>
+                <img src={surr} id="extend" data-aos="fade-up" data-aos-delay="500"/>
               </div>
             </Col>
             <Col sm={3}>
               <div className='point'>
-                <ul className="menu" data-aos="fade-left">
+                <ul className="menu" data-aos="fade-left" data-aos-delay="1000">
                   <li onClick={changeimg1}>
                     <div className='headdrop'>
                       <label className="closer" for="dropclose" id="surround">SURROUNDING</label>

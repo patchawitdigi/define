@@ -44,6 +44,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 export default function Gallaryart() {
 
     useEffect(() => {
@@ -96,6 +99,8 @@ export default function Gallaryart() {
         span05.onclick = function () {
             modal05.style.display = "none";
         }
+
+        Aos.init({ duration:  1000 });
 
     }, [])
 
@@ -216,8 +221,8 @@ export default function Gallaryart() {
                         <Col xs={12} sm={8}>
                             <div className="lgallary">
 
-                                <img className="facade1" src={Facade1} />
-                                <img className="facade2 bwimg" src={Facade2} />
+                                <img className="facade1" src={Facade1} data-aos="fade-right"/>
+                                <img className="facade2 bwimg" src={Facade2} data-aos="fade-right" data-aos-delay="500"/>
 
                             </div>
                         </Col>
@@ -225,10 +230,10 @@ export default function Gallaryart() {
                             <div className="rgallary">
 
                                 <div className="moreitem facade">
-                                    <p>FACADE</p>
-                                    <BsPlusCircle size="2vw" id='plusitem1' />
+                                    <p data-aos="fade-left" data-aos-delay="500">FACADE</p>
+                                    <BsPlusCircle size="2vw" id='plusitem1' data-aos="fade-left" data-aos-delay="500"/>
                                 </div>
-                                <img className="facade3 bwimg" src={Facade3} />
+                                <img className="facade3 bwimg" src={Facade3} data-aos="fade-left"/>
 
                             </div>
                         </Col>
@@ -253,16 +258,16 @@ export default function Gallaryart() {
                         <Col xs={12} sm={4}>
                             <div className="rgallary2">
                                 <div className="moreitem">
-                                    <BsPlusCircle size="2vw" id='plusitem2' />
-                                    <p>OUTDOOR<br />FACILITIES</p>
+                                    <BsPlusCircle size="2vw" id='plusitem2' data-aos="fade-right" />
+                                    <p data-aos="fade-right">OUTDOOR<br />FACILITIES</p>
                                 </div>
-                                <img className="outdoor3 bwimg" src={Outdoor3} />
+                                <img className="outdoor3 bwimg" src={Outdoor3} data-aos="fade-right" data-aos-delay="500"/>
                             </div>
                         </Col>
                         <Col xs={12} sm={8}>
                             <div className="lgallary2">
-                                <img className="facade1 outdoor1" src={Outdoor1} />
-                                <img className="outdoor2 bwimg" src={Outdoor2} />
+                                <img className="facade1 outdoor1" src={Outdoor1} data-aos="fade-left"/>
+                                <img className="outdoor2 bwimg" src={Outdoor2} data-aos="fade-left" data-aos-delay="500"/>
                             </div>
                         </Col>
                     </Row>
@@ -284,17 +289,17 @@ export default function Gallaryart() {
                     <Row>
                         <Col xs={12} sm={8}>
                             <div className="lgallary">
-                                <img className="facade1 indoor1" src={Indoor1} />
-                                <img className="facade2 bwimg" src={Indoor2} />
+                                <img className="facade1 indoor1" src={Indoor1} data-aos="fade-right"/>
+                                <img className="facade2 bwimg" src={Indoor2} data-aos="fade-right" data-aos-delay="500"/>
                             </div>
                         </Col>
                         <Col xs={12} sm={4}>
                             <div className="rgallary ">
                                 <div className="moreitem indoort">
-                                    <p>INDOOR<br />FACILITIES</p>
-                                    <BsPlusCircle size="2vw" id='plusitem3' />
+                                    <p data-aos="fade-left">INDOOR<br />FACILITIES</p>
+                                    <BsPlusCircle size="2vw" id='plusitem3' data-aos="fade-left"/>
                                 </div>
-                                <img className="facade3 bwimg" src={Indoor3} />
+                                <img className="facade3 bwimg" src={Indoor3} data-aos="fade-left" data-aos-delay="500"/>
                             </div>
                         </Col>
                     </Row>
@@ -316,16 +321,16 @@ export default function Gallaryart() {
                         <Col xs={12} sm={4}>
                             <div className="rgallary2 rgallary3">
                                 <div className="moreitem riviere">
-                                    <BsPlusCircle size="2vw" id='plusitem4' />
-                                    <p>RIVIERE</p>
+                                    <BsPlusCircle size="2vw" id='plusitem4' data-aos="fade-right"/>
+                                    <p data-aos="fade-right">RIVIERE</p>
                                 </div>
-                                <img className="Riviere3 bwimg" src={Riviere3} />
+                                <img className="Riviere3 bwimg" src={Riviere3} data-aos="fade-right" data-aos-delay="500"/>
                             </div>
                         </Col>
                         <Col xs={12} sm={8}>
                             <div className="lgallary2">
-                                <img className="facade1 riviere1" src={Riviere2} />
-                                <img className="outdoor2 bwimg" src={Riviere1} />
+                                <img className="facade1 riviere1" src={Riviere2} data-aos="fade-left" data-aos-delay="500"/>
+                                <img className="outdoor2 bwimg" src={Riviere1} data-aos="fade-left" data-aos-delay="1000"/>
                             </div>
                         </Col>
                     </Row>
@@ -346,17 +351,17 @@ export default function Gallaryart() {
                     <Row>
                         <Col xs={12} sm={8}>
                             <div className="lgallary">
-                                <img className="facade1" src={Jardin1} />
-                                <img className="facade2 bwimg" src={Jardin2} />
+                                <img className="facade1" src={Jardin1} data-aos="fade-right" data-aos-delay="250"/>
+                                <img className="facade2 bwimg" src={Jardin2} data-aos="fade-right" data-aos-delay="500"/>
                             </div>
                         </Col>
                         <Col xs={12} sm={4}>
                             <div className="rgallary">
                                 <div className="moreitem jardin">
-                                    <p>JARDIN</p>
-                                    <BsPlusCircle size="2vw" id='plusitem5' />
+                                    <p data-aos="fade-left">JARDIN</p>
+                                    <BsPlusCircle size="2vw" id='plusitem5' data-aos="fade-left" />
                                 </div>
-                                <img className="jardin3 bwimg" src={Jardin3} />
+                                <img className="jardin3 bwimg" src={Jardin3} data-aos="fade-left" data-aos-delay="500"/>
                             </div>
                         </Col>
                     </Row>

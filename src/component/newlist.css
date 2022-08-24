@@ -1,0 +1,198 @@
+.images {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.image {
+    text-align: center;
+    margin-bottom: 3vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    min-height: 28vw;
+    
+}
+
+.image img {
+    width: 100%;
+    height: 16vw;
+    border-right: 0.5vw solid #f0f0f0;
+    border-left: 0.5vw solid #bf5c4040;
+    border-top: 0.5vw solid #bf5c4040;
+}
+
+.image img:hover {
+    border-left: 0.5vw solid #bf5c40;
+    border-top: 0.5vw solid #bf5c40;
+    transition: 500ms;
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vw;
+    font-size: 1vw;
+}
+
+.pagination .page-num {
+    padding: 0.25vw 0.60vw;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+.pagination .page-num:hover {
+    background-color: #bf5c40;
+    color: #fff;
+}
+
+.pagination .page-num-chg {
+    padding: 0.25vw 0.60vw;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+.pagination .page-num-chg:hover {
+    color: #bf5c40;
+}
+
+
+
+.pagination .active {
+    background-color: #bf5c40;
+    color: #fff;
+}
+
+.newdetail{
+    display: flex;
+}
+.date{
+    color: white;
+    font-size: 0.8vw;
+    background-color: #bf5c40;
+    width: 4vw;
+    height: 6vw;
+    text-align:center;
+    padding-top: 1vw;
+}
+
+.newtitle{
+    width: 100%;
+    min-height: 12vw;
+    padding-top: 2vw;
+    padding-left: 1vw;
+    text-align: start;
+    background-color: #f0f0f0;
+}
+.newtitle h6{     
+    font-size: 1vw;
+}
+.newtitle p{     
+    font-size: 1vw;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .images {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    
+    .image {
+        margin-bottom: 5vw;
+        min-height: 45vw;
+    }
+    .image img {
+        width: 100%;
+        height: 28vw;
+        border-right: 1vw solid #f0f0f0;
+        border-left: 1vw solid #bf5c4040;
+        border-top: 1vw solid #bf5c4040;
+        
+    }
+    
+    .image img:hover {
+        border-left: 1vw solid #bf5c40;
+        border-top: 1vw solid #bf5c40;
+        transition: 500ms;
+    
+    }
+    .newtitle{     
+        min-height: 17vw;
+        padding-top: 4vw;
+        padding-left:2vw;
+    }
+    .newtitle h6{     
+        font-size: 2vw;
+    }
+    .newtitle p{     
+        font-size: 1.6vw;
+    }
+    .date{
+        font-size: 1vw;
+        width: 5vw;
+        height: 9vw;
+        padding-top: 1.5vw;
+    }
+    .pagination {  
+        font-size: 1.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .images {
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    .image {
+        margin-bottom: 5vw;
+        min-height: 78vw;
+    }
+    .image img {
+        width: 100%;
+        height: 50vw;
+        border-right: 1.5vw solid #f0f0f0;
+        border-left: 1.5vw solid #bf5c4040;
+        border-top: 1.5vw solid #bf5c4040;
+        
+    }
+ 
+    .image img:hover {
+        border-left: 1.5vw solid #bf5c40;
+        border-top: 1.5vw solid #bf5c40;
+        transition: 500ms;
+    
+    }
+    .newtitle{     
+        min-height: 28vw;
+        padding-top: 7vw;
+        padding-left:3vw;
+    }
+    .newtitle h6{     
+        font-size: 3vw;
+    }
+    .newtitle p{     
+        font-size: 2vw;
+    }
+    .date{
+        font-size: 2vw;
+        width: 9.5vw;
+        height: 17vw;
+        padding-top: 1.5vw;
+    }
+    .pagination {  
+        font-size: 2.5vw;
+    }
+    .pagination .page-num {
+        padding: 0.5vw 0.9vw;
+       
+    }
+}
