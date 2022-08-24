@@ -8,9 +8,9 @@ import New from './new'
 function Mainnew() {
 
     const [images, setImages] = useState([]);
-
+    //https://jsonplaceholder.typicode.com/albums/1/photos
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/albums/1/photos").then(
+        fetch("http://localhost:8202/publicServices/news/list.php").then(
             response => response.json().then(data => {
                 setImages(data);
             })

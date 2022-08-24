@@ -34,9 +34,16 @@ export default function New(props) {
                             return (
                                 <Col lg={4} sm={6}>
                                     <div className="image">
-                                        <img src={image.url} alt={image.title} />
-                                        <p>{image.id}</p>
-                                        <p>{image.thumbnailUrl}</p>
+                                        <img src={image.coverUrl} />
+                                        <div className="newdetail">
+                                            <div className="date">
+                                                <p>{image.dateFormat}</p>
+                                            </div>
+                                            <div className="newtitle">
+                                                <h6>{image.title}</h6>
+                                                <p>{image.subTitle}</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </Col>
 

@@ -12,7 +12,7 @@
     border-top: 0.1vw solid #bf5c40;
     padding-right: 74vw;
 }
-.newmedia{
+/* .newmedia{
     display: flex;
     flex-direction: column;
     margin: 0 5vw;
@@ -77,7 +77,7 @@
 .newname p{
     font-size: 0.8vw;
     margin-left: 1vw;
-}
+} */
 
 @media only screen and (max-width: 576px) { 
 

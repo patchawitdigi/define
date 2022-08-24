@@ -5,17 +5,26 @@
 
 .image {
     text-align: center;
-    border: 0.1vw solid #bf5c40;
     margin-bottom: 3vw;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
-    height: 25vw;
+    height: 28vw;
+    
 }
 
 .image img {
     width: 100%;
     height: 16vw;
-    margin-bottom: 1vw;
+    border-right: 0.5vw solid #f0f0f0;
+    border-left: 0.5vw solid #bf5c4040;
+    border-top: 0.5vw solid #bf5c4040;
+}
+
+.image img:hover {
+    border-left: 0.5vw solid #bf5c40;
+    border-top: 0.5vw solid #bf5c40;
+    transition: 500ms;
+
 }
 
 .pagination {
@@ -62,6 +71,30 @@
     color: #fff;
 }
 
+.newdetail{
+    display: flex;
+}
+.date{
+    color: white;
+    font-size: 0.8vw;
+    background-color: #bf5c40;
+    width: 3.5vw;
+    height: 6vw;
+    text-align:center;
+    padding-top: 1vw;
+}
+
+.newtitle{
+    width: 100%;
+    height: 12vw;
+    padding-top: 2vw;
+    padding-left: 1vw;
+    text-align: start;
+    background-color: #f0f0f0;
+
+}
+
+
 @media only screen and (max-width: 992px) {
     .images {
         margin-left: 2vw;
@@ -75,7 +108,7 @@
     .image img {
         width: 100%;
         height: 35vw;
-        margin-bottom: 1vw;
+        
     }
 }
 
@@ -92,6 +125,6 @@
     .image img {
         width: 100%;
         height: 45vw;
-        margin-bottom: 1vw;
+        
     }
 }
