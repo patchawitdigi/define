@@ -3,7 +3,6 @@ import logodef from "../img/overview/logodef.png"
 
 import pattleft from '../img/overview/pattern-left.png'
 import pattright from '../img/overview/pattern-right.png'
-import { useEffect } from "react";
 
 export default function Menu() {
 
@@ -18,8 +17,7 @@ export default function Menu() {
             menuBox.style.display = "block";
             document.getElementsByClassName("wrap-close")[0].style.display = 'block'
             document.getElementsByClassName("menuclick")[0].style.display = 'none'
-        }
-        
+        } 
     }
 
     return (
@@ -55,8 +53,8 @@ export default function Menu() {
                 </div>
             </div>
             <div className="menubg" id="menu-box" style={{ display: "none" }}>
-                <img className="pattl" src={pattleft} />
-                <img className="pattr" src={pattright} />
+                <img className="pattl" src={pattleft}/>
+                <img className="pattr" src={pattright}/>
                 <div className="logodef">
                     <img src={logodef} />
                 </div>
