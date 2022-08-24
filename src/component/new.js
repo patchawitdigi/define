@@ -13,7 +13,15 @@ export default function New() {
 
     return (
         <div>
-
+            <img className='delogo' src={delogo} />
+            <div className='headborder'>
+                <h3 className="headnew" data-aos="fade-right" >NEWS & MEDIA</h3>
+                <h3 className="headnew2" data-aos="fade-right" data-aos-delay="250"></h3>
+            </div>
+            <p>date</p>
+            <p>title</p>
+            <img />
+            <p>sub title</p>
         </div>
     )
 }
