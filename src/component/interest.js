@@ -16,6 +16,9 @@ import surr from '../img/pointint/surround.png'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 
 function Interest() {
@@ -307,25 +310,29 @@ function Interest() {
     }
   }
 
+  useEffect(() => {
+    Aos.init({ duration:  1000 });
+},[]);
+
   return (
     <div>
       <img className='delogo' src={delogo} />
-      <img className='gal5' src={gal5} />
-      <h3 className='where'>DEFINE WHERE YOU STAY</h3>
+      <img className='gal5' src={gal5} data-aos="fade-up"/>
+      <h3 className='where' data-aos="fade-up">DEFINE WHERE YOU STAY</h3>
       <Container fluid className='p-0'>
         <div className='staymap'>
           <Row>
             <Col sm={8}>
-              <div className='bgmap'>
+              <div className='bgmap' data-aos="fade-up">
                 <img src={bgmap} />
               </div>
               <div className='mapextend'>
-                <img src={surr} id="extend" />
+                <img src={surr} id="extend" data-aos="fade-up"/>
               </div>
             </Col>
             <Col sm={3}>
               <div className='point'>
-                <ul className="menu">
+                <ul className="menu" data-aos="fade-left">
                   <li onClick={changeimg1}>
                     <div className='headdrop'>
                       <label className="closer" for="dropclose" id="surround">SURROUNDING</label>

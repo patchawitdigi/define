@@ -24,8 +24,9 @@ import { FiArrowLeft } from "react-icons/fi";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 function Slide() {
 
@@ -64,7 +65,9 @@ function Slide() {
         console.log(imgsl)
     }
 
-
+    useEffect(() => {
+        Aos.init({ duration:  1000 });
+    },[]);
 
     return (
         <div>
@@ -74,7 +77,7 @@ function Slide() {
                 <div className="content conhid">
                     <Row>
                         <Col lg={4}>
-                            <div className="textcon texthid">
+                            <div className="textcon texthid" data-aos="fade-up">
                                 <h2></h2>
                                 <h3>DEFINE YOUR LIFESTYLE<br />
                                     & WELLBEING</h3>

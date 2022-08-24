@@ -16,13 +16,19 @@ import icon4 from '../img/overview/g-4.png'
 import video from "../img/overview/video-banner.mp4"
 
 import useScrollSnap from 'react-use-scroll-snap';
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Content() {
+
+    useEffect(() => {
+        Aos.init({ duration:  1000 });
+    },[]);
 
     const scrollRef = useRef(null);
     useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
@@ -38,7 +44,7 @@ export default function Content() {
                 <div className="content">
                     <Row>
                         <Col lg={4}>
-                            <div className="textcon">
+                            <div className="textcon" data-aos="fade-down">
                                 <h2></h2>
                                 <h3>DEFINE A WORLD OF <br />
                                     SOPHISTICATION</h3>
@@ -66,7 +72,7 @@ export default function Content() {
                             </div>
                         </Col>
                         <Col lg={4}>
-                            <div className="textcon textr">
+                            <div className="textcon textr" data-aos="fade-down">
                                 <h2></h2>
                                 <h3>DEFINE A PLACE<br />
                                     TO CALL YOUR OWN </h3>
@@ -85,7 +91,7 @@ export default function Content() {
                 <div className="content">
                     <Row>
                         <Col lg={4}>
-                            <div className="textcon textl2">
+                            <div className="textcon textl2" data-aos="fade-down">
                                 <h2></h2>
                                 <h3>DEFINE THE PEAK<br />
                                     OF PROVISIONS</h3>
@@ -118,7 +124,7 @@ export default function Content() {
                             </div>
                         </Col>
                         <Col lg={4}>
-                            <div className="textcon textr2">
+                            <div className="textcon textr2" data-aos="fade-down">
                                 <h2></h2>
                                 <h3>DEFINE YOUR<br />
                                     INNER SELF</h3>
@@ -142,7 +148,7 @@ export default function Content() {
                             </div>
                         </Col>
                         <Col lg={4}>
-                            <div className="textcon textr2">
+                            <div className="textcon textr2" data-aos="fade-down">
                                 <h2></h2>
                                 <h3>DEFINE WHERE<br />
                                     YOU STAY</h3>

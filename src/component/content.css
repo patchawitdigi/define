@@ -14,7 +14,7 @@
     /* display: flex;
     justify-content: space-between; */
     margin-bottom: 12vw;
-    padding-top: 10vw;
+    padding-top: 8vw;
 
 
 }
@@ -59,8 +59,8 @@
 .bgleft {
     position: absolute;
     width: 21vw;
-    left: 0;
-    top: 87vw;
+    left: -2vw;
+    top: 17vw;
     z-index: -1;
 
 }
@@ -79,14 +79,14 @@
     position: absolute;
     width: 21vw;
     right: 0;
-    top: 145.5vw;
+    top: 16vw;
     z-index: -1;
 
 }
 
 
 .left2 {
-    top: 205vw;
+    top: 20vw;
 }
 
 .textl2 {
@@ -144,11 +144,11 @@
 }
 
 .right2 {
-    top: 263vw;
+    top: 18vw;
 }
 
 .right3 {
-    top: 321vw;
+    top: 17vw;
 }
 
 .changeto {
@@ -187,7 +187,8 @@
     }
 
     .bgleft {
-        top: 145vw;
+        top: 20vw;
+        left: -5vw;
 
     }
 
@@ -196,7 +197,7 @@
     }
 
     .bgright {
-        top: 248.5vw;
+        top: 17vw;
     }
 
     .ban3 {
@@ -207,11 +208,11 @@
     }
 
     .textl2 {
-        margin-top: 60vw;
+        margin-top: 70vw;
     }
 
     .left2 {
-        top: 353.5vw;
+        top: 19vw;
     }
 
     .icon1 {
@@ -241,11 +242,11 @@
     }
 
     .right2 {
-        top: 453.5vw;
+        top: 17vw;
     }
 
     .right3 {
-        top: 550.5vw;
+        top: 15vw;
     }
 
 }
@@ -268,12 +269,12 @@
     }
 
     .bgleft {
-        top: 156vw;
+        top: 30vw;
 
     }
 
     .bgright {
-        top: 270vw;
+        top: 30vw;
     }
 
     .ban3 {
@@ -281,7 +282,7 @@
     }
 
     .left2 {
-        top: 388vw;
+        top: 25vw;
     }
 
     .textr2 a {
@@ -289,11 +290,11 @@
 
     }
     .right2 {
-        top: 490.5vw;
+        top: 30vw;
     }
 
     .right3 {
-        top: 600.5vw;
+        top: 25vw;
     }
     .vibanner video {
         position: absolute;
