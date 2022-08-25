@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 export default function Newlist(props) {
     const { data } = props;
@@ -37,6 +38,7 @@ export default function Newlist(props) {
                         {currentItems.map(image => {
                             return (
                                 <Col lg={4} sm={6}>
+                                    <Link to={`/news-and-media/news-promotion/${image.newsId}`}>
                                     <div className="image" data-aos="fade-up" data-aos-delay="500">
                                         <img src={image.coverUrl} />
                                         <div className="newdetail">
@@ -49,6 +51,7 @@ export default function Newlist(props) {
                                             </div>
                                         </div>
                                     </div>
+                                    </Link>
                                 </Col>
 
                             );

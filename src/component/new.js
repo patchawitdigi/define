@@ -1,15 +1,17 @@
 import './new.css';
+import delogo from '../img/pointint/logo-menu.png'
+import { useState } from 'react';
 
 export default function New() {
 
     const [Newinfo, setNewinfo] = useState([]);
-    useEffect(() => {
-        fetch(`http://localhost:8202/publicServices/news/list.php?route${newsId}`).then(
-            response => response.json().then(data => {
-                setNewinfo(data);
-            })
-        )
-    }, [])
+    // useEffect(() => {
+    //     fetch(`http://localhost:8202/publicServices/news/list.php?route=${newsId}`).then(
+    //         response => response.json().then(data => {
+    //             setNewinfo(data);
+    //         })
+    //     )
+    // }, [])
 
     return (
         <div>
@@ -22,6 +24,7 @@ export default function New() {
             <p>title</p>
             <img />
             <p>sub title</p>
+            
         </div>
     )
 }
