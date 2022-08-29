@@ -27,14 +27,9 @@ export default function New() {
             </div>
             {Newinfo.map(image => {
                             return (
-                                <div></div>
+                                <div>{image.fullDetail}</div>
                             );
-                        })}
-            <p>date</p>
-            <p>title</p>
-            <img />
-            <p>sub title</p>
-            
+                        })}        
         </div>
     )
 }
