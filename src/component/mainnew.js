@@ -8,11 +8,13 @@ import "aos/dist/aos.css";
 
 function Mainnew() {
 
+    const { REACT_APP_SECRET_NAME } = process.env;
+
     const [images, setImages] = useState([]);
     useEffect(() => {
         // fetch("http://localhost:8202/publicServices/news/list.php").then(
         // fetch("https://define.com.vn/apiv1/publicServices/news/list.php").then(
-        fetch(`${process.env.REACT_APP_SECRET_NAME}/publicServices/news/list.php`).then(
+        fetch(`${REACT_APP_SECRET_NAME}/publicServices/news/list.php`).then(
             response => response.json().then(data => {
                 setImages(data);
             })
