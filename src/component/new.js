@@ -12,7 +12,7 @@ export default function New() {
     const [newinfo, setNewinfo] = useState([]);
 
     useEffect(() => {
-
+        
         // fetch(`http://localhost:8202/publicServices/news/list.php?route=${newsId}`).then(
         // fetch(`https://define.com.vn/apiv1/publicServices/news/list.php?route=${newsRouting}`).then(
         fetch( newsList +`?route=${newsRouting}`).then(
