@@ -29,6 +29,9 @@
     color: #bf5c40;
     font-size: 1.2vw;
 }
+.backtomain a:hover{
+    color: #bf5c40;
+}
 .backto {
     color: #bf5c40;
     margin-right: 0.5vw;
