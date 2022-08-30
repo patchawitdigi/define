@@ -1,23 +1,24 @@
 import './new.css';
 import delogo from '../img/pointint/logo-menu.png'
 import { useState, useEffect } from 'react';
-import {
-    useParams
-  } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
 
 export default function New() {
 
     let { newsId } = useParams();
     
-    const [Newinfo, setNewinfo] = useState([]);
+    const [newinfo, setNewinfo] = useState([]);
+
     useEffect(() => {
         fetch(`http://localhost:8202/publicServices/news/list.php?route=${newsId}`).then(
             response => response.json().then(data => {
                 setNewinfo(data);
             })
         )
+       
     }, [])
-
+    console.log(newinfo)
     return (
         <div>
             <img className='delogo' src={delogo} />
@@ -25,11 +26,15 @@ export default function New() {
                 <h3 className="headnew" data-aos="fade-right" >NEWS & MEDIA</h3>
                 <h3 className="headnew2" data-aos="fade-right" data-aos-delay="250"></h3>
             </div>
-            {Newinfo.map(image => {
-                            return (
-                                <div>{image.fullDetail}</div>
-                            );
-                        })}        
+            <div className='newstyle'>
+                <p className='titledate'>{newinfo.dateFormat}</p>
+                <p className='titlename'>{newinfo.title}</p>
+                {newinfo.fullDetail}
+            </div>
+            <div className='backtomain'>
+                
+                <a href='/project/define/news-and-media'><FiArrowLeft size="1.5vw" className="backto" />BACK TO NEWS & MEDIA</a>
+            </div>
         </div>
     )
 }

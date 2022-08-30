@@ -1,0 +1,31 @@
+.newstyle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlename{
+    font-size: 3vw;
+    color: #bf5c40;
+}
+.titledate{
+    font-size: 1.2vw;
+}
+
+.backtomain{
+    display: flex;
+    width: 60%;
+    margin: 3vw auto;
+}
+
+.backtomain a{
+    text-decoration: none;
+    color: #bf5c40;
+    font-size: 1.2vw;
+}
+.backto {
+    color: #bf5c40;
+    margin-right: 0.5vw;
+    margin-top: -0.25vw;
+}
