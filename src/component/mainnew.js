@@ -5,16 +5,16 @@ import new1 from '../img/newmedia/new1.jpeg'
 import Newlist from './newlist'
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { newsList } from'./flieapi';
 
-function Mainnew() {
-
-    const { REACT_APP_SECRET_NAME } = process.env;
+function Mainnew() { 
 
     const [images, setImages] = useState([]);
     useEffect(() => {
         // fetch("http://localhost:8202/publicServices/news/list.php").then(
         // fetch("https://define.com.vn/apiv1/publicServices/news/list.php").then(
-        fetch(`${REACT_APP_SECRET_NAME}/publicServices/news/list.php`).then(
+        // fetch(`${process.env.REACT_APP_LINK_NAME}/news/list.php`).then(
+        fetch(newsList).then(
             response => response.json().then(data => {
                 setImages(data);
             })

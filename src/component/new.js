@@ -3,6 +3,7 @@ import delogo from '../img/pointint/logo-menu.png'
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
+import { newsList } from'./flieapi';
 
 export default function New() {
 
@@ -14,7 +15,7 @@ export default function New() {
 
         // fetch(`http://localhost:8202/publicServices/news/list.php?route=${newsId}`).then(
         // fetch(`https://define.com.vn/apiv1/publicServices/news/list.php?route=${newsRouting}`).then(
-        fetch(`${process.env.REACT_APP_SECRET_NAME}/publicServices/news/list.php?route=${newsRouting}`).then(
+        fetch( newsList +`?route=${newsRouting}`).then(
             response => response.json().then(data => {
                 setNewinfo(data);
             })
