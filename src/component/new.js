@@ -6,19 +6,26 @@ import { FiArrowLeft } from "react-icons/fi";
 
 export default function New() {
 
-    let { newsId } = useParams();
+    let { newsRouting } = useParams();
     
     const [newinfo, setNewinfo] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:8202/publicServices/news/list.php?route=${newsId}`).then(
-            response => response.json().then(data => {
+
+        // fetch(`http://localhost:8202/publicServices/news/list.php?route=${newsId}`).then(
+            fetch(`https://define.com.vn/apiv1/publicServices/news/list.php?route=${newsRouting}`).then(    
+        response => response.json().then(data => {
                 setNewinfo(data);
             })
         )
        
     }, [])
     console.log(newinfo)
+
+    function createMarkup(data) {
+        return { __html: data };
+    }
+    
     return (
         <div>
             <img className='delogo' src={delogo} />
@@ -26,13 +33,15 @@ export default function New() {
                 <h3 className="headnew" data-aos="fade-right" >NEWS & MEDIA</h3>
                 <h3 className="headnew2" data-aos="fade-right" data-aos-delay="250"></h3>
             </div>
+
             <div className='newstyle'>
                 <p className='titledate'>{newinfo.dateFormat}</p>
                 <p className='titlename'>{newinfo.title}</p>
-                {newinfo.fullDetail}
+                <p className='titlesub'>{newinfo.subTitle}</p>
+                <div dangerouslySetInnerHTML={createMarkup(newinfo.fullDetail)} className='fulldetali'></div>
+                
             </div>
             <div className='backtomain'>
-                
                 <a href='/project/define/news-and-media'><FiArrowLeft size="1.5vw" className="backto" />BACK TO NEWS & MEDIA</a>
             </div>
         </div>

@@ -38,7 +38,7 @@ export default function Newlist(props) {
                         {currentItems.map(image => {
                             return (
                                 <Col lg={4} sm={6}>
-                                    <Link to={`/news-and-media/news-promotion/${image.newsId}`}>
+                                    <Link to={`/news-and-media/news-promotion/${image.newsRouting}`} style={{ textDecoration: 'none' }}>
                                     <div className="image" data-aos="fade-up" data-aos-delay="500">
                                         <img src={image.coverUrl} />
                                         <div className="newdetail">

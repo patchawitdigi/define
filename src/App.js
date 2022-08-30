@@ -28,7 +28,7 @@ function App() {
           <Route path="/luxury-of-choices" element={<Luxury />} exact />
           <Route path="/gallerie-d-arte" element={<Gallerie />} exact />
           <Route path="/news-and-media" element={<Newmedia />} exact />
-          <Route path="/news-and-media/news-promotion/:newsId" element={<Newinfo />} exact />
+          <Route path="/news-and-media/news-promotion/:newsRouting" element={<Newinfo />} exact />
       </Routes>
     </BrowserRouter>
     

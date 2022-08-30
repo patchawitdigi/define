@@ -9,9 +9,9 @@ import "aos/dist/aos.css";
 function Mainnew() {
 
     const [images, setImages] = useState([]);
-    //https://jsonplaceholder.typicode.com/albums/1/photos
     useEffect(() => {
-        fetch("http://localhost:8202/publicServices/news/list.php").then(
+        // fetch("http://localhost:8202/publicServices/news/list.php").then(
+        fetch("https://define.com.vn/apiv1/publicServices/news/list.php").then(
             response => response.json().then(data => {
                 setImages(data);
             })
