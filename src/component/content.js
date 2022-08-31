@@ -16,7 +16,7 @@ import icon4 from '../img/overview/g-4.png'
 import video from "../img/overview/video-banner.mp4"
 
 import useScrollSnap from 'react-use-scroll-snap';
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -51,15 +51,37 @@ export default function Content() {
             </div>
 
             {content.map(detail => {
+
                 return (
                     <div>
-                        
+                        <Container fluid className="p-0">
+                            <div className="content">
+                                <Row>
+                                    <Col lg={4}>
+                                        <div className="textcon" data-aos="fade-down">
+                                            <h2></h2>
+                                            <h3>DEFINE A WORLD OF <br />
+                                                SOPHISTICATION</h3>
+                                            <p>DEFINE your stature in society by owning one of the exclusive 88 units of
+                                                Vietnam’s most exclusive luxury condominium development, where
+                                                unparalleled style and sophistication come to life.</p>
+                                            <img className="bgleft" src={bgleft} />
+                                        </div>
+                                    </Col>
+                                    <Col lg={8}>
+                                        <div className="imgcon ban1">
+                                            <img src={ban1} />
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Container>
                     </div>
                 );
             })}
 
 
-            <Container fluid className="p-0">
+            {/* <Container fluid className="p-0">
                 <div className="content">
                     <Row>
                         <Col lg={4}>
@@ -179,7 +201,7 @@ export default function Content() {
                         </Col>
                     </Row>
                 </div>
-            </Container>
+            </Container> */}
         </div>
     )
 }
