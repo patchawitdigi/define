@@ -26,9 +26,18 @@ import "aos/dist/aos.css";
 
 export default function Content() {
 
+    const [content, setContent] = useState([]);
+
     useEffect(() => {
-        Aos.init({ duration:  1000 });
-    },[]);
+        fetch("http://localhost:8202/publicServices/homeGallery/list.php").then(
+            response => response.json().then(data => {
+                setContent(data);
+            })
+        )
+
+        Aos.init({ duration: 1000 });
+
+    }, []);
 
     const scrollRef = useRef(null);
     useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
@@ -40,6 +49,16 @@ export default function Content() {
                     <source src={video} type="video/mp4" />
                 </video>
             </div>
+
+            {content.map(detail => {
+                return (
+                    <div>
+                        
+                    </div>
+                );
+            })}
+
+
             <Container fluid className="p-0">
                 <div className="content">
                     <Row>
