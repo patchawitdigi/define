@@ -9,7 +9,12 @@
     font-size: 2.5vw;
     color: #bf5c40;
     margin-bottom: 2vw;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+
 .titledate{
     font-size: 1.2vw;
 }
@@ -39,6 +44,10 @@
 }
 .fulldetali{
     font-size: 0.8vw;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .fulldetali p{
     margin-bottom: 0.5vw;

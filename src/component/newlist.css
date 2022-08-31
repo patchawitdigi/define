@@ -1,6 +1,6 @@
 .images {
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .image {
@@ -8,7 +8,7 @@
     margin-bottom: 3vw;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
-    min-height: 28vw;
+    
 }
 
 .image img {
@@ -35,12 +35,14 @@
 }
 
 .pagination .page-num {
-    padding: 0.25vw 0.60vw;
+    padding: 0.25vw 0.6vw;
     cursor: pointer;
     border-radius: 50%;
     font-weight: 400;
     text-decoration: none;
     color: black;
+    margin-left: 0.25vw;
+    margin-right: 0.25vw;
 }
 
 .pagination .page-num:hover {
@@ -75,7 +77,7 @@
     color: white;
     font-size: 1vw;
     background-color: #bf5c40;
-    width: 4vw;
+    width: 5.2vw;
     height: 7vw;
     text-align:center;
     padding-top: 0.25vw;
@@ -90,7 +92,7 @@
 
 .newtitle{
     width: 100%;
-    height: 13vw;
+    height: 15vw;
     padding-top: 2vw;
     padding-left: 1vw;
     text-align: start;
@@ -103,7 +105,7 @@
     
 }
 .newtitle p{     
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     padding-right: 1vw;
    
 }
@@ -117,7 +119,6 @@
     
     .image {
         margin-bottom: 5vw;
-        min-height: 45vw;
     }
     .image img {
         width: 100%;
@@ -135,25 +136,25 @@
     
     }
     .newtitle{     
-        height: 19vw;
+        height: 23vw;
         padding-top: 4vw;
         padding-left:2vw;
     }
     .newtitle h6{     
-        font-size: 1.7vw;
+        font-size: 1.5vw;
         padding-right: 1.75vw;
     }
     .newtitle p{     
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         padding-right: 1.75vw;
     }
     .date{
         font-size: 1.2vw;
-        width: 5vw;
+        width: 6vw;
         height: 9vw;
         padding-top: 0.25vw;
-        padding-left: 0.25vw;
-        padding-right: 0.25vw;
+        padding-left: 0.2vw;
+        padding-right: 0.2vw;
     }
     .date::first-line{
        font-size: 2.5vw;
@@ -172,7 +173,6 @@
     
     .image {
         margin-bottom: 5vw;
-        min-height: 78vw;
     }
     .image img {
         width: 100%;
@@ -190,25 +190,25 @@
     
     }
     .newtitle{     
-        height: 28vw;
+        height: 35vw;
         padding-top: 7vw;
         padding-left:3vw;
     }
     .newtitle h6{     
-        font-size: 3vw;
+        font-size: 2.8vw;
         padding-right: 4vw;
     }
     .newtitle p{     
-        font-size: 2vw;
+        font-size: 1.9vw;
         padding-right: 4vw;
     }
     .date{
         font-size: 2.4vw;
-        width: 9.5vw;
+        width: 12vw;
         height: 17vw;
         padding-top: 0.5vw;
-        padding-left: 0.75vw;
-        padding-right: 0.75vw;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
     }
     .date::first-line{
        font-size: 4vw;

@@ -32,7 +32,7 @@ export default function Newlist(props) {
 
     return (
         <>
-            <Container fluid >
+            <Container fluid>
                 <div className="images">
                     <Row>
                         {currentItems.map(image => {
