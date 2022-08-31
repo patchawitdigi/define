@@ -1,0 +1,32 @@
+[
+    {
+        "homeGalleryId": "9d18bbbe-4d04-4a29-a2c2-b206bc045b08",
+        "homeGalleryImage": "f9d786da-e479-4ed5-9efd-53f58ff7e5ec",
+        "imageAlignment": "left",
+        "title": "Titleeee\r\nfdsf",
+        "description": "12",
+        "titleTh": "titlee nnn\r\n2222",
+        "descriptionTh": "33",
+        "createdAt": "2022-08-29 20:48:54.413820",
+        "updatedAt": "2022-08-29 20:48:54.413820",
+        "imageStatus": "public",
+        "imageCaption": "",
+        "imageCaptionTh": "",
+        "url": "http://localhost:8202/uploads/2022/08/a885f550-6c6e-41ac-ba0f-d7795e0a7d80.jpg"
+    },
+    {
+        "homeGalleryId": "03261633-7b02-497f-b810-5b4f246e17b7",
+        "homeGalleryImage": "c6ec464f-d490-490e-bc66-8106a4e7b772",
+        "imageAlignment": "right",
+        "title": "TITEEEE",
+        "description": "123",
+        "titleTh": "TITLEVNNN",
+        "descriptionTh": "4567",
+        "createdAt": "2022-08-29 20:43:47.666843",
+        "updatedAt": "2022-08-29 20:43:47.666843",
+        "imageStatus": "public",
+        "imageCaption": "",
+        "imageCaptionTh": "",
+        "url": "http://localhost:8202/uploads/2022/08/39a13495-ae46-47d9-9903-c382c9463cdd.jpg"
+    }
+]
