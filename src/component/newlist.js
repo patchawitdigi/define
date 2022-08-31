@@ -36,22 +36,31 @@ export default function Newlist(props) {
                 <div className="images">
                     <Row>
                         {currentItems.map(image => {
+                            let content
+                            if (image.externalUrl == "") {
+                                content = `news-and-media/news-promotion/${image.newsRouting}`
+                            }
+                            else {
+                                content = image.externalUrl
+                            }
+                            console.log(content)
                             return (
                                 <Col lg={4} sm={6}>
-                                    <Link to={`/news-and-media/news-promotion/${image.newsRouting}`} style={{ textDecoration: 'none' }}>
-                                    <div className="image" data-aos="fade-up" data-aos-delay="500">
-                                        <img src={image.coverUrl} />
-                                        <div className="newdetail">
-                                            <div className="date">
-                                                <p>{image.dateFormat}</p>
-                                            </div>
-                                            <div className="newtitle">
-                                                <h6>{image.title}</h6>
-                                                <p>{image.subTitle}</p>
+                                    <a href={content} style={{ textDecoration: 'none' }}>
+                                        {/* <Link to={`/news-and-media/news-promotion/${image.newsRouting}`} style={{ textDecoration: 'none' }}> */}
+                                        <div className="image" data-aos="fade-up" data-aos-delay="500">
+                                            <img src={image.coverUrl} />
+                                            <div className="newdetail">
+                                                <div className="date">
+                                                    <p>{image.dateFormat}</p>
+                                                </div>
+                                                <div className="newtitle">
+                                                    <h6>{image.title}</h6>
+                                                    <p>{image.subTitle}</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    </Link>
+                                    </a>
                                 </Col>
 
                             );

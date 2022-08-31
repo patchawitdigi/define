@@ -22,7 +22,6 @@ export default function New() {
         )
 
     }, [])
-    console.log(newinfo)
 
     function createMarkup(data) {
         return { __html: data };
