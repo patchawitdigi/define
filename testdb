@@ -30,3 +30,55 @@
         "url": "http://localhost:8202/uploads/2022/08/39a13495-ae46-47d9-9903-c382c9463cdd.jpg"
     }
 ]
+
+
+<?php
+  require_once(__DIR__ . '/variables.php');
+  date_default_timezone_set('Asia/Bangkok');
+  class Database {
+    private $host;
+    private $database_name;
+    private $username;
+    private $password;
+    private $port;
+    public $conn;
+
+    function __construct(){
+      $conf = getEnvConfig();
+      $this->host = $conf['host'];
+      $this->database_name = $conf['databaseName'];
+      $this->username = $conf['username'];
+      $this->password = $conf['password'];
+      $this->port = $conf['port'];
+    }
+
+    public function getConnection(){
+      $this->conn = null;
+      try {
+          mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // error reporting
+          // $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->database_name, $this->username, $this->password);
+          $this->conn = new mysqli($this->host, $this->username, $this->password, $this->database_name, $this->port); 
+          mysqli_set_charset($this->conn, "utf8mb4");
+
+          // echo "Connected successfully";
+      } catch (PDOException $exception){
+          die("Database could not be connected: " . $exception->getMessage());
+      }
+      return $this->conn;
+    }
+  }  
+?>
+
+<?php
+function getEnvConfig() {
+  return [
+    "publicUrl" => "http://localhost:8202", // set to http://localhost:8202 for dev mode.
+
+    // DATABASE CONFIG
+    "host" => "define-vn-database", // If using docker set host to "database".
+    "port" => 3306, // Default MySQL port.
+    "username" => "root", // If using docker set username to "root" ir another you can.
+    "password" => "1q2w3e4r", // If using docker you can see the password at docker-compose.yml file
+    "databaseName" => "define_vn", // Default as "define_vn".
+  ];
+}
