@@ -61,17 +61,14 @@ export default function Content() {
                                         <Col lg={4}>
                                             <div className="textcon" data-aos="fade-down">
                                                 <h2></h2>
-                                                <h3>DEFINE A WORLD OF <br />
-                                                    SOPHISTICATION</h3>
-                                                <p>DEFINE your stature in society by owning one of the exclusive 88 units of
-                                                    Vietnam’s most exclusive luxury condominium development, where
-                                                    unparalleled style and sophistication come to life.</p>
+                                                <h3>{detail.title}</h3>
+                                                <p>{detail.description}</p>
                                                 <img className="bgleft" src={bgleft} />
                                             </div>
                                         </Col>
                                         <Col lg={8}>
                                             <div className="imgcon ban1">
-                                                <img src={ban1} />
+                                                <img src={detail.url} />
                                             </div>
                                         </Col>
                                     </Row>
@@ -88,18 +85,14 @@ export default function Content() {
                                     <Row>
                                         <Col lg={8}>
                                             <div className="imgcon ban2">
-                                                <img src={ban2} />
+                                                <img src={detail.url} />
                                             </div>
                                         </Col>
                                         <Col lg={4}>
                                             <div className="textcon textr" data-aos="fade-down">
                                                 <h2></h2>
-                                                <h3>DEFINE A PLACE<br />
-                                                    TO CALL YOUR OWN </h3>
-                                                <p>All units at DEFINE are fully & beautifully fitted with provisions that will
-                                                    define your lifestyle, such as spacious Bedrooms, Designer Gallery Kitchen,
-                                                    Private Lift access, separate Maid’s Quarters for security and privacy, and
-                                                    more.</p>
+                                                <h3>{detail.title}</h3>
+                                                <p>{detail.description}</p>
                                                 <img className="bgright" src={bgright} />
                                             </div>
                                         </Col>
