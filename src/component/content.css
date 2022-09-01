@@ -157,17 +157,20 @@
 
 @media only screen and (max-width: 992px) {
 
-    /* .ban1 {
+    .content {
+        position: relative;
+    }
+    .ban1 {
         position: absolute;
         right: 0vw;
         left: 0vw;
-        top: 70vw;
-        margin-left: 0vw;
-    } */
-    .ban1{
-        margin-top: 13vw;
+        top: 15vw;
         margin-left: 0vw;
     }
+    /* .ban1{
+        margin-top: 13vw;
+        margin-left: 0vw;
+    } */
 
     .imgcon img {
         width: 100%;
@@ -176,11 +179,11 @@
     }
 
     .ban2 {
-        margin-top: 5vw;
+        margin-top: 7vw;
     }
 
     .textcon {
-        margin-top: 1vw;
+        margin-top: 63vw;
         margin-left: 5vw;
     }
 
@@ -190,7 +193,7 @@
     }
 
     .bgleft {
-        top: 10vw;
+        top: 14vw;
         left: -5vw;
 
     }
