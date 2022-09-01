@@ -224,6 +224,14 @@
    text-align: end;
 }
 
+
+@media only screen and (max-width: 991px) {
+   .bgfoot1 {
+      margin-top: 15vw;
+   }
+
+}
+
 @media only screen and (max-width: 575px) {
    .craft {
       margin: 2vw;

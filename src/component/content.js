@@ -39,46 +39,81 @@ export default function Content() {
 
     }, []);
 
-    const scrollRef = useRef(null);
-    useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
+    // const scrollRef = useRef(null);
+    // useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
 
     return (
-        <div ref={scrollRef}>
+        // <div ref={scrollRef}>
+        <div>
             <div className="vibanner">
                 <video loop muted autoPlay>
                     <source src={video} type="video/mp4" />
                 </video>
             </div>
 
-            {content.map(detail => {
-
-                return (
-                    <div>
-                        <Container fluid className="p-0">
-                            <div className="content">
-                                <Row>
-                                    <Col lg={4}>
-                                        <div className="textcon" data-aos="fade-down">
-                                            <h2></h2>
-                                            <h3>DEFINE A WORLD OF <br />
-                                                SOPHISTICATION</h3>
-                                            <p>DEFINE your stature in society by owning one of the exclusive 88 units of
-                                                Vietnam’s most exclusive luxury condominium development, where
-                                                unparalleled style and sophistication come to life.</p>
-                                            <img className="bgleft" src={bgleft} />
-                                        </div>
-                                    </Col>
-                                    <Col lg={8}>
-                                        <div className="imgcon ban1">
-                                            <img src={ban1} />
-                                        </div>
-                                    </Col>
-                                </Row>
-                            </div>
-                        </Container>
-                    </div>
-                );
+            {content.map(detail => {   
+                if (detail.imageAlignment == "left") {
+                    return (
+                        <div>
+                            <Container fluid className="p-0">
+                                <div className="content">
+                                    <Row>
+                                        <Col lg={4}>
+                                            <div className="textcon" data-aos="fade-down">
+                                                <h2></h2>
+                                                <h3>DEFINE A WORLD OF <br />
+                                                    SOPHISTICATION</h3>
+                                                <p>DEFINE your stature in society by owning one of the exclusive 88 units of
+                                                    Vietnam’s most exclusive luxury condominium development, where
+                                                    unparalleled style and sophistication come to life.</p>
+                                                <img className="bgleft" src={bgleft} />
+                                            </div>
+                                        </Col>
+                                        <Col lg={8}>
+                                            <div className="imgcon ban1">
+                                                <img src={ban1} />
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Container>
+                        </div>
+                    );  
+                }
+                else if (detail.imageAlignment == "right") {
+                    return (
+                        <div>
+                            <Container fluid className="p-0">
+                                <div className="content">
+                                    <Row>
+                                        <Col lg={8}>
+                                            <div className="imgcon ban2">
+                                                <img src={ban2} />
+                                            </div>
+                                        </Col>
+                                        <Col lg={4}>
+                                            <div className="textcon textr" data-aos="fade-down">
+                                                <h2></h2>
+                                                <h3>DEFINE A PLACE<br />
+                                                    TO CALL YOUR OWN </h3>
+                                                <p>All units at DEFINE are fully & beautifully fitted with provisions that will
+                                                    define your lifestyle, such as spacious Bedrooms, Designer Gallery Kitchen,
+                                                    Private Lift access, separate Maid’s Quarters for security and privacy, and
+                                                    more.</p>
+                                                <img className="bgright" src={bgright} />
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Container>
+                        </div>
+                    );
+                }      
             })}
+
+            
+                
+
 
 
             {/* <Container fluid className="p-0">
