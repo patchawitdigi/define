@@ -128,14 +128,47 @@
 .infoetc a {
    font-size: 0.7vw;
    margin-bottom: 0.5vw;
+   width: fit-content;
    text-decoration: none;
    color: white;
+}
+.infoetc a {
+	display: block;
+	position: relative;
+}
+/* Fade in */
+.infoetc a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1vw;
+	background-color: white;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.infoetc a:hover::after,
+.infoetc a:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2vw, 0);
+}
+.infoetc a::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+.infoetc a:hover::after,
+.infoetc a:focus::after{
+	transform: scale(1);
+
 }
 
 .infoetc a:hover {
    color: white;
-   text-decoration: underline;
-   width: fit-content;
+
 }
 
 
@@ -227,12 +260,15 @@
 
 @media only screen and (max-width: 991px) {
    .bgfoot1 {
-      margin-top: 15vw;
+      margin-top: 20vw;
    }
 
 }
 
 @media only screen and (max-width: 575px) {
+   .bgfoot1 {
+      margin-top: 25vw;
+   }
    .craft {
       margin: 2vw;
    }

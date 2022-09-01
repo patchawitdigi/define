@@ -51,7 +51,7 @@ export default function Content() {
                 </video>
             </div>
 
-            {content.map(detail => {   
+            {content.map(detail => {
                 if (detail.imageAlignment == "left") {
                     return (
                         <div>
@@ -75,7 +75,7 @@ export default function Content() {
                                 </div>
                             </Container>
                         </div>
-                    );  
+                    );
                 }
                 else if (detail.imageAlignment == "right") {
                     return (
@@ -101,11 +101,11 @@ export default function Content() {
                             </Container>
                         </div>
                     );
-                }      
+                }
             })}
 
-            
-                
+
+
 
 
 

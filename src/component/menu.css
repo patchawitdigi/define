@@ -104,13 +104,44 @@
     margin-bottom: 2vw;
     text-decoration: none;
 }
-
-.menuitem a:hover {
-
+.menuitem a:hover{
     color: white;
-    text-decoration: underline;
+}
+
+.menuitem a {
+	display: block;
+	position: relative;
+}
+/* Fade in */
+.menuitem a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1vw;
+	background-color: white;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.menuitem a:hover::after,
+.menuitem a:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2vw, 0);
+}
+.menuitem a::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+.menuitem a:hover::after,
+.menuitem a:focus::after{
+	transform: scale(1);
 
 }
+
 
 .pattl {
     position: absolute;

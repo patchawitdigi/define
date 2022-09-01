@@ -162,6 +162,7 @@
     .ban1 {
         position: absolute;
         right: 0vw;
+        left: 0vw;
         top: 70vw;
         margin-left: 0vw;
     }
