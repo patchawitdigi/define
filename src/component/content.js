@@ -39,12 +39,12 @@ export default function Content() {
 
     }, []);
 
-    // const scrollRef = useRef(null);
-    // useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
+    const scrollRef = useRef(null);
+    useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
 
     return (
-        // <div ref={scrollRef}>
-        <div>
+        <div ref={scrollRef}>
+        {/* <div> */}
             <div className="vibanner">
                 <video loop muted autoPlay>
                     <source src={video} type="video/mp4" />
