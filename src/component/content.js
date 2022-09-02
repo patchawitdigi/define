@@ -23,13 +23,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { homeGallery } from'./flieapi';
 
 export default function Content() {
 
     const [content, setContent] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8202/publicServices/homeGallery/list.php").then(
+        // fetch("http://localhost:8202/publicServices/homeGallery/list.php").then(
+        fetch(homeGallery).then(    
             response => response.json().then(data => {
                 setContent(data);
             })
@@ -52,7 +54,7 @@ export default function Content() {
             </div>
 
             {content.map(detail => {
-                if (detail.imageAlignment == "left") {
+                if (detail.imageAlignment == "right") {
                     return (
                         <div>
                             <Container fluid className="p-0">
@@ -77,7 +79,7 @@ export default function Content() {
                         </div>
                     );
                 }
-                else if (detail.imageAlignment == "right") {
+                else if (detail.imageAlignment == "left") {
                     return (
                         <div>
                             <Container fluid className="p-0">
