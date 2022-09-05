@@ -25,9 +25,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { homeGallery } from'./flieapi';
 
+import { useTranslation } from 'react-i18next';
+
 export default function Content() {
 
     const [content, setContent] = useState([]);
+
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         // fetch("http://localhost:8202/publicServices/homeGallery/list.php").then(
@@ -54,7 +58,7 @@ export default function Content() {
             </div>
 
             {content.map(detail => {
-                if (detail.imageAlignment == "right") {
+                if (detail.imageAlignment == "right" ) {
                     return (
                         <div>
                             <Container fluid className="p-0">

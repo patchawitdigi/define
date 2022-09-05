@@ -19,6 +19,10 @@
 .headmenu{
     display: flex;
 }
+.stylelan{
+    border: 0;
+    background-color: transparent;
+}
 .language{
     display: flex;
     margin-right: 1.5vw;
@@ -27,7 +31,8 @@
 }
 .language p{
    padding: 0 0.3vw;
-   font-size: 1vw;
+   font-size: 1.1vw;
+   cursor: pointer;
     
 }
 
@@ -100,7 +105,7 @@
         
     }
     .language p{
-        font-size: 2vw;
+        font-size: 2.1vw;
          
      }
 }

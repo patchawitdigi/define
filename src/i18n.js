@@ -5,6 +5,7 @@ import { initReactI18next } from "react-i18next";
 // (tip move them in a JSON file and import them,
 // or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
 const resources = {
+
   en: {
     translation: {
       "REGISTER NOW": "REGISTER NOW",
@@ -54,7 +55,8 @@ const resources = {
       "Enterprise Registration Certificate No. 0309710742 issued by the Department of Planning and": "Enterprise Registration Certificate No. 0309710742 issued by the Department of Planning and",
       "Investment Ho Chi Minh City, 1st issued on 30 December 2009": "Investment Ho Chi Minh City, 1st issued on 30 December 2009",
       "Address: No 02, Phan Van Dang Street, Thanh My Loi Ward, Thu Duc City, Ho Chi Minh City": "Address: No 02, Phan Van Dang Street, Thanh My Loi Ward, Thu Duc City, Ho Chi Minh City",
-    }
+      
+    } 
   },
   vn: {
     translation: {
@@ -112,5 +114,6 @@ i18n
       escapeValue: false // react already safes from xss
     }
   });
+
 
   export default i18n;
