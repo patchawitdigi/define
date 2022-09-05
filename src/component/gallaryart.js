@@ -44,6 +44,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import { galleryArt } from'./flieapi';
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -52,12 +54,10 @@ export default function Gallaryart() {
 
   useEffect(() => {
     
-    fetch(
-      "https://define.com.vn/apiv1/publicServices/gallerieDArt/list.php"
-    ).then((response) =>
-      response.json().then((data) => {
-        setGallarys(data);
-      })
+    fetch(galleryArt).then(
+        (response) => response.json().then((data) => {
+            setGallarys(data);
+        })
     );
 
     // var modal01 = document.getElementById("myModal01");
