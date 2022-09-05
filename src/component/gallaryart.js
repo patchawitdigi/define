@@ -51,6 +51,7 @@ export default function Gallaryart() {
   const [gallarys, setGallarys] = useState([]);
 
   useEffect(() => {
+    
     fetch(
       "https://define.com.vn/apiv1/publicServices/gallerieDArt/list.php"
     ).then((response) =>
@@ -58,6 +59,7 @@ export default function Gallaryart() {
         setGallarys(data);
       })
     );
+
     // var modal01 = document.getElementById("myModal01");
     // var btn01 = document.getElementById("plusitem1");
     // var span01 = document.getElementsByClassName("close")[0];
@@ -128,92 +130,92 @@ export default function Gallaryart() {
     }
   }
 
-  const [imgsl02, setimgsl02] = useState(0);
-  const slide02 = [
-    Outdoor4,
-    Outdoor5,
-    Outdoor6,
-    Outdoor2,
-    Outdoor3,
-    Outdoor1,
-    Outdoor7,
-    Outdoor8,
-    Outdoor9,
-  ];
-  function next02() {
-    if (imgsl02 >= slide02.length - 1) {
-      setimgsl02(0);
-    } else {
-      setimgsl02(imgsl02 + 1);
-    }
-  }
-  function prev02() {
-    if (imgsl02 <= 0) {
-      setimgsl02(slide02.length - 1);
-    } else {
-      setimgsl02(imgsl02 - 1);
-    }
-  }
+//   const [imgsl02, setimgsl02] = useState(0);
+//   const slide02 = [
+//     Outdoor4,
+//     Outdoor5,
+//     Outdoor6,
+//     Outdoor2,
+//     Outdoor3,
+//     Outdoor1,
+//     Outdoor7,
+//     Outdoor8,
+//     Outdoor9,
+//   ];
+//   function next02() {
+//     if (imgsl02 >= slide02.length - 1) {
+//       setimgsl02(0);
+//     } else {
+//       setimgsl02(imgsl02 + 1);
+//     }
+//   }
+//   function prev02() {
+//     if (imgsl02 <= 0) {
+//       setimgsl02(slide02.length - 1);
+//     } else {
+//       setimgsl02(imgsl02 - 1);
+//     }
+//   }
 
-  const [imgsl03, setimgsl03] = useState(0);
-  const slide03 = [
-    Indoor4,
-    Indoor5,
-    Indoor6,
-    Indoor3,
-    Indoor1,
-    Indoor2,
-    Indoor7,
-    Indoor8,
-  ];
-  function next03() {
-    if (imgsl03 >= slide03.length - 1) {
-      setimgsl03(0);
-    } else {
-      setimgsl03(imgsl03 + 1);
-    }
-  }
-  function prev03() {
-    if (imgsl03 <= 0) {
-      setimgsl03(slide03.length - 1);
-    } else {
-      setimgsl03(imgsl03 - 1);
-    }
-  }
+//   const [imgsl03, setimgsl03] = useState(0);
+//   const slide03 = [
+//     Indoor4,
+//     Indoor5,
+//     Indoor6,
+//     Indoor3,
+//     Indoor1,
+//     Indoor2,
+//     Indoor7,
+//     Indoor8,
+//   ];
+//   function next03() {
+//     if (imgsl03 >= slide03.length - 1) {
+//       setimgsl03(0);
+//     } else {
+//       setimgsl03(imgsl03 + 1);
+//     }
+//   }
+//   function prev03() {
+//     if (imgsl03 <= 0) {
+//       setimgsl03(slide03.length - 1);
+//     } else {
+//       setimgsl03(imgsl03 - 1);
+//     }
+//   }
 
-  const [imgsl04, setimgsl04] = useState(0);
-  const slide04 = [Riviere4, Riviere2, Riviere1, Riviere3, Riviere5];
-  function next04() {
-    if (imgsl04 >= slide04.length - 1) {
-      setimgsl04(0);
-    } else {
-      setimgsl04(imgsl04 + 1);
-    }
-  }
-  function prev04() {
-    if (imgsl04 <= 0) {
-      setimgsl04(slide04.length - 1);
-    } else {
-      setimgsl04(imgsl04 - 1);
-    }
-  }
+//   const [imgsl04, setimgsl04] = useState(0);
+//   const slide04 = [Riviere4, Riviere2, Riviere1, Riviere3, Riviere5];
+//   function next04() {
+//     if (imgsl04 >= slide04.length - 1) {
+//       setimgsl04(0);
+//     } else {
+//       setimgsl04(imgsl04 + 1);
+//     }
+//   }
+//   function prev04() {
+//     if (imgsl04 <= 0) {
+//       setimgsl04(slide04.length - 1);
+//     } else {
+//       setimgsl04(imgsl04 - 1);
+//     }
+//   }
 
-  const [imgsl05, setimgsl05] = useState(0);
-  const slide05 = [Jardin1, Jardin2, Jardin4, Jardin5, Jardin6, Jardin3];
-  function next05() {
-    if (imgsl05 >= slide05.length - 1) {
-      setimgsl05(0);
-    } else {
-      setimgsl05(imgsl05 + 1);
-    }
-  }
-  function prev05() {
-    if (imgsl05 <= 0) {
-      setimgsl05(slide05.length - 1);
-    } else {
-      setimgsl05(imgsl05 - 1);
-    }
-  }
+//   const [imgsl05, setimgsl05] = useState(0);
+//   const slide05 = [Jardin1, Jardin2, Jardin4, Jardin5, Jardin6, Jardin3];
+//   function next05() {
+//     if (imgsl05 >= slide05.length - 1) {
+//       setimgsl05(0);
+//     } else {
+//       setimgsl05(imgsl05 + 1);
+//     }
+//   }
+//   function prev05() {
+//     if (imgsl05 <= 0) {
+//       setimgsl05(slide05.length - 1);
+//     } else {
+//       setimgsl05(imgsl05 - 1);
+//     }
+//   }
 
   return (
     <div>
@@ -280,9 +282,22 @@ export default function Gallaryart() {
                 </Row>
               </div>
             </Container>
+       
+            <div id="myModal01" class="modal2">
+                <span className="close">&times;</span>
+                <div className="modal2-content">
+                    <img src={slide01[imgsl01]} />
+                </div>
+                <FiArrowLeft onClick={prev01} className="prev" size="3vw" />
+                <FiArrowRight onClick={next01} className="nextimg" size="3vw" />
+            </div>
+            
           </div>
-        );
-      })}
+        );  
+      })}   
+
+       
+        
 
       {/* <Container fluid>
 
