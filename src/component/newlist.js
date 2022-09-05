@@ -46,7 +46,7 @@ export default function Newlist(props) {
                             console.log(content)
                             return (
                                 <Col lg={4} sm={6}>
-                                    <a href={content} style={{ textDecoration: 'none' }}>
+                                    <a href={content} target="_blank" style={{ textDecoration: 'none' }}>
                                         {/* <Link to={`/news-and-media/news-promotion/${image.newsRouting}`} style={{ textDecoration: 'none' }}> */}
                                         <div className="image" data-aos="fade-up" data-aos-delay="500">
                                             <img src={image.coverUrl} />
