@@ -53,18 +53,20 @@ export default function Gallaryart() {
 
     const [gallarys, setGallarys] = useState([]);
 
-
     useEffect(() => {
 
         fetch(galleryArt).then(
-            (response) => response.json().then((data) => {
+            response => response.json().then(data => {
                 setGallarys(data);
             })
         );
 
-        // var modal01 = document.getElementsByClassName("modal2")[0];
-        // var btn01 = document.getElementsByClassName("plusitem1")[0];
-        // var span01 = document.getElementsByClassName("close")[0];
+        var modal01 = document.getElementById("myModal01");
+        var btn01 = document.getElementById("plusitem1");
+        var span01 = document.getElementsByClassName("close")[0];
+        console.log(modal01)
+        console.log(btn01)
+        console.log(span01)
         // btn01.onclick = function () {
         //     modal01.style.display = "block";
         // }
@@ -267,7 +269,7 @@ export default function Gallaryart() {
                                                     </p>
                                                     <BsPlusCircle
                                                         size="2vw"
-                                                        className="plusitem1"
+                                                        id="plusitem1"
                                                         data-aos="fade-left"
                                                         data-aos-delay="500"
                                                     />
@@ -298,7 +300,7 @@ export default function Gallaryart() {
                                         <Col xs={12} sm={4}>
                                             <div className="rgallary2">
                                                 <div className="moreitem">
-                                                    <BsPlusCircle size="2vw" className='plusitem1' data-aos="fade-right" />
+                                                    <BsPlusCircle size="2vw" id='plusitem1' data-aos="fade-right" />
                                                     <p data-aos="fade-right"> {gallary.title}</p>
                                                 </div>
                                                 {gallary.images.slice(2, 3).map((image) => {
@@ -331,7 +333,7 @@ export default function Gallaryart() {
                 }
             })}
 
-            <div className="modal2">
+            <div id="myModal01" className="modal2">
                 <span className="close">&times;</span>
                 <div className="modal2-content">
                     <img src={slide01[imgsl01]} />

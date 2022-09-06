@@ -44,12 +44,13 @@ export default function Content() {
         )
         fetch(bannervideo).then(    
             response => response.json().then(data => {
-                setVideoBan(data);
+                setVideoBan([data]);  
             })
         )
+        console.log(videoban)
 
         Aos.init({ duration: 1000 });
-
+       
     }, []);
 
     const scrollRef = useRef(null);
@@ -60,7 +61,8 @@ export default function Content() {
         {/* <div> */}
             <div className="vibanner">
                 <video loop muted autoPlay>
-                    <source src={videoban.banners[0]} type="video/mp4" />
+                    {/* <source src={videoban.banners[0]} type="video/mp4" /> */}
+                    <source src={video} type="video/mp4" />    
                 </video>
             </div>
 
@@ -118,6 +120,7 @@ export default function Content() {
 
                 
             })}
+           
 
 
 

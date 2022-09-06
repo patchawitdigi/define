@@ -115,7 +115,7 @@
     display: flex;
     justify-content: flex-end;
 }
-.plusitem1{
+#plusitem1{
     color: #bf5c40;
     margin-top: 10vw;
     margin-left: 1vw;
