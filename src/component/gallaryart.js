@@ -44,263 +44,253 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { galleryArt } from'./flieapi';
+import { galleryArt } from './flieapi';
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function Gallaryart() {
-  const [gallarys, setGallarys] = useState([]);
 
-  useEffect(() => {
-    
-    fetch(galleryArt).then(
-        (response) => response.json().then((data) => {
-            setGallarys(data);
-        })
-    );
+    const [gallarys, setGallarys] = useState([]);
+    const [hidden, setHidden] = useState(true);
 
-    // var modal01 = document.getElementById("myModal01");
-    // var btn01 = document.getElementById("plusitem1");
-    // var span01 = document.getElementsByClassName("close")[0];
-    // btn01.onclick = function () {
-    //     modal01.style.display = "block";
-    // }
-    // span01.onclick = function () {
-    //     modal01.style.display = "none";
-    // }
 
-    // var modal02 = document.getElementById("myModal02");
-    // var btn02 = document.getElementById("plusitem2");
-    // var span02 = document.getElementsByClassName("close")[1];
-    // btn02.onclick = function () {
-    //     modal02.style.display = "block";
-    // }
-    // span02.onclick = function () {
-    //     modal02.style.display = "none";
-    // }
+    useEffect(() => {
 
-    // var modal03 = document.getElementById("myModal03");
-    // var btn03 = document.getElementById("plusitem3");
-    // var span03 = document.getElementsByClassName("close")[2];
-    // btn03.onclick = function () {
-    //     modal03.style.display = "block";
-    // }
-    // span03.onclick = function () {
-    //     modal03.style.display = "none";
-    // }
+        fetch(galleryArt).then(
+            (response) => response.json().then((data) => {
+                setGallarys(data);
+            })
+        );
 
-    // var modal04 = document.getElementById("myModal04");
-    // var btn04 = document.getElementById("plusitem4");
-    // var span04 = document.getElementsByClassName("close")[3];
-    // btn04.onclick = function () {
-    //     modal04.style.display = "block";
-    // }
-    // span04.onclick = function () {
-    //     modal04.style.display = "none";
-    // }
+        // var modal01 = document.getElementById("myModal01");
+        // var btn01 = document.getElementById("plusitem1");
+        // var span01 = document.getElementsByClassName("close")[0];
+        // btn01.onclick = function () {
+        //     modal01.style.display = "block";
+        // }
+        // span01.onclick = function () {
+        //     modal01.style.display = "none";
+        // }
 
-    // var modal05 = document.getElementById("myModal05");
-    // var btn05 = document.getElementById("plusitem5");
-    // var span05 = document.getElementsByClassName("close")[4];
-    // btn05.onclick = function () {
-    //     modal05.style.display = "block";
-    // }
-    // span05.onclick = function () {
-    //     modal05.style.display = "none";
-    // }
+        // var modal02 = document.getElementById("myModal02");
+        // var btn02 = document.getElementById("plusitem2");
+        // var span02 = document.getElementsByClassName("close")[1];
+        // btn02.onclick = function () {
+        //     modal02.style.display = "block";
+        // }
+        // span02.onclick = function () {
+        //     modal02.style.display = "none";
+        // }
 
-    Aos.init({ duration: 1000 });
-  }, []);
+        // var modal03 = document.getElementById("myModal03");
+        // var btn03 = document.getElementById("plusitem3");
+        // var span03 = document.getElementsByClassName("close")[2];
+        // btn03.onclick = function () {
+        //     modal03.style.display = "block";
+        // }
+        // span03.onclick = function () {
+        //     modal03.style.display = "none";
+        // }
 
-  const [imgsl01, setimgsl01] = useState(0);
-  const slide01 = [Facade1, Facade2, Facade3];
-  function next01() {
-    if (imgsl01 >= slide01.length - 1) {
-      setimgsl01(0);
-    } else {
-      setimgsl01(imgsl01 + 1);
+        // var modal04 = document.getElementById("myModal04");
+        // var btn04 = document.getElementById("plusitem4");
+        // var span04 = document.getElementsByClassName("close")[3];
+        // btn04.onclick = function () {
+        //     modal04.style.display = "block";
+        // }
+        // span04.onclick = function () {
+        //     modal04.style.display = "none";
+        // }
+
+        // var modal05 = document.getElementById("myModal05");
+        // var btn05 = document.getElementById("plusitem5");
+        // var span05 = document.getElementsByClassName("close")[4];
+        // btn05.onclick = function () {
+        //     modal05.style.display = "block";
+        // }
+        // span05.onclick = function () {
+        //     modal05.style.display = "none";
+        // }
+
+        Aos.init({ duration: 1000 });
+    }, []);
+
+    const [imgsl01, setimgsl01] = useState(0);
+    const slide01 = [Facade1, Facade2, Facade3];
+    function next01() {
+        if (imgsl01 >= slide01.length - 1) {
+            setimgsl01(0);
+        } else {
+            setimgsl01(imgsl01 + 1);
+        }
     }
-  }
-  function prev01() {
-    if (imgsl01 <= 0) {
-      setimgsl01(slide01.length - 1);
-    } else {
-      setimgsl01(imgsl01 - 1);
+    function prev01() {
+        if (imgsl01 <= 0) {
+            setimgsl01(slide01.length - 1);
+        } else {
+            setimgsl01(imgsl01 - 1);
+        }
     }
-  }
 
-//   const [imgsl02, setimgsl02] = useState(0);
-//   const slide02 = [
-//     Outdoor4,
-//     Outdoor5,
-//     Outdoor6,
-//     Outdoor2,
-//     Outdoor3,
-//     Outdoor1,
-//     Outdoor7,
-//     Outdoor8,
-//     Outdoor9,
-//   ];
-//   function next02() {
-//     if (imgsl02 >= slide02.length - 1) {
-//       setimgsl02(0);
-//     } else {
-//       setimgsl02(imgsl02 + 1);
-//     }
-//   }
-//   function prev02() {
-//     if (imgsl02 <= 0) {
-//       setimgsl02(slide02.length - 1);
-//     } else {
-//       setimgsl02(imgsl02 - 1);
-//     }
-//   }
+    //   const [imgsl02, setimgsl02] = useState(0);
+    //   const slide02 = [
+    //     Outdoor4,
+    //     Outdoor5,
+    //     Outdoor6,
+    //     Outdoor2,
+    //     Outdoor3,
+    //     Outdoor1,
+    //     Outdoor7,
+    //     Outdoor8,
+    //     Outdoor9,
+    //   ];
+    //   function next02() {
+    //     if (imgsl02 >= slide02.length - 1) {
+    //       setimgsl02(0);
+    //     } else {
+    //       setimgsl02(imgsl02 + 1);
+    //     }
+    //   }
+    //   function prev02() {
+    //     if (imgsl02 <= 0) {
+    //       setimgsl02(slide02.length - 1);
+    //     } else {
+    //       setimgsl02(imgsl02 - 1);
+    //     }
+    //   }
 
-//   const [imgsl03, setimgsl03] = useState(0);
-//   const slide03 = [
-//     Indoor4,
-//     Indoor5,
-//     Indoor6,
-//     Indoor3,
-//     Indoor1,
-//     Indoor2,
-//     Indoor7,
-//     Indoor8,
-//   ];
-//   function next03() {
-//     if (imgsl03 >= slide03.length - 1) {
-//       setimgsl03(0);
-//     } else {
-//       setimgsl03(imgsl03 + 1);
-//     }
-//   }
-//   function prev03() {
-//     if (imgsl03 <= 0) {
-//       setimgsl03(slide03.length - 1);
-//     } else {
-//       setimgsl03(imgsl03 - 1);
-//     }
-//   }
+    //   const [imgsl03, setimgsl03] = useState(0);
+    //   const slide03 = [
+    //     Indoor4,
+    //     Indoor5,
+    //     Indoor6,
+    //     Indoor3,
+    //     Indoor1,
+    //     Indoor2,
+    //     Indoor7,
+    //     Indoor8,
+    //   ];
+    //   function next03() {
+    //     if (imgsl03 >= slide03.length - 1) {
+    //       setimgsl03(0);
+    //     } else {
+    //       setimgsl03(imgsl03 + 1);
+    //     }
+    //   }
+    //   function prev03() {
+    //     if (imgsl03 <= 0) {
+    //       setimgsl03(slide03.length - 1);
+    //     } else {
+    //       setimgsl03(imgsl03 - 1);
+    //     }
+    //   }
 
-//   const [imgsl04, setimgsl04] = useState(0);
-//   const slide04 = [Riviere4, Riviere2, Riviere1, Riviere3, Riviere5];
-//   function next04() {
-//     if (imgsl04 >= slide04.length - 1) {
-//       setimgsl04(0);
-//     } else {
-//       setimgsl04(imgsl04 + 1);
-//     }
-//   }
-//   function prev04() {
-//     if (imgsl04 <= 0) {
-//       setimgsl04(slide04.length - 1);
-//     } else {
-//       setimgsl04(imgsl04 - 1);
-//     }
-//   }
+    //   const [imgsl04, setimgsl04] = useState(0);
+    //   const slide04 = [Riviere4, Riviere2, Riviere1, Riviere3, Riviere5];
+    //   function next04() {
+    //     if (imgsl04 >= slide04.length - 1) {
+    //       setimgsl04(0);
+    //     } else {
+    //       setimgsl04(imgsl04 + 1);
+    //     }
+    //   }
+    //   function prev04() {
+    //     if (imgsl04 <= 0) {
+    //       setimgsl04(slide04.length - 1);
+    //     } else {
+    //       setimgsl04(imgsl04 - 1);
+    //     }
+    //   }
 
-//   const [imgsl05, setimgsl05] = useState(0);
-//   const slide05 = [Jardin1, Jardin2, Jardin4, Jardin5, Jardin6, Jardin3];
-//   function next05() {
-//     if (imgsl05 >= slide05.length - 1) {
-//       setimgsl05(0);
-//     } else {
-//       setimgsl05(imgsl05 + 1);
-//     }
-//   }
-//   function prev05() {
-//     if (imgsl05 <= 0) {
-//       setimgsl05(slide05.length - 1);
-//     } else {
-//       setimgsl05(imgsl05 - 1);
-//     }
-//   }
+    //   const [imgsl05, setimgsl05] = useState(0);
+    //   const slide05 = [Jardin1, Jardin2, Jardin4, Jardin5, Jardin6, Jardin3];
+    //   function next05() {
+    //     if (imgsl05 >= slide05.length - 1) {
+    //       setimgsl05(0);
+    //     } else {
+    //       setimgsl05(imgsl05 + 1);
+    //     }
+    //   }
+    //   function prev05() {
+    //     if (imgsl05 <= 0) {
+    //       setimgsl05(slide05.length - 1);
+    //     } else {
+    //       setimgsl05(imgsl05 - 1);
+    //     }
+    //   }
 
-  return (
-    <div>
-      <img className="delogo" src={delogo} />
-      <div className="headborder">
-        <h3 className="headgal">GALLERIE D’ARTE</h3>
-        <h3 className="headgal2"></h3>
-      </div>
-
-      {gallarys.map((gallary) => {
-        return (
-          <div>
-            <Container fluid>
-              <div className="gallary">
-                <Row>
-                  <Col xs={12} sm={8}>
-                    <div className="lgallary">
-                        {gallary.images.slice(0, gallary.images.length-2).map((image) => {
-                        return (
-                            <img
-                              className="facade1"
-                              src={image.url}
-                              data-aos="fade-right"
-                            />
-                            );
-                        })}
-                        {gallary.images.slice(1, gallary.images.length-1).map((image) => {
-                        return (
-                            <img
-                              className="facade2 bwimg"
-                              src={image.url}
-                              data-aos="fade-right"
-                              data-aos-delay="500"
-                            />
-                            );
-                        })}
-                    </div>
-                     
-                  </Col>
-                  <Col xs={12} sm={4}>
-                    <div className="rgallary">
-                      <div className="moreitem facade">
-                        <p>
-                          {gallary.title}
-                        </p>
-                        <BsPlusCircle
-                          size="2vw"
-                          id="plusitem1"
-                          data-aos="fade-left"
-                          data-aos-delay="500"
-                        />
-                      </div>
-                        {gallary.images.slice(2, gallary.images.length).map((image) => {
-                        return (
-                            <img
-                            className="facade3 bwimg"
-                            src={image.url}
-                            data-aos="fade-left"
-                            />
-                            );
-                        })}
-                    </div>
-                  </Col>
-                </Row>
-              </div>
-            </Container>
-       
-            <div id="myModal01" class="modal2">
-                <span className="close">&times;</span>
-                <div className="modal2-content">
-                    <img src={slide01[imgsl01]} />
-                </div>
-                <FiArrowLeft onClick={prev01} className="prev" size="3vw" />
-                <FiArrowRight onClick={next01} className="nextimg" size="3vw" />
+    return (
+        <div>
+            <img className="delogo" src={delogo} />
+            <div className="headborder">
+                <h3 className="headgal">GALLERIE D’ARTE</h3>
+                <h3 className="headgal2"></h3>
             </div>
-            
-          </div>
-        );  
-      })}   
 
-       
-        
+            {gallarys.map((gallary) => {
+                return (
+                    <div>
+                        <Container fluid>
+                            <div className="gallary">
+                                <Row>
+                                    <Col xs={12} sm={8}>
+                                        <div className="lgallary">
+                                            {gallary.images.slice(0, 1).map((image) => {
+                                                return (
+                                                    <img
+                                                        className="facade1"
+                                                        src={image.url}
+                                                        data-aos="fade-right"
+                                                    />
+                                                );
+                                            })}
+                                            {gallary.images.slice(1, 2).map((image) => {
+                                                return (
+                                                    <img
+                                                        className="facade2 bwimg"
+                                                        src={image.url}
+                                                        data-aos="fade-right"
+                                                        data-aos-delay="500"
+                                                    />
+                                                );
+                                            })}
+                                        </div>
 
-      {/* <Container fluid>
+                                    </Col>
+                                    <Col xs={12} sm={4}>
+                                        <div className="rgallary">
+                                            <div className="moreitem facade">
+                                                <p>
+                                                    {gallary.title}
+                                                </p>
+                                                <BsPlusCircle
+                                                    size="2vw"
+                                                    id="plusitem1"
+                                                    data-aos="fade-left"
+                                                    data-aos-delay="500"
+                                                />
+                                            </div>          
+                                            {gallary.images.slice(2, 3).map((image) => {
+                                                return (
+                                                    <img
+                                                        className="facade3 bwimg"
+                                                        src={image.url}
+                                                        data-aos="fade-left"
+                                                    />
+                                                );
+                                            })}
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Container>
+                    </div>
+                );
+            })}
 
+
+            {/* <Container fluid>
                 <div className="gallary">
                     <Row>
                         <Col xs={12} sm={8}>
@@ -460,7 +450,7 @@ export default function Gallaryart() {
                 </div>
                 <FiArrowLeft onClick={prev05} className="prev" size="3vw" />
                 <FiArrowRight onClick={next05} className="nextimg" size="3vw" />
-            </div> */}
-    </div>
-  );
+            </div>  */}
+        </div>
+    );
 }
