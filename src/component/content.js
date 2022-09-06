@@ -24,12 +24,14 @@ import Col from 'react-bootstrap/Col';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { homeGallery } from'./flieapi';
+import { bannervideo } from'./flieapi';
 
 import { useTranslation } from 'react-i18next';
 
 export default function Content() {
 
     const [content, setContent] = useState([]);
+    const [videoban, setVideoBan] = useState([]);
 
     const { t, i18n } = useTranslation();
 
@@ -38,6 +40,11 @@ export default function Content() {
         fetch(homeGallery).then(    
             response => response.json().then(data => {
                 setContent(data);
+            })
+        )
+        fetch(bannervideo).then(    
+            response => response.json().then(data => {
+                setVideoBan(data);
             })
         )
 
@@ -53,7 +60,7 @@ export default function Content() {
         {/* <div> */}
             <div className="vibanner">
                 <video loop muted autoPlay>
-                    <source src={video} type="video/mp4" />
+                    <source src={videoban.banners[0]} type="video/mp4" />
                 </video>
             </div>
 

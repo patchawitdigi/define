@@ -10,6 +10,7 @@ import Luxury from './luxury'
 import Gallerie from './gallerie'
 import Newmedia from './newmedia'
 import Newinfo from './component/new'
+import Project from './component/project'
 
 import Footer from './component/footer'
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/gallerie-d-arte" element={<Gallerie />} exact />
           <Route path="/news-and-media" element={<Newmedia />} exact />
           <Route path="/news-and-media/news-promotion/:newsRouting" element={<Newinfo />} exact />
+          <Route path="/project-information" element={<Project />} exact />
       </Routes>
     </BrowserRouter>
     

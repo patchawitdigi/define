@@ -87,7 +87,7 @@
 .logodef img {
     width: 10vw;
     margin-top: 4vw;
-    margin-bottom: 6vw;
+    margin-bottom: 5vw;
 
 }
 
@@ -101,7 +101,7 @@
     width: fit-content;
     color: white;
     font-size: 1.5vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1.5vw;
     text-decoration: none;
 }
 .menuitem a:hover{

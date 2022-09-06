@@ -65,6 +65,7 @@ export default function Menu() {
                     <a href='/project/define/luxury-of-choices'>LUXURY OF CHOICES</a>
                     <a href='/project/define/gallerie-d-arte'>GALLERIE D’ARTE</a>
                     <a href='/project/define/news-and-media'>NEWS & MEDIA</a>
+                    <a href='/project/define/project-information'>PROJECT INFORMATION</a>
                 </div>
             </div>
         </div>
