@@ -219,6 +219,8 @@ export default function Gallaryart() {
     //     }
     //   }
 
+    
+
     return (
         <div>
             <img className="delogo" src={delogo} />
@@ -226,111 +228,106 @@ export default function Gallaryart() {
                 <h3 className="headgal">GALLERIE D’ARTE</h3>
                 <h3 className="headgal2"></h3>
             </div>
-
-            {gallarys.map((gallary) => {
-                for (let i = 0; i < gallarys.length; i++) {
-                    console.log(gallarys.length)
-                    console.log(i)
-                    if (i % 2 == 0) {
-                        return (
-                            <>
-                                <Container fluid>
-                                    <div className="gallary">
-                                        <Row>
-                                            <Col xs={12} sm={8}>
-                                                <div className="lgallary">
-                                                    {gallary.images.slice(0, 1).map((image) => {
-                                                        return (
-                                                            <img
-                                                                className="facade1"
-                                                                src={image.url}
-                                                                data-aos="fade-right"
-                                                            />
-                                                        );
-                                                    })}
-                                                    {gallary.images.slice(1, 2).map((image) => {
-                                                        return (
-                                                            <img
-                                                                className="facade2 bwimg"
-                                                                src={image.url}
-                                                                data-aos="fade-right"
-                                                                data-aos-delay="500"
-                                                            />
-                                                        );
-                                                    })}
-                                                </div>
-
-                                            </Col>
-                                            <Col xs={12} sm={4}>
-                                                <div className="rgallary">
-                                                    <div className="moreitem facade">
-                                                        <p>
-                                                            {gallary.title}
-                                                        </p>
-                                                        <BsPlusCircle
-                                                            size="2vw"
-                                                            className="plusitem1"
-                                                            data-aos="fade-left"
+            {gallarys.map((gallary, i) => {
+                if (i % 2 == 0) {
+                    return (
+                        <>
+                            <Container fluid>
+                                <div className="gallary">
+                                    <Row>
+                                        <Col xs={12} sm={8}>
+                                            <div className="lgallary">
+                                                {gallary.images.slice(0, 1).map((image) => {
+                                                    return (
+                                                        <img
+                                                            className="facade1"
+                                                            src={image.url}
+                                                            data-aos="fade-right"
+                                                        />
+                                                    );
+                                                })}
+                                                {gallary.images.slice(1, 2).map((image) => {
+                                                    return (
+                                                        <img
+                                                            className="facade2 bwimg"
+                                                            src={image.url}
+                                                            data-aos="fade-right"
                                                             data-aos-delay="500"
                                                         />
-                                                    </div>
-                                                    {gallary.images.slice(2, 3).map((image) => {
-                                                        return (
-                                                            <img
-                                                                className="facade3 bwimg"
-                                                                src={image.url}
-                                                                data-aos="fade-left"
-                                                            />
-                                                        );
-                                                    })}
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                </Container>
-                            </>
-                        );
-                    }
-                    else if (i % 2 == 1) {
-                        return (
-                            <>
-                                <Container fluid>
-                                    <div className="gallary">
-                                        <Row>
-                                            <Col xs={12} sm={4}>
-                                                <div className="rgallary2">
-                                                    <div className="moreitem">
-                                                        <BsPlusCircle size="2vw" id='plusitem2' data-aos="fade-right" />
-                                                        <p data-aos="fade-right"> {gallary.title}</p>
-                                                    </div>
-                                                    {gallary.images.slice(2, 3).map((image) => {
-                                                        return (
-                                                            <img className="outdoor3 bwimg" src={image.url} data-aos="fade-right" data-aos-delay="500" />
-                                                        );
-                                                    })}
+                                                    );
+                                                })}
+                                            </div>
 
+                                        </Col>
+                                        <Col xs={12} sm={4}>
+                                            <div className="rgallary">
+                                                <div className="moreitemr facade">
+                                                    <p>
+                                                        {gallary.title}
+                                                    </p>
+                                                    <BsPlusCircle
+                                                        size="2vw"
+                                                        className="plusitem1"
+                                                        data-aos="fade-left"
+                                                        data-aos-delay="500"
+                                                    />
                                                 </div>
-                                            </Col>
-                                            <Col xs={12} sm={8}>
-                                                <div className="lgallary2">
-                                                    {gallary.images.slice(0, 1).map((image) => {
-                                                        return (
-                                                            <img className="facade1 outdoor1" src={image.url} data-aos="fade-left" />
-                                                        );
-                                                    })}
-                                                    {gallary.images.slice(1, 2).map((image) => {
-                                                        return (
-                                                            <img className="outdoor2 bwimg" src={image.url} data-aos="fade-left" data-aos-delay="500" />
-                                                        );
-                                                    })}
+                                                {gallary.images.slice(2, 3).map((image) => {
+                                                    return (
+                                                        <img
+                                                            className="facade3 bwimg"
+                                                            src={image.url}
+                                                            data-aos="fade-left"
+                                                        />
+                                                    );
+                                                })}
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Container>
+                        </>
+                    );
+                }
+                else if (i % 2 == 1) {
+                    return (
+                        <>
+                            <Container fluid>
+                                <div className="gallary">
+                                    <Row>
+                                        <Col xs={12} sm={4}>
+                                            <div className="rgallary2">
+                                                <div className="moreitem">
+                                                    <BsPlusCircle size="2vw" className='plusitem1' data-aos="fade-right" />
+                                                    <p data-aos="fade-right"> {gallary.title}</p>
                                                 </div>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                </Container>
-                            </>
-                        );
-                    }
+                                                {gallary.images.slice(2, 3).map((image) => {
+                                                    return (
+                                                        <img className="outdoor3 bwimg" src={image.url} data-aos="fade-right" data-aos-delay="500" />
+                                                    );
+                                                })}
+
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} sm={8}>
+                                            <div className="lgallary2">
+                                                {gallary.images.slice(0, 1).map((image) => {
+                                                    return (
+                                                        <img className="facade1 outdoor1" src={image.url} data-aos="fade-left" />
+                                                    );
+                                                })}
+                                                {gallary.images.slice(1, 2).map((image) => {
+                                                    return (
+                                                        <img className="outdoor2 bwimg" src={image.url} data-aos="fade-left" data-aos-delay="500" />
+                                                    );
+                                                })}
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Container>
+                        </>
+                    );
                 }
             })}
 
