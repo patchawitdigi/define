@@ -1,7 +1,7 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-    height: 4vw;
+    height: 4.5vw;
     padding: 0 3vw;
     background-color: white;
     border-bottom: 0.2vw solid #bf5c40;
@@ -11,103 +11,121 @@
     z-index: 2;
 
 }
-.logocapita img{
-    width: 7vw;
+
+.logocapita img {
+    width: 8vw;
     margin-top: 0.5vw;
-    
+
 }
-.headmenu{
+
+.headmenu {
     display: flex;
 }
-.stylelan{
-    border: 0;
-    background-color: transparent;
+
+.stylelan {
+    color: black;
+    text-decoration: none;
 }
-.language{
+
+.stylelan:hover {
+    color: black;
+
+}
+
+.language {
     display: flex;
     margin-right: 1.5vw;
-    margin-top: 1vw;
-    
-}
-.language p{
-   padding: 0 0.3vw;
-   font-size: 1.1vw;
-   cursor: pointer;
-    
-}
-
-
-.btnregis{
-    text-decoration: none;
-    color: #bf5c40;
     margin-top: 1.2vw;
+
 }
 
-.btnregis a{
-    border: 0.15vw solid #bf5c40;
-    padding: 0.55vw 1.25vw 0.55vw 1.25vw;
+.language p {
+    padding: 0 0.3vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+
+}
+
+
+.btnregis button{
+    background-color: white;
     text-decoration: none;
+    margin-top: 0.75vw;
+    width: 10.5vw;
+    height: 2.75vw;
+    border: 0.15vw solid #bf5c40;
     color: #bf5c40;
     font-size: 0.9vw;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
-.btnregis a:hover{
-   background-color: #bf5c40;
-   color: white;
-   transition: 700ms;
+.btnregis button:hover{ 
+    color: white;
+    background-color: #bf5c40;
+    transition: 700ms;
 }
+
 .en {
     color: #bf5c40;
 }
 
 
 @media only screen and (max-width: 991px) {
-    .header{
-        height: 5vw;
-    
-    }
-    .logocapita img{
-        width: 8vw;
-        margin-top: 0.9vw;
-        
-    }
-    .btnregis{
-        margin-top: 1vw;
+    .header {
+        height: 7vw;
+        border-bottom: 0.4vw solid #bf5c40;
 
     }
-    .language{
-        margin-top: 1.7vw;
-        
+
+    .logocapita img {
+        width: 11vw;
+        margin-top: 0.9vw;
+
     }
-    
+    .language {
+        margin-top: 2vw;
+    }
+
+    .language p {
+        padding: 0 0.5vw;
+        font-size: 1.7vw;
+    }
+
+    .btnregis button{
+        margin-top: 1.25vw;
+        width: 15vw;
+        height: 4vw;
+        border: 0.3vw solid #bf5c40;
+        font-size: 1.5vw;
+    }
+
 }
 
 @media only screen and (max-width: 575px) {
-    .header{
-        height: 7vw;
-    
+    .header {
+        height: 10vw;
+
     }
-    .logocapita img{
-        width: 12vw;
-        margin-top: 0.9vw;
-        
-    }
-    .btnregis{
+
+    .logocapita img {
+        width: 17vw;
         margin-top: 1vw;
 
     }
-    .btnregis a{     
-        font-size: 1.2vw;
+    .language {
+        margin-top: 3vw;
     }
-    .language{
-        margin-top: 2vw;
-        
+
+    .language p {
+        padding: 0 0.75vw;
+        font-size: 2.5vw;
     }
-    .language p{
-        font-size: 2.1vw;
-         
-     }
+
+    .btnregis button{
+        margin-top: 1.75vw;
+        width: 20vw;
+        height: 6vw;
+        border: 0.4vw solid #bf5c40;
+        font-size: 2vw;
+    }
 }
-
-

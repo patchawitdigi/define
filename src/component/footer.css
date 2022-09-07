@@ -10,7 +10,7 @@
 .craft {
    display: inline-block;
    background-color: white;
-   margin: 1vw;
+   margin: 1.3vw;
    width: 100%;
 }
 
@@ -38,11 +38,11 @@
 }
 
 .logo1 {
-   width: 11vw;
+   width: 12vw;
 }
 
 .logo2 {
-   width: 8vw;
+   width: 7vw;
 
 }
 
@@ -57,19 +57,19 @@
 }
 
 .craft button {
-
    border: 0.1vw solid transparent;
    background-color: #bf5c40;
-   padding: 1vw 2vw;
+   width: 13vw;
+   height: 4vw;
    text-decoration: none;
    color: white;
-   font-size: 1.2vw;
+   font-size: 1.3vw;
 }
 
 .numregis a {
    display: inline-block;
    margin-top: 1vw;
-   margin-bottom: 2vw;
+   margin-bottom: 3vw;
    text-decoration: none;
    color: #bf5c40;
    font-size: 1.7vw;
@@ -88,11 +88,13 @@
 }
 
 .moreetc {
-   padding: 0vw 8vw;
+   max-width: 1280px;
+   margin: 0 auto;
+
 }
 
 .mfcapi {
-   padding-left: 3vw;
+   padding-left: 4vw;
 }
 
 .infoetc {
@@ -122,12 +124,12 @@
 
 .infoetc h4 {
    font-size: 0.9vw;
-   margin-bottom: 1vw;
+   margin-bottom: 1.2vw;
 }
 
 .infoetc a {
-   font-size: 0.7vw;
-   margin-bottom: 0.5vw;
+   font-size: 0.75vw;
+   margin-bottom: 0.75vw;
    width: fit-content;
    text-decoration: none;
    color: white;
@@ -175,11 +177,12 @@
 .follow {
    display: flex;
    justify-content: space-between;
-   margin: 1vw 8vw 0vw 8vw;
-   padding: 1vw 0vw;
+   max-width: 1280px;
+   margin: 1vw auto 0vw auto;
+   padding: 1vw 1vw;
    border-top: 0.1vw solid white;
    color: white;
-   font-size: 0.7vw;
+   font-size: 0.75vw;
 }
 
 .follow a {
@@ -218,12 +221,14 @@
 
 .descrip {
    background-color: #e6e6e7;
-   padding: 1.5vw 13vw;
+   padding: 2vw 10vw;
 }
 
 .descrip p {
+   max-width: 1280px;
+   margin: 0 auto;
    text-align: center;
-   font-size: 0.7vw;
+   font-size: 0.8vw;
    line-height: 1.2vw;
 }
 
@@ -234,17 +239,21 @@
 .copyright {
    display: flex;
    flex-direction: column;
-   font-size: 0.6vw;
+   font-size: 0.7vw;
 }
 
 .copyright img {
-   width: 6vw;
+   width: 8vw;
    margin-bottom: 1vw;
 }
 
 .copyright a {
    color: black;
 }
+.copyright a:hover{
+   color: black;
+}
+
 
 .address {
    display: flex;
@@ -253,7 +262,7 @@
 
 .address p {
    padding-top: 2vw;
-   font-size: 0.6vw;
+   font-size: 0.7vw;
    text-align: end;
 }
 
@@ -262,7 +271,83 @@
    .bgfoot1 {
       margin-top: 20vw;
    }
+   .craft {
+      margin: 2vw;
+   }
+   .craft p {
+      padding-top: 5vw;
+      font-size: 2.2vw;
+   }
+   .teamicon {
+      padding: 0vw 15vw;
+      margin-bottom: 7vw;
+   }
+   .teamicon p {
+      font-size: 2vw;
+   } 
+   .logo1 {
+      width: 18vw;
+   }
+   .logo2 {
+      width: 10vw;
+   }
+   .craft button {
+      width: 19vw;
+      height: 5vw;
+      font-size: 1.7vw;
+      font-weight: bold;
+   }
+   
+   .numregis a {
+      margin-top: 2vw;
+      margin-bottom: 4vw;
+      font-size: 2.5vw;
+      border-top: 0.15vw solid #bf5c40;
+      border-bottom: 0.15vw solid #bf5c40;
+      padding: 0.75vw 1.5vw;
+   }
+   .infoetc h4 {
+      font-size: 1.3vw;
+      margin-bottom: 1.5vw;
+   }
+   
+   .infoetc a {
+      font-size: 1.1vw;
+      margin-bottom: 0.8vw;
 
+   }
+   .moreetc {
+      margin: 0 1vw;
+   }
+   .follow {
+      margin: 1.5vw 1.5vw 0vw 1.5vw;
+      padding: 1vw 0vw;
+      border-top: 0.1vw solid white;
+      color: white;
+      font-size: 1.1vw;
+   }
+   .follow a {
+      padding: 0vw 0.75vw;
+   }
+   .social img {
+      width: 2.8vw;
+      height: 2.4vw;
+      padding: 0vw 0vw;
+   }
+   .descrip {
+      background-color: #e6e6e7;
+      padding: 2vw 3vw;
+   }
+   
+   .descrip p {
+      max-width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.1vw;
+      line-height: 1.4vw;
+   }
+   
+   
 }
 
 @media only screen and (max-width: 575px) {

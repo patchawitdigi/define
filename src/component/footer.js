@@ -1,6 +1,7 @@
 import "./footer.css";
-import logo from "../img/overview/logo-capita.png"
+import logo from "../img/overview/logo-capita.jpeg"
 import logo2 from "../img/overview/logo-thein.png"
+import logo3 from "../img/overview/logo-thein.svg"
 import ig from "../img/overview/ic-ig.png"
 import fb from "../img/overview/ic-facebook.png"
 import tw from "../img/overview/ic-twitter.png"
@@ -171,7 +172,7 @@ export default function Footer() {
                         </div>
                         <div className="collapicon">
                             <p>{t('IN COLLABORATION WITH')}</p>
-                            <img className="logo2" src={logo2} />
+                            <img className="logo2" src={logo3} />
                         </div>
                     </div>
                     <div className="butregis">
@@ -258,7 +259,7 @@ export default function Footer() {
                     <div>
                         <a href="https://www.capitaland.com/en/find-a-property/global-presence-map.html" target="_blank" className="folleft">{t('Find a Property')}</a>
                         <a href="https://www.capitaland.com/en/contact-us.html" target="_blank" className="folleft">{t('Contact Us')}</a>
-                        <a href="" target="_blank" className="folleft">{t('Privacy Policy')}</a>
+                        <a href="https://define.com.vn/privacy-policy" target="_blank" className="folleft">{t('Privacy Policy')}</a>
                         <a href="https://www.capitaland.com/en/legal-notices/terms-and-conditions.html" target="_blank">{t('Terms & Conditions')}</a>
 
                     </div>
@@ -287,7 +288,7 @@ export default function Footer() {
                             <div className="copyright">
                                 <img src={logo} />
                                 <p>{t('Copyright © 2021 CapitaLand Limited. All Rights Reserved.')}</p>
-                                <a href=''>{t('Personal Information Protection Policy')}</a>
+                                <a href='https://define.com.vn/privacy-policy'>{t('Personal Information Protection Policy')}</a>
                             </div>
                         </Col>
                         <Col sm={6}>

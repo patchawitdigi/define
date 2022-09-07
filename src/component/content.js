@@ -66,7 +66,7 @@ export default function Content() {
                          console.log(banvid)
                     })}     */}
                     {/* <source src={"https://define.com.vn/assets/video-banner.mp4"} type="video/mp4" />        */}
-                    {/* <source src={video} type="video/mp4" /> */}
+                    <source src={video} type="video/mp4" />
                     
                     
                 </video>

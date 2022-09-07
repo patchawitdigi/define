@@ -52,6 +52,8 @@ function Interest() {
     document.getElementById("extend").src = capi
     document.getElementById("capital").style.color = "#bf5c40"
     var liblock = document.querySelectorAll("#liblock")
+
+    
     if (liblock[0].style.display == "block") { // if is menuBox displayed, hide it
       liblock[0].style.display = "none";
       document.getElementById("rotatep0").style.transform = "rotate(0deg)";
@@ -336,6 +338,15 @@ function Interest() {
     Aos.init({ duration: 1000 });
   }, []);
 
+  {pointint?.rows?.map(interest => {
+      console.log(interest.locationTitle)
+      {interest.locationBelongs.map(point => {
+         console.log(point.prefix, point.subTitle)
+      })}
+         
+  })}
+  
+
   return (
     <div>
       <img className='delogo' src={delogo} />
@@ -364,7 +375,7 @@ function Interest() {
                           <p id="rotatep0">+</p>
                         </div>
                         <ul id="liblock">
-                          {interest?.locationbelong?.map(point => {
+                          {interest?.locationBelongs?.map(point => {
                             return (
                               <li><span>{point.prefix}</span> <a>{point.subTitle}</a></li>
                             );
