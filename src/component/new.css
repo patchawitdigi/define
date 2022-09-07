@@ -13,15 +13,18 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-family: 'Montserrat-Regular';
 }
 
 .titledate{
     font-size: 1.2vw;
+    font-family: 'minion_proregular';
 }
 .titlesub{
     font-size: 0.8vw;
     width: 50%;
     margin: 1vw auto;
+    font-family: 'minion_proregular';
 }
 .backtomain{
     display: flex;
@@ -33,6 +36,7 @@
     text-decoration: none;
     color: #bf5c40;
     font-size: 1.2vw;
+    font-family: 'Montserrat-Light';
 }
 .backtomain a:hover{
     color: #bf5c40;

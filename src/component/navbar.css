@@ -43,7 +43,7 @@
     padding: 0 0.3vw;
     font-size: 1.2vw;
     cursor: pointer;
-
+    font-family: 'Montserrat-Regular';
 }
 
 
@@ -57,6 +57,7 @@
     color: #bf5c40;
     font-size: 0.9vw;
     font-weight: bold; 
+    font-family: 'Montserrat-Regular';
 }
 
 .btnregis button:hover{ 

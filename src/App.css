@@ -1,3 +1,35 @@
 body{
   overflow-x: hidden;
 }
+
+@font-face {
+  font-family: 'minion_proregular';
+  src: url('fonts/MinionPro-Regular.8055395f.woff2') format('woff2');      
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('fonts/Montserrat-Light.b25f69dd.woff2') format('woff2');  
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('fonts/Montserrat-Medium.a78cebd5.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('fonts/Montserrat-Regular.7fde05f9.woff2') format('woff2');  
+  font-weight: normal;
+  font-style: normal;
+
+}

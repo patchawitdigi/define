@@ -27,7 +27,8 @@ export default function Project() {
             <img className="bannerproject" src={bannerproject} />
             <div className='lineproject'><h3></h3></div>
             <p className='infoproject'>INFORMATION OF REAL PROPERTIES PUT INTO BUSINESS</p>
-            <Container className='project'>
+            <Container fluid >
+                <div className='project'>
                 {projects.map((project) => {
                     return (
                         <div className='nameproject'>
@@ -44,6 +45,7 @@ export default function Project() {
                         </div>
                     );
                 })}
+                </div>
             </Container>
         </div>
     )

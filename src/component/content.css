@@ -46,11 +46,13 @@
     color: #bf5c40;
     margin-bottom: 1vw;
     font-size: 2vw;
+    font-family:'Montserrat-Regular';
 }
 
 .textcon p {
     font-size: 0.8vw;
     line-height: 1.5vw;
+    font-family: 'minion_proregular';
 }
 
 
@@ -98,18 +100,18 @@
 
 .icon2 {
     margin-left: 7vw;
-    width: 5vw;
+    width: 4vw;
 }
 
 .icon3 {
-    margin-top: 4vw;
+    margin-top: 1vw;
     margin-left: 3vw;
     width: 4vw;
 }
 
 .icon4 {
-    margin-left: 14vw;
-    margin-top: -4vw;
+    margin-left: 6vw;
+    margin-top: 2vw;
     width: 10vw;
 }
 
@@ -227,19 +229,20 @@
     }
 
     .icon2 {
-        margin-left: 20vw;
+        margin-top: 1vw;
+        margin-left: 15vw;
         width: 7vw;
     }
 
     .icon3 {
         margin-top: 4vw;
-        margin-left: 20vw;
+        margin-left: 18vw;
         width: 7vw;
     }
 
     .icon4 {
-        margin-left: 25vw;
-        margin-top: 0vw;
+        margin-left: 15vw;
+        margin-top: 2vw;
         width: 15vw;
     }
 
@@ -272,6 +275,28 @@
         font-size: 1.7vw;
         line-height: 3vw;
         padding-right: 5vw;
+    }
+    .icon1 {
+        margin-left: 5vw;
+        width: 12vw;
+    }
+
+    .icon2 {
+        margin-top: 3vw;
+        margin-left: 15vw;
+        width: 7vw;
+    }
+
+    .icon3 {
+        margin-top: 4vw;
+        margin-left: 18vw;
+        width: 7vw;
+    }
+
+    .icon4 {
+        margin-left: 15vw;
+        margin-top: 2vw;
+        width: 15vw;
     }
 
     .bgleft {

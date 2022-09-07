@@ -9,6 +9,7 @@
     color: #bf5c40;
     margin-bottom: 2vw;
     font-size: 2vw;
+    font-family: 'Montserrat-Regular';
 }
 
 
@@ -22,12 +23,14 @@
     border-bottom: 0.1vw solid #bf5c40;
     padding: 0 2.5vw 1vw 2.5vw;
     margin-bottom: 1vw;
+    font-family: 'minion_proregular';
 }
 
 .selectlevel p {
     padding: 0.25vw 0vw 0vw 2.5vw;
     cursor: pointer;
     font-size: 1.1vw;
+    font-family: 'minion_proregular';
 }
 
 .imglevel img {
@@ -40,6 +43,7 @@
     margin-bottom: 4vw;
     margin-top: 2vw;
     text-align: center;
+    font-family: 'minion_proregular';
 }
 
 #floor3 {
@@ -234,6 +238,7 @@
 .planpopup p {
     font-size: 0.7vw;
     text-align: center;
+    font-family: 'minion_proregular';
 
 }
 
@@ -255,6 +260,7 @@
     color: #bf5c40;
     font-size: 1vw;
     margin-bottom: 0.3vw;
+    font-family: 'minion_proregular';
 }
 
 .popuplogo p {

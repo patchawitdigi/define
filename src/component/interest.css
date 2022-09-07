@@ -20,6 +20,7 @@
     margin-bottom: 2.5vw;
     color: #bf5c40;
     font-size: 2.5vw;
+    font-family: 'Montserrat-Regular';
 }
 
 .staymap {
@@ -68,11 +69,13 @@
     margin-bottom: 0.5vw;
     font-size: 0.8vw;
     font-weight: bold;
+    font-family: 'Montserrat-Regular';
 }
 
 .menu li ul li {
     border: 0;
     font-size: 0.7vw;
+    font-family: 'Montserrat-Light';
 
 }
 
@@ -94,6 +97,7 @@
     font-size: 0.7vw;
     margin-bottom: 2vw;
     text-align: center;
+    font-family: 'minion_proregular';
 }
 
 .mapextend img {

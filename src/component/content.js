@@ -52,7 +52,7 @@ export default function Content() {
     }, []);
 
     console.log(videoban.banners)
-   
+
     const scrollRef = useRef(null);
     useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
 
@@ -67,13 +67,46 @@ export default function Content() {
                     })}     */}
                     {/* <source src={"https://define.com.vn/assets/video-banner.mp4"} type="video/mp4" />        */}
                     <source src={video} type="video/mp4" />
-                    
-                    
+
+
                 </video>
             </div>
 
             {content.map(detail => {
-                if (detail.imageAlignment == "right") {
+                console.log(detail.descriptionTh)
+                if (detail.imageAlignment == "right" && detail.descriptionTh == "fouricon") {
+                    return (
+                        <div>
+                            <Container fluid className="p-0">
+                                <div className="content">
+                                    <Row>
+                                        <Col lg={4}>
+                                            <div className="textcon" data-aos="fade-down">
+                                                <h2></h2>
+                                                <h3>{detail.title}</h3>
+                                                <div>
+                                                    <img className="icon1" src={icon1} />
+                                                    <img className="icon2" src={icon2} />
+                                                </div>
+                                                <div>
+                                                    <img className="icon3" src={icon3} />
+                                                    <img className="icon4" src={icon4} />
+                                                </div>
+                                                <img className="bgleft" src={bgleft} />
+                                            </div>
+                                        </Col>
+                                        <Col lg={8}>
+                                            <div className="imgcon ban1">
+                                                <img src={detail.url} />
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Container>
+                        </div>
+                    );
+                }
+                else if (detail.imageAlignment == "right") {
                     return (
                         <div>
                             <Container fluid className="p-0">
