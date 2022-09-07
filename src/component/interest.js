@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./interest.css";
 import gal5 from '../img/overview/gallery-5.jpeg'
 import delogo from '../img/pointint/logo-menu.png'
@@ -19,7 +19,6 @@ import Col from 'react-bootstrap/Col';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-
 
 function Interest() {
 
@@ -326,14 +325,21 @@ function Interest() {
     }
   }
 
+  const [pointint, setPoinint] = useState([])
+
   useEffect(() => {
-    Aos.init({ duration:  1000 });
-},[]);
+    fetch("https://define.com.vn/apiv1/publicServices/pointOfInterest/list.php").then(
+      response => response.json().then(data => {
+        setPoinint(data);
+      })
+    )
+    Aos.init({ duration: 1000 });
+  }, []);
 
   return (
     <div>
       <img className='delogo' src={delogo} />
-      <img className='gal5' src={gal5} data-aos="fade-up"/>
+      <img className='gal5' src={gal5} data-aos="fade-up" />
       <h3 className='where' data-aos="fade-up">DEFINE WHERE YOU STAY</h3>
       <Container fluid className='p-0'>
         <div className='staymap'>
@@ -343,33 +349,31 @@ function Interest() {
                 <img src={bgmap} />
               </div>
               <div className='mapextend'>
-                <img src={surr} id="extend" data-aos="fade-up" data-aos-delay="500"/>
+                <img src={surr} id="extend" data-aos="fade-up" data-aos-delay="500" />
               </div>
             </Col>
             <Col sm={3}>
               <div className='point'>
                 <ul className="menu" data-aos="fade-left" data-aos-delay="1000">
 
-                <li onClick={changeimg2}>
-                    <div className='headdrop'>
-                      <label className="closer" for="dropclose" id="capital">CAPITALAND PROJECTS</label>
-                      <p id="rotatep0">+</p>
-                    </div>
-                    <ul id="liblock">
-                      <li><span>A</span> <a>The Vista</a></li>
-                      <li><span>B</span> <a>Vista Verde</a></li>
-                      <li><span>C</span> <a>ParcSpring</a></li>
-                      <li><span>D</span> <a>The Krista</a></li>
-                      <li><span>E</span> <a>Kris Vue</a></li>
-                      <li><span>F</span> <a>Feliz en Vista</a></li>
-                      <li><span>G</span> <a>D2eight</a></li>
-                      <li><span>H</span> <a>D1MENSION</a></li>
-                      <li><span>I</span> <a>De La Sol</a></li>
-                      <li><span>J</span> <a>d’Edge Thao Dien</a></li>
-                      <li><span>K</span> <a>ZENITY</a></li>
-                    </ul>
-                  </li>
-                
+                  {pointint?.rows?.map(interest => {
+                    return (
+                      <li onClick={changeimg2}>
+                        <div className='headdrop'>
+                          <label className="closer" for="dropclose" id="capital">{interest.locationTitle}</label>
+                          <p id="rotatep0">+</p>
+                        </div>
+                        <ul id="liblock">
+                          {interest?.locationbelong?.map(point => {
+                            return (
+                              <li><span>{point.prefix}</span> <a>{point.subTitle}</a></li>
+                            );
+                          })}
+                        </ul>
+                      </li>
+                    );
+                  })}
+
 
                   {/* <li onClick={changeimg1}>
                     <div className='headdrop'>
