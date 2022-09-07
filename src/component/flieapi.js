@@ -4,5 +4,6 @@ const homeGallery = `${apiurl}/homeGallery/list.php`;
 const galleryArt = `${apiurl}/gallerieDArt/list.php`;
 const projectinfo = `${apiurl}/projectInfo/list.php`;
 const bannervideo = `${apiurl}/banner/list.php`;
+const hiddentreasure = `${apiurl}/hiddenTreasure/list.php`;
 
-export{newsList, homeGallery, galleryArt, projectinfo, bannervideo}
+export{newsList, homeGallery, galleryArt, projectinfo, bannervideo, hiddentreasure}

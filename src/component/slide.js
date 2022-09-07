@@ -28,11 +28,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
 
+import { hiddentreasure } from './flieapi';
+
 function Slide() {
 
     const [imgsty, setimgsty] = useState({ objectPosition: '50% 100%' })
     const [imgsl, setimgsl] = useState(0)
     const slide = [im1, im2, im3, im4, im5, im6, im7, im8, im9, im10, im11, im12, im13, im14, im15, im16, im17]
+    const slide2 = []
     function next() {
         if (imgsl >= slide.length - 1) {
             setimgsl(0)
@@ -65,9 +68,26 @@ function Slide() {
         console.log(imgsl)
     }
 
+    const [treasure, setTreasure] = useState([])
     useEffect(() => {
+        fetch(hiddentreasure).then(
+            response => response.json().then(data => {
+                setTreasure(data);
+            })
+        );
+
         Aos.init({ duration:  1000 });
     },[]);
+
+    console.log(treasure.images)
+    
+    {treasure?.images?.map(hidden =>{
+        slide2.push(hidden.url);
+    })}
+
+    console.log(slide2)
+    
+
 
     return (
         <div>
@@ -77,7 +97,13 @@ function Slide() {
                 <div className="content conhid">
                     <Row>
                         <Col lg={4}>
-                            <div className="textcon texthid" data-aos="fade-down">
+                        <div className="textcon texthid" data-aos="fade-down">
+                                <h2></h2>
+                                <h3>{treasure.title}</h3>
+                                <p>{treasure.subTitle}</p>
+                                <img className="bglefthid" src={bgleft} />
+                            </div>
+                            {/* <div className="textcon texthid" data-aos="fade-down">
                                 <h2></h2>
                                 <h3>DEFINE YOUR LIFESTYLE<br />
                                     & WELLBEING</h3>
@@ -85,13 +111,14 @@ function Slide() {
                                     within DEFINE. Lush jewel themed gardens are dotted around the first floor and third floor, allowing
                                     residents to easily reconnect with nature for quiet moments of repose.</p>
                                 <img className="bglefthid" src={bgleft} />
-                            </div>
+                            </div> */}
                         </Col>
                         <Col lg={8}>
                             <div className="main-carousel">
                                 <div className="carousel">
                                     <div className="items">
-                                        <img src={slide[imgsl]} alt="" className="carousel-image" style={imgsty} />
+                                        {/* <img src={slide[imgsl]} alt="" className="carousel-image" style={imgsty} /> */}
+                                        <img src={slide2[imgsl]} alt="" className="carousel-image" style={imgsty} />
                                     </div>
                                 </div>
 

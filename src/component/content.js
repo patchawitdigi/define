@@ -23,8 +23,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { homeGallery } from'./flieapi';
-import { bannervideo } from'./flieapi';
+import { homeGallery } from './flieapi';
+import { bannervideo } from './flieapi';
 
 import { useTranslation } from 'react-i18next';
 
@@ -37,37 +37,43 @@ export default function Content() {
 
     useEffect(() => {
         // fetch("http://localhost:8202/publicServices/homeGallery/list.php").then(
-        fetch(homeGallery).then(    
+        fetch(homeGallery).then(
             response => response.json().then(data => {
                 setContent(data);
             })
         )
-        fetch(bannervideo).then(    
+        fetch(bannervideo).then(
             response => response.json().then(data => {
-                setVideoBan([data]);  
+                setVideoBan(data);
             })
         )
-        console.log(videoban)
-
         Aos.init({ duration: 1000 });
-       
+
     }, []);
 
+    console.log(videoban.banners)
+   
     const scrollRef = useRef(null);
     useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
 
     return (
         <div ref={scrollRef}>
-        {/* <div> */}
+            {/* <div> */}
             <div className="vibanner">
                 <video loop muted autoPlay>
-                    {/* <source src={videoban.banners[0]} type="video/mp4" /> */}
-                    <source src={video} type="video/mp4" />    
+                    {/* {videoban?.banners?.map((banvid) => {
+                         <source src={banvid} type="video/mp4" />
+                         console.log(banvid)
+                    })}     */}
+                    {/* <source src={"https://define.com.vn/assets/video-banner.mp4"} type="video/mp4" />        */}
+                    {/* <source src={video} type="video/mp4" /> */}
+                    
+                    
                 </video>
             </div>
 
             {content.map(detail => {
-                if (detail.imageAlignment == "right" ) {
+                if (detail.imageAlignment == "right") {
                     return (
                         <div>
                             <Container fluid className="p-0">
@@ -118,9 +124,9 @@ export default function Content() {
                     );
                 }
 
-                
+
             })}
-           
+
 
 
 

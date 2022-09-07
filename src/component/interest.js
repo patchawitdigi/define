@@ -51,15 +51,7 @@ function Interest() {
   }
   function changeimg2() {
     document.getElementById("extend").src = capi
-    document.getElementById("surround").style.color = "black"
     document.getElementById("capital").style.color = "#bf5c40"
-    document.getElementById("educa").style.color = "black"
-    document.getElementById("health").style.color = "black"
-    document.getElementById("business").style.color = "black"
-    document.getElementById("superma").style.color = "black"
-    document.getElementById("shopen").style.color = "black"
-    document.getElementById("nearby").style.color = "black"
-    document.getElementById("metroline").style.color = "black"
     var liblock = document.querySelectorAll("#liblock")
     if (liblock[0].style.display == "block") { // if is menuBox displayed, hide it
       liblock[0].style.display = "none";
@@ -70,18 +62,42 @@ function Interest() {
         liblock[i].style.display = "none"
       }
       liblock[0].style.display = "block"
-      document.getElementById("rotatep").style.transform = "rotate(0deg)"
       document.getElementById("rotatep0").style.transform = "rotate(45deg)"
-      document.getElementById("rotatep1").style.transform = "rotate(0deg)"
-      document.getElementById("rotatep2").style.transform = "rotate(0deg)"
-      document.getElementById("rotatep3").style.transform = "rotate(0deg)"
-      document.getElementById("rotatep4").style.transform = "rotate(0deg)"
-      document.getElementById("rotatep5").style.transform = "rotate(0deg)"
-      document.getElementById("rotatep6").style.transform = "rotate(0deg)"
-      document.getElementById("rotatep7").style.transform = "rotate(0deg)";
     }
-
   }
+  // function changeimg2() {
+  //   document.getElementById("extend").src = capi
+  //   document.getElementById("surround").style.color = "black"
+  //   document.getElementById("capital").style.color = "#bf5c40"
+  //   document.getElementById("educa").style.color = "black"
+  //   document.getElementById("health").style.color = "black"
+  //   document.getElementById("business").style.color = "black"
+  //   document.getElementById("superma").style.color = "black"
+  //   document.getElementById("shopen").style.color = "black"
+  //   document.getElementById("nearby").style.color = "black"
+  //   document.getElementById("metroline").style.color = "black"
+  //   var liblock = document.querySelectorAll("#liblock")
+  //   if (liblock[0].style.display == "block") { // if is menuBox displayed, hide it
+  //     liblock[0].style.display = "none";
+  //     document.getElementById("rotatep0").style.transform = "rotate(0deg)";
+  //   }
+  //   else { // if is menuBox hidden, display it
+  //     for (var i = 0; i < liblock.length; i++) {
+  //       liblock[i].style.display = "none"
+  //     }
+  //     liblock[0].style.display = "block"
+  //     document.getElementById("rotatep").style.transform = "rotate(0deg)"
+  //     document.getElementById("rotatep0").style.transform = "rotate(45deg)"
+  //     document.getElementById("rotatep1").style.transform = "rotate(0deg)"
+  //     document.getElementById("rotatep2").style.transform = "rotate(0deg)"
+  //     document.getElementById("rotatep3").style.transform = "rotate(0deg)"
+  //     document.getElementById("rotatep4").style.transform = "rotate(0deg)"
+  //     document.getElementById("rotatep5").style.transform = "rotate(0deg)"
+  //     document.getElementById("rotatep6").style.transform = "rotate(0deg)"
+  //     document.getElementById("rotatep7").style.transform = "rotate(0deg)";
+  //   }
+  // }
+
   function changeimg3() {
     document.getElementById("extend").src = edu
     document.getElementById("surround").style.color = "black"
@@ -333,7 +349,29 @@ function Interest() {
             <Col sm={3}>
               <div className='point'>
                 <ul className="menu" data-aos="fade-left" data-aos-delay="1000">
-                  <li onClick={changeimg1}>
+
+                <li onClick={changeimg2}>
+                    <div className='headdrop'>
+                      <label className="closer" for="dropclose" id="capital">CAPITALAND PROJECTS</label>
+                      <p id="rotatep0">+</p>
+                    </div>
+                    <ul id="liblock">
+                      <li><span>A</span> <a>The Vista</a></li>
+                      <li><span>B</span> <a>Vista Verde</a></li>
+                      <li><span>C</span> <a>ParcSpring</a></li>
+                      <li><span>D</span> <a>The Krista</a></li>
+                      <li><span>E</span> <a>Kris Vue</a></li>
+                      <li><span>F</span> <a>Feliz en Vista</a></li>
+                      <li><span>G</span> <a>D2eight</a></li>
+                      <li><span>H</span> <a>D1MENSION</a></li>
+                      <li><span>I</span> <a>De La Sol</a></li>
+                      <li><span>J</span> <a>d’Edge Thao Dien</a></li>
+                      <li><span>K</span> <a>ZENITY</a></li>
+                    </ul>
+                  </li>
+                
+
+                  {/* <li onClick={changeimg1}>
                     <div className='headdrop'>
                       <label className="closer" for="dropclose" id="surround">SURROUNDING</label>
                       <p id="rotatep">+</p>
@@ -452,7 +490,8 @@ function Interest() {
                       <li><span><br /></span> <a>Metro Station (Under Construction)</a></li>
                       <li><span style={{ backgroundColor: '#9e9e9e' }}><br /></span> <a>Metro Line 2 (Under Planning)</a></li>
                     </ul>
-                  </li>
+                  </li> */}
+
                 </ul>
               </div>
             </Col>

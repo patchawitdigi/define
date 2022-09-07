@@ -68,7 +68,7 @@
     .carousel-image {
         width: 100%;
         height: 48vw;
-       
+       margin-top: -10vw;
     }
 
     .main-carousel {
@@ -83,12 +83,12 @@
     }
     
     .buttons #prevBtn { 
-        top: 24vw;
+        top: 14vw;
        
     }
     
     .buttons #nextBtn {
-        top: 24vw;    
+        top: 14vw;    
       
     }
     .bglefthid {
@@ -104,8 +104,21 @@
     .texthid{
         margin-top: 50vw;
     }
-
-
+    .carousel-image {
+        width: 100%;
+        height: 48vw;
+       margin-top: -19vw;
+    }
+      
+    .buttons #prevBtn { 
+        top: 5vw;
+       
+    }
+    
+    .buttons #nextBtn {
+        top: 5vw;    
+      
+    }
     .main-carousel {
         width: 100%;
         position: absolute;
@@ -115,6 +128,6 @@
     .bglefthid {
         left: -5vw;
         top: 23vw;
-        ;
+        
     }
 }
