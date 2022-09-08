@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 import { newsList } from'./flieapi';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function New() {
 
@@ -20,7 +22,7 @@ export default function New() {
                 setNewinfo(data);
             })
         )
-
+        Aos.init({ duration: 1000 });
     }, [])
 
     function createMarkup(data) {
@@ -38,7 +40,6 @@ export default function New() {
             <div className='newstyle'>
                 <p className='titledate'>{newinfo.dateFormat}</p>
                 <p className='titlename'>{newinfo.title}</p>
-                <p className='titlesub'>{newinfo.subTitle}</p>
                 <div dangerouslySetInnerHTML={createMarkup(newinfo.fullDetail)} className='fulldetali'></div>
 
             </div>

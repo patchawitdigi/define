@@ -9,7 +9,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { compareAsc, format } from 'date-fns'
-
+import { RiArrowRightFill } from "react-icons/ri";
+import { CgArrowLongRight } from "react-icons/cg";
 
 export default function Newlist(props) {
     const { data } = props;
@@ -30,6 +31,7 @@ export default function Newlist(props) {
     const handlePageClick = (event) => {
         const newOffset = (event.selected * itemsPerPage) % data.length;
         setItemOffset(newOffset);
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -46,7 +48,7 @@ export default function Newlist(props) {
                                 content = image.externalUrl
                             }
                             console.log(image.dateFormat)
-                            
+
                             return (
                                 <Col lg={4} sm={6}>
                                     <a href={content} target="_blank" style={{ textDecoration: 'none' }}>
@@ -60,6 +62,9 @@ export default function Newlist(props) {
                                                 <div className="newtitle">
                                                     <h6>{image.title}</h6>
                                                     <p>{image.subTitle}</p>
+                                                    <div className="linkto">
+                                                        <CgArrowLongRight />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

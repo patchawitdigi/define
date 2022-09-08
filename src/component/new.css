@@ -6,7 +6,8 @@
 }
 
 .titlename{
-    font-size: 2.5vw;
+    font-size: 2vw;
+    font-weight: bold;
     color: #bf5c40;
     margin-bottom: 2vw;
     width: 70%;
@@ -28,14 +29,14 @@
 }
 .backtomain{
     display: flex;
-    width: 60%;
+    width: 50%;
     margin: 3vw auto;
 }
 
 .backtomain a{
     text-decoration: none;
     color: #bf5c40;
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-family: 'Montserrat-Light';
 }
 .backtomain a:hover{
@@ -47,10 +48,11 @@
     margin-top: -0.25vw;
 }
 .fulldetali{
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'minion_proregular';
 
 }
 .fulldetali p{
