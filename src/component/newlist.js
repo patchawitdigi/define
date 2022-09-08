@@ -8,6 +8,8 @@ import Col from 'react-bootstrap/Col';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import { compareAsc, format } from 'date-fns'
+
 
 export default function Newlist(props) {
     const { data } = props;
@@ -43,7 +45,8 @@ export default function Newlist(props) {
                             else {
                                 content = image.externalUrl
                             }
-                            console.log(content)
+                            console.log(image.dateFormat)
+                            
                             return (
                                 <Col lg={4} sm={6}>
                                     <a href={content} target="_blank" style={{ textDecoration: 'none' }}>
