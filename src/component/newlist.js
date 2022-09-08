@@ -70,11 +70,11 @@ export default function Newlist(props) {
             </Container>
             <ReactPaginate
                 breakLabel="..."
-                nextLabel="next"
+                nextLabel="Next"
                 onPageChange={handlePageClick}
                 pageRangeDisplayed={3}
                 pageCount={pageCount}
-                previousLabel="previous"
+                previousLabel="Previous"
                 renderOnZeroPageCount={null}
                 containerClassName="pagination"
                 pageLinkClassName="page-num"

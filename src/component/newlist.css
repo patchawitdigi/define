@@ -26,7 +26,6 @@
 .image img:hover {
     border-left: 0.5vw solid #bf5c40;
     border-top: 0.5vw solid #bf5c40;
-
 }
 
 .pagination {
@@ -35,12 +34,12 @@
     align-items: center;
     margin-bottom: 5vw;
     font-size: 1vw;
+    font-family: 'Montserrat-Light';
 }
 
 .pagination .page-num {
-    padding: 0.25vw 0.6vw;
+    padding: 0.25vw 0.75vw;
     cursor: pointer;
-    border-radius: 50%;
     font-weight: 400;
     text-decoration: none;
     color: black;
@@ -50,13 +49,14 @@
 
 .pagination .page-num:hover {
     background-color: #bf5c40;
+    border-radius: 50%;
     color: #fff;
+
 }
 
 .pagination .page-num-chg {
-    padding: 0.25vw 0.60vw;
+    padding: 0.25vw 1vw;
     cursor: pointer;
-    border-radius: 50%;
     font-weight: 400;
     text-decoration: none;
     color: black;
@@ -67,9 +67,9 @@
 }
 
 
-
 .pagination .active {
     background-color: #bf5c40;
+    border-radius: 50%;
     color: #fff;
 }
 
@@ -167,6 +167,9 @@
     .pagination {  
         font-size: 1.5vw;
     }
+    .pagination .page-num {
+        padding: 0.25vw 0.9vw;
+    }
 
 }
 
@@ -222,7 +225,8 @@
         font-size: 2.5vw;
     }
     .pagination .page-num {
-        padding: 0.5vw 0.9vw;
+        padding: 0.5vw 1.5vw;
        
     }
+
 }
