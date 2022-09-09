@@ -18,7 +18,7 @@
    text-align: center;
    padding-top: 4vw;
    font-size: 1.5vw;
-   font-family: 'Montserrat-Regular';
+   font-family: 'Montserrat-Light';
 }
 
 .teamicon {
@@ -221,7 +221,7 @@
 }
 
 .social img {
-   width: 2.4vw;
+   width: 2.3vw;
    height: 1.8vw;
    padding: 0vw 0.2vw;
 }

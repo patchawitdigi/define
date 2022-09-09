@@ -76,17 +76,17 @@ function Slide() {
             })
         );
 
-        Aos.init({ duration:  1000 });
-    },[]);
+        Aos.init({ duration: 1000 });
+    }, []);
 
     console.log(treasure.images)
-    
-    {treasure?.images?.map(hidden =>{
-        slide2.push(hidden.url);
-    })}
+
+    {treasure?.images?.map(hidden => {
+            slide2.push(hidden.url);
+        })}
 
     console.log(slide2)
-    
+
 
 
     return (
@@ -97,7 +97,7 @@ function Slide() {
                 <div className="content conhid">
                     <Row>
                         <Col lg={4}>
-                        <div className="textcon texthid" data-aos="fade-down">
+                            <div className="textcon texthid" data-aos="fade-down">
                                 <h2></h2>
                                 <h3>{treasure.title}</h3>
                                 <p>{treasure.subTitle}</p>
@@ -119,6 +119,14 @@ function Slide() {
                                     <div className="items">
                                         {/* <img src={slide[imgsl]} alt="" className="carousel-image" style={imgsty} /> */}
                                         <img src={slide2[imgsl]} alt="" className="carousel-image" style={imgsty} />
+                                        {/* {treasure?.images?.map(hidden => {
+                                            return (
+                                                <div>
+                                                    <p>{hidden.caption}</p>
+                                                    <p>Artist's Impreesion</p>
+                                                </div>
+                                            );
+                                        })} */}
                                     </div>
                                 </div>
 

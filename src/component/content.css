@@ -1,13 +1,17 @@
 .vibanner video {
-    position: absolute;
+    /* position: absolute; */
+    /* top: 0vw; */
     width: 100%;
-    top: -5.25vw;
-    z-index: -1;
-
+    height: 100%;
+    object-fit: cover;
+    object-position: center 85%;
 }
 
 .vibanner {
-    margin-bottom: 53vw;
+    margin-bottom: 10vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 .content {
@@ -15,6 +19,17 @@
     justify-content: space-between; */
     margin-bottom: 12vw;
     padding-top: 8vw;
+}
+.imgcon{
+    position: relative;
+}
+.imgcon p{
+    position: absolute;
+    top: 34vw;
+    left: 2vw;
+    font-size: 0.65vw;
+    color: #fff;
+    font-family: 'Montserrat-Light';
 }
 
 .imgcon img {
@@ -69,17 +84,14 @@
 .textr {
     margin-top: 9vw;
     margin-left: 0vw;
-}
-
-.textr p {
-    padding-right: 1vw;
+    padding-right: 1.5vw;
 }
 
 .bgright {
     position: absolute;
     width: 21vw;
     right: 0;
-    top: 16vw;
+    top: 18vw;
     z-index: -1;
 
 }
@@ -95,7 +107,7 @@
 
 .icon1 {
     margin-left: 3vw;
-    width: 6vw;
+    width: 7vw;
 }
 
 .icon2 {
@@ -106,7 +118,7 @@
 .icon3 {
     margin-top: 1vw;
     margin-left: 3vw;
-    width: 4vw;
+    width: 4.5vw;
 }
 
 .icon4 {
@@ -156,6 +168,22 @@
     background-color: #bf5c40;
     margin-left: 0.5vw;
 }
+@media only screen and (max-width: 1900px) {
+    .vibanner video {
+        /* position: absolute; */
+        /* top: 0vw; */
+        width: 100%;
+        object-fit: cover;
+        object-position: center 85%;
+       
+    }
+    
+    .vibanner {
+        width: 100vw;
+        height: auto;
+        z-index: -1;
+    }
+}
 
 @media only screen and (max-width: 992px) {
 
@@ -195,7 +223,7 @@
     }
 
     .bgleft {
-        top: 14vw;
+        top: 18vw;
         left: -5vw;
 
     }
@@ -327,11 +355,5 @@
     .right3 {
         top: 25vw;
     }
-    .vibanner video {
-        position: absolute;
-        width: 100%;
-        top: -2.25vw;
-        z-index: -1;
-    
-    }
+
 }

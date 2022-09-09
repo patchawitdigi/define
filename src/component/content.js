@@ -31,49 +31,42 @@ import { useTranslation } from 'react-i18next';
 export default function Content() {
 
     const [content, setContent] = useState([]);
-    const [videoban, setVideoBan] = useState([]);
+    const [videoban, setVideoBan] = useState();
 
-    const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation(); 
 
     useEffect(() => {
         // fetch("http://localhost:8202/publicServices/homeGallery/list.php").then(
         fetch(homeGallery).then(
             response => response.json().then(data => {
-                setContent(data);
+                return setContent(data);
             })
         )
+        
         fetch(bannervideo).then(
             response => response.json().then(data => {
-                setVideoBan(data);
+                return setVideoBan(data);
             })
         )
+
         Aos.init({ duration: 1000 });
 
     }, []);
 
-    console.log(videoban.banners)
 
-    const scrollRef = useRef(null);
-    useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
+    // const scrollRef = useRef(null);
+    // useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
 
     return (
-        <div ref={scrollRef}>
-            {/* <div> */}
+        // <div ref={scrollRef}>
+        <div>
             <div className="vibanner">
                 <video loop muted autoPlay>
-                    {/* {videoban?.banners?.map((banvid) => {
-                         <source src={banvid} type="video/mp4" />
-                         console.log(banvid)
-                    })}     */}
-                    {/* <source src={"https://define.com.vn/assets/video-banner.mp4"} type="video/mp4" />        */}
-                    <source src={video} type="video/mp4" />
-
-
+                    {videoban && <source src={videoban?.banners[0]} type="video/mp4"/>}
                 </video>
             </div>
 
             {content.map(detail => {
-                console.log(detail.descriptionTh)
                 if (detail.imageAlignment == "right" && detail.descriptionTh == "fouricon") {
                     return (
                         <div>
@@ -98,6 +91,7 @@ export default function Content() {
                                         <Col lg={8}>
                                             <div className="imgcon ban1">
                                                 <img src={detail.url} />
+                                                <p>Artist's Impression</p>
                                             </div>
                                         </Col>
                                     </Row>
@@ -123,6 +117,7 @@ export default function Content() {
                                         <Col lg={8}>
                                             <div className="imgcon ban1">
                                                 <img src={detail.url} />
+                                                <p>Artist's Impression</p>
                                             </div>
                                         </Col>
                                     </Row>
@@ -140,6 +135,7 @@ export default function Content() {
                                         <Col lg={8}>
                                             <div className="imgcon ban2">
                                                 <img src={detail.url} />
+                                                <p>Artist's Impression</p>
                                             </div>
                                         </Col>
                                         <Col lg={4}>

@@ -61,12 +61,9 @@ export default function Gallaryart() {
             })
         );
 
-        var modal01 = document.getElementById("myModal01");
-        var btn01 = document.getElementById("plusitem1");
-        var span01 = document.getElementsByClassName("close")[0];
-        console.log(modal01)
-        console.log(btn01)
-        console.log(span01)
+        // var modal01 = document.getElementById("myModal01");
+        // var btn01 = document.getElementById("plusitem1");
+        // var span01 = document.getElementsByClassName("close")[0];
         // btn01.onclick = function () {
         //     modal01.style.display = "block";
         // }

@@ -53,7 +53,7 @@ function Interest() {
     document.getElementById("capital").style.color = "#bf5c40"
     var liblock = document.querySelectorAll("#liblock")
 
-    
+
     if (liblock[0].style.display == "block") { // if is menuBox displayed, hide it
       liblock[0].style.display = "none";
       document.getElementById("rotatep0").style.transform = "rotate(0deg)";
@@ -338,18 +338,22 @@ function Interest() {
     Aos.init({ duration: 1000 });
   }, []);
 
-  {pointint?.rows?.map(interest => {
+  {
+    pointint?.rows?.map(interest => {
       console.log(interest.locationTitle)
-      {interest.locationBelongs.map(point => {
-         console.log(point.prefix, point.subTitle)
-      })}
-         
-  })}
-  
+      {
+        interest.locationBelongs.map(point => {
+          console.log(point.prefix, point.subTitle)
+        })
+      }
+
+    })
+  }
+
 
   return (
     <div>
-      <img className='delogo' src={delogo} />
+      <a href='/project/define/'><img className='delogo' src={delogo} /></a>
       <img className='gal5' src={gal5} data-aos="fade-up" />
       <h3 className='where' data-aos="fade-up">DEFINE WHERE YOU STAY</h3>
       <Container fluid className='p-0'>
@@ -358,9 +362,9 @@ function Interest() {
             <Col sm={8}>
               <div className='bgmap' data-aos="fade-up" data-aos-delay="500">
                 <img src={bgmap} />
-              </div>
-              <div className='mapextend'>
-                <img src={surr} id="extend" data-aos="fade-up" data-aos-delay="500" />
+                <div className='mapextend'>
+                  <img src={surr} id="extend" data-aos="fade-up" data-aos-delay="500" />
+                </div>
               </div>
             </Col>
             <Col sm={3}>

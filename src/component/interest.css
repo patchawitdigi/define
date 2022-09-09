@@ -28,7 +28,9 @@
     margin-bottom: 2vw;
     margin-left: 2.8vw;
 }
-
+.bgmap{
+    position: relative;
+}
 .bgmap img {
     width: 61.5vw;
     height: 45vw;
@@ -42,7 +44,7 @@
 
 .menu {
     margin-top: 0.5vw;
-    padding-inline-start: 1.5vw;
+   
 }
 
 .menu li {
@@ -102,10 +104,9 @@
 
 .mapextend img {
     position: absolute;
-    left: 2.5vw;
-    top: 63.7vw;
-    width: 62vw;
-    height: 45vw;
+    left: 1vw;
+    top: 0vw;
+    width: 100%;
 }
 
 #surround {
@@ -114,10 +115,10 @@
 
 @media only screen and (max-width: 991px) {
     .mapextend img {
-        left: 2.5vw;
-        top: 64.2vw;
-        width: 62vw;
-        height: 44vw;
+        position: absolute;
+        left: 1vw;
+        top: 0vw;
+        width: 100%;
     }
 }
 
@@ -135,10 +136,10 @@
     }
 
     .mapextend img {
-        left: 3vw;
-        top: 77vw;
-        width: 93%;
-        height: auto;
+        position: absolute;
+        left: 1vw;
+        top: 0vw;
+        width: 97%;
     }
 
     .delogo {

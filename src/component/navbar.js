@@ -20,7 +20,9 @@ export default function Navbar() {
     return (
         <div className="header">
             <div className="logocapita" >
+                <a href="https://www.capitaland.com/en.html">
                 <img src={logo} />
+                </a>
             </div>
             <div className="headmenu">
                 <div className="language">
