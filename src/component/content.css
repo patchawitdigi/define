@@ -62,14 +62,23 @@
     margin-bottom: 1vw;
     font-size: 2vw;
     font-family:'Montserrat-Regular';
+    white-space: pre-line;
 }
 
 .textcon p {
     font-size: 0.8vw;
     line-height: 1.5vw;
     font-family: 'minion_proregular';
+    white-space: pre-line;
 }
-
+.textcon a{
+   color: #bf5c40;
+   text-decoration: none;
+   font-family: 'Montserrat-Medium';
+}
+.textcon a:hover{
+    color: #bf5c40;
+ }
 
 .bgleft {
     position: absolute;

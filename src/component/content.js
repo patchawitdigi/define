@@ -142,7 +142,7 @@ export default function Content() {
                                             <div className="textcon textr" data-aos="fade-down">
                                                 <h2></h2>
                                                 <h3>{detail.title}</h3>
-                                                <p>{detail.description}</p>
+                                                <p dangerouslySetInnerHTML={{ __html: detail.description }} className="gotopage"></p>
                                                 <img className="bgright" src={bgright} />
                                             </div>
                                         </Col>

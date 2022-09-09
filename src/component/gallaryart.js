@@ -53,6 +53,18 @@ export default function Gallaryart() {
 
     const [gallarys, setGallarys] = useState([]);
 
+    window.onload = function(){ 
+        var modal01 = document.querySelectorAll("#myModal01"); 
+        var btn01 = document.querySelectorAll("#plusitem1");
+        var span01 = document.getElementsByClassName("close")[0];
+        btn01[0].onclick = function () {
+            modal01[0].style.display = "block";
+        }
+        span01.onclick = function () {
+            modal01[0].style.display = "none";
+        } 
+    };
+
     useEffect(() => {
 
         fetch(galleryArt).then(
@@ -264,12 +276,13 @@ export default function Gallaryart() {
                                                     <p>
                                                         {gallary.title}
                                                     </p>
+                                                    <div className="clickpop">
                                                     <BsPlusCircle
-                                                        size="2vw"
                                                         id="plusitem1"
                                                         data-aos="fade-left"
                                                         data-aos-delay="500"
                                                     />
+                                                    </div>
                                                 </div>
                                                 {gallary.images.slice(2, 3).map((image) => {
                                                     return (
@@ -297,7 +310,9 @@ export default function Gallaryart() {
                                         <Col xs={12} sm={4}>
                                             <div className="rgallary2">
                                                 <div className="moreitem">
-                                                    <BsPlusCircle size="2vw" id='plusitem1' data-aos="fade-right" />
+                                                <div className="clickpop">
+                                                    <BsPlusCircle id='plusitem1' data-aos="fade-right" />
+                                                </div>
                                                     <p data-aos="fade-right"> {gallary.title}</p>
                                                 </div>
                                                 {gallary.images.slice(2, 3).map((image) => {

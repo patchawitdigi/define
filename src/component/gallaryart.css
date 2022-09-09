@@ -118,6 +118,9 @@
     display: flex;
     justify-content: flex-end;
 }
+.clickpop{
+    font-size: 2vw;
+}
 #plusitem1{
     color: #bf5c40;
     margin-top: 10vw;
@@ -240,8 +243,11 @@
         padding-top: 15vw;
         line-height: 4vw;
     }
-    .plusitem1{
-        margin-top: 16vw;
+    .clickpop{
+        font-size: 4vw;
+    }
+    #plusitem1{
+        margin-top: 15vw;
         margin-left: 2vw;
     }
     .facade3{
