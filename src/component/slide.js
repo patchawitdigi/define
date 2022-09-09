@@ -91,7 +91,7 @@ function Slide() {
 
     return (
         <div>
-            <img className='delogo' src={delogo} />
+            <a href='/project/define/'><img className='delogo' src={delogo} /></a>
 
             <Container fluid className="p-0">
                 <div className="content conhid">

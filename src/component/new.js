@@ -31,7 +31,7 @@ export default function New() {
 
     return (
         <div>
-            <img className='delogo' src={delogo} />
+            <a href='/project/define/'><img className='delogo' src={delogo} /></a>
             <div className='headborder'>
                 <h3 className="headnew" data-aos="fade-right" >NEWS & MEDIA</h3>
                 <h3 className="headnew2" data-aos="fade-right" data-aos-delay="250"></h3>

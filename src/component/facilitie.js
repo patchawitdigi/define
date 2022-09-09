@@ -44,8 +44,9 @@ function Facilitie() {
       </div>
       <div className='levelimg'>
         <img src={vel1} id="level" data-aos="fade-up" data-aos-delay="500"/>
+        <img className='textlv' src={text1} id="text" data-aos="fade-up" data-aos-delay="500"/>
       </div>
-      <img className='textlv' src={text1} id="text" data-aos="fade-up" data-aos-delay="500"/>
+      
 
       <div id="textlv1" style={{ display: "block" }}>
         <Container fluid>
@@ -162,7 +163,6 @@ function Facilitie() {
           </div>
         </Container>
       </div>
-
 
       <p className='disclaimer2'>Disclaimer: Whilst every care has been taken to ensure accuracy in the preparation of the information contained herein,
         no warranties whatsoever are given, or legal representations provided in respect thereon. The Developer reserves the right

@@ -23,7 +23,7 @@ export default function Project() {
 
     return (
         <div>
-            <img className="delogo" src={delogo} />
+            <a href='/project/define/'><img className='delogo' src={delogo} /></a>
             <img className="bannerproject" src={bannerproject} />
             <div className='lineproject'><h3></h3></div>
             <p className='infoproject'>INFORMATION OF REAL PROPERTIES PUT INTO BUSINESS</p>

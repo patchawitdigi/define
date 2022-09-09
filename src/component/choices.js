@@ -468,7 +468,7 @@ function Choices() {
       }
     }
 
-    Aos.init({ duration:  1000 });
+    Aos.init({ duration: 1000 });
 
   }, [])
 
@@ -477,8 +477,11 @@ function Choices() {
 
   return (
     <div>
-      <img className='delogo' src={delogo} />
-      <img className='floorbg' src={Floor} data-aos="fade-up"/>
+      <a href='/project/define/'><img className='delogo' src={delogo} /></a>
+      <div className='floorban'>
+        <img className='floorbg' src={Floor} data-aos="fade-up" />
+        <p>Artist's Impression</p>
+      </div>
       <h3 className='yourown' data-aos="fade-up">DEFINE A PLACE TO CALL YOUR OWN</h3>
       <Container fluid className="p-0">
         <div className='floorplan'>
@@ -487,38 +490,38 @@ function Choices() {
               <div className='selectlevel' data-aos="fade-right" data-aos-delay="500">
                 <h4>FLOOR PLAN</h4>
                 <div className='selectleveltext'>
-                <p onClick={changelv3} id="floor3">LEVEL3</p>
-                <p onClick={changelv4} id="floor4">LEVEL4</p>
-                <p onClick={changetyp1} id="typ1">TYPICAL 1</p>
-                <p onClick={changetyp2} id="typ2">TYPICAL 2</p>
-                <p onClick={changelv15} id="floor15">LEVEL15</p>
-                <p onClick={changelv25} id="floor25">LEVEL25</p>
+                  <p onClick={changelv3} id="floor3">LEVEL3</p>
+                  <p onClick={changelv4} id="floor4">LEVEL4</p>
+                  <p onClick={changetyp1} id="typ1">TYPICAL 1</p>
+                  <p onClick={changetyp2} id="typ2">TYPICAL 2</p>
+                  <p onClick={changelv15} id="floor15">LEVEL15</p>
+                  <p onClick={changelv25} id="floor25">LEVEL25</p>
                 </div>
               </div>
             </Col>
             <Col lg={10}>
               <div className='imglevel'>
-                <img src={Floor3} id="floorselect" data-aos="fade-up" data-aos-delay="1000"/>
-                <BsPlusCircle size="3.5vw" id='plus3-1' data-aos="fade-up" data-aos-delay="1000"/>
-                <BsPlusCircle size="3.5vw" id='plus3-2' data-aos="fade-up" data-aos-delay="1000"/>
-                <BsPlusCircle size="3.5vw" id='plus4-1'/>
-                <BsPlusCircle size="3.5vw" id='plus4-2'/>
-                <BsPlusCircle size="3.5vw" id='plus4-3'/>
-                <BsPlusCircle size="3.5vw" id='plus4-4'/>
-                <BsPlusCircle size="3.5vw" id='plus1-1'/>
-                <BsPlusCircle size="3.5vw" id='plus1-2'/>
-                <BsPlusCircle size="3.5vw" id='plus1-3'/>
-                <BsPlusCircle size="3.5vw" id='plus1-4'/>
-                <BsPlusCircle size="3.5vw" id='plus2-1'/>
-                <BsPlusCircle size="3.5vw" id='plus2-2'/>
-                <BsPlusCircle size="3.5vw" id='plus2-3'/>
-                <BsPlusCircle size="3.5vw" id='plus2-4'/>
-                <BsPlusCircle size="3.5vw" id='plus15-1'/>
-                <BsPlusCircle size="3.5vw" id='plus15-2'/>
-                <BsPlusCircle size="3.5vw" id='plus15-3'/>
-                <BsPlusCircle size="3.5vw" id='plus15-4'/>
-                <BsPlusCircle size="3.5vw" id='plus25-1'/>
-                <BsPlusCircle size="3.5vw" id='plus25-2'/>
+                <img src={Floor3} id="floorselect" data-aos="fade-up" data-aos-delay="1000" />
+                <BsPlusCircle size="3.5vw" id='plus3-1' data-aos="fade-up" data-aos-delay="1000" />
+                <BsPlusCircle size="3.5vw" id='plus3-2' data-aos="fade-up" data-aos-delay="1000" />
+                <BsPlusCircle size="3.5vw" id='plus4-1' />
+                <BsPlusCircle size="3.5vw" id='plus4-2' />
+                <BsPlusCircle size="3.5vw" id='plus4-3' />
+                <BsPlusCircle size="3.5vw" id='plus4-4' />
+                <BsPlusCircle size="3.5vw" id='plus1-1' />
+                <BsPlusCircle size="3.5vw" id='plus1-2' />
+                <BsPlusCircle size="3.5vw" id='plus1-3' />
+                <BsPlusCircle size="3.5vw" id='plus1-4' />
+                <BsPlusCircle size="3.5vw" id='plus2-1' />
+                <BsPlusCircle size="3.5vw" id='plus2-2' />
+                <BsPlusCircle size="3.5vw" id='plus2-3' />
+                <BsPlusCircle size="3.5vw" id='plus2-4' />
+                <BsPlusCircle size="3.5vw" id='plus15-1' />
+                <BsPlusCircle size="3.5vw" id='plus15-2' />
+                <BsPlusCircle size="3.5vw" id='plus15-3' />
+                <BsPlusCircle size="3.5vw" id='plus15-4' />
+                <BsPlusCircle size="3.5vw" id='plus25-1' />
+                <BsPlusCircle size="3.5vw" id='plus25-2' />
               </div>
             </Col>
           </Row>

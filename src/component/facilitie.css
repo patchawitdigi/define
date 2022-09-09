@@ -34,6 +34,7 @@
 .levelimg{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .levelimg img{
     width: 80vw;
@@ -41,9 +42,9 @@
 
 .textlv{
     position: absolute;
-    top: 63.3vw;
-    left: 9.8vw;
-    width: 80vw;
+    top: 0vw;
+    left: 9.5vw;
+    width: 100%;
 }
 
 
@@ -72,6 +73,7 @@
     margin-right: 2vw;
 }
 .colout a{  
+    margin-left: 0.5vw;
     font-size: 0.9vw;
     font-family: 'minion_proregular';
 }
@@ -114,20 +116,22 @@
 
 @media only screen and (max-width: 991px) {
     .textlv{
-        top: 101vw;
-        left: 10vw;
-        width: 80vw;
+        position: absolute;
+        top: 0vw;
+        left: 9vw;
+        width: 100%;
     }
+    
     .faciout span{
-        width: 1.6vw;
-        height: 1.6vw;
-        font-size: 0.9vw;
+        width: 1.8vw;
+        height: 1.8vw;
+        font-size: 0.5vw;
         
     }
     .faciin span{
-        width: 1.6vw;
-        height: 1.6vw;
-        font-size: 0.9vw;
+        width: 1.8vw;
+        height: 1.8vw;
+        font-size: 0.5vw;
     }
     .rowlv3 {
         margin-right: 2.5vw;
@@ -136,15 +140,18 @@
 
 @media only screen and (max-width: 575px) {
     .textlv{
-        top: 123vw;
-        left: 9.5vw;
-        width: 80vw;
+        position: absolute;
+        top: 0vw;
+        left: 1.5vw;
+        width: 100%;
     }
+    
     .levelimg img{
         width: 94vw;
     }
     .facilitie {
         font-size: 4vw;
+        margin-top: 20vw;
     }
     .levelselect p {
         margin-left: 2.5vw;
@@ -159,15 +166,15 @@
         font-size: 2.5vw;
     }
     .faciout span{
-        width: 3vw;
-        height: 3vw;
-        font-size: 1.8vw;
+        width: 3.2vw;
+        height: 3.2vw;
+        font-size: 1.5vw;
         
     }
     .faciin span{
-        width: 3vw;
-        height: 3vw;
-        font-size: 1.8vw;
+        width: 3.2vw;
+        height: 3.2vw;
+        font-size: 1.5vw;
     }
     .indoor{
         margin-top: 3vw;

@@ -222,7 +222,7 @@ export default function Gallaryart() {
 
     return (
         <div>
-            <img className="delogo" src={delogo} />
+            <a href='/project/define/'><img className='delogo' src={delogo} /></a>
             <div className="headborder">
                 <h3 className="headgal">GALLERIE D’ARTE</h3>
                 <h3 className="headgal2"></h3>

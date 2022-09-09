@@ -1,3 +1,15 @@
+.floorban{
+    position: relative;
+}
+.floorban p{
+    position: absolute;
+    top: 35vw;
+    left: 3vw;
+    color: #fff;
+    font-size: 0.7vw;
+    font-family: 'Montserrat-Light';
+}
+
 .floorbg {
     width: 100%;
     height: 41vw;
@@ -23,7 +35,8 @@
     border-bottom: 0.1vw solid #bf5c40;
     padding: 0 2.5vw 1vw 2.5vw;
     margin-bottom: 1vw;
-    font-family: 'minion_proregular';
+    font-family: 'Montserrat-Light';
+    font-weight: bold;
 }
 
 .selectlevel p {
@@ -230,6 +243,7 @@
 
 .planpopup {
     width: 100%;
+    height: fit-content;
     background-color: white;
     padding: 1vw 1.5vw;
 
@@ -238,7 +252,7 @@
 .planpopup p {
     font-size: 0.7vw;
     text-align: center;
-    font-family: 'minion_proregular';
+    font-family: 'Montserrat-Light';
 
 }
 
